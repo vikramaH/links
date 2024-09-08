@@ -1,5 +1,6 @@
 # links
-Great links will be stored here for takin inspiration and guidance.
+People are already doing a lot of great or advanced things. 
+Great links will be stored here for taking inspiration and guidance.
 This avoids kUpamanDUkatA and reinventing the wheel.
 This results in going forward fast.
 
