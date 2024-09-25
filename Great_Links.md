@@ -10,6 +10,14 @@
 (3) select 'fitting target' from the menu and it will give options such as 'Lowest sum of squared absolute error' ,
     'Lowest sum of squared orthogonal distance' and several others.
 
+**Database for particle accelerator centres**
+* DABATASE FOR NSLS-II ACCELERATOR OPERATION_2017  https://epaper.kek.jp/ipac2017/papers/wepab121.pdf
+* A Software System for Measurement of  Accelerator Magnets Using a Relational  Database
+  https://www.academia.edu/107141004/A_software_system_for_measurement_of_accelerator_magnets_using_a_relational_database
+* 
+
+
+
 
 Online Computing applications
 ============================
