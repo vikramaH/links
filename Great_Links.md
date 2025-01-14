@@ -63,5 +63,16 @@ Further investigation
 =====================
 
 Study Assembly Modeling 
-Study using FreeCAD for building modeling and FEM modeling for Elmer
+
+Study using FreeCAD for building information modeling (BIM) and FEM modeling for Elmer
+
+Choosing the Best 3D CAD Software: A Comprehensive Guide 
+https://formlabs.com/asia/blog/cad-software/?srsltid=AfmBOoqwzfuT-Ok1Jt3VCqhmh6XDxdxHCHa09aBDAJ689Gy2XLmXMq9G
+
+Generative Design 101 ===> https://formlabs.com/asia/blog/generative-design/
+
+AutoMATES: Automated Model Assembly from Text, Equations,and Software (2020)
+https://arxiv.org/pdf/2001.07295
+https://github.com/ml4ai/automates
+
 
