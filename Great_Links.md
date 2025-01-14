@@ -28,3 +28,12 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 2) 109 Useful Websites & Online Applications You Should Know About
 
 3) Particle Tracking Module for Python https://github.com/acanbay/apricot
+
+
+
+Magnetic Field calculation codes
+================================
+
+MAGNETIC FIELD TOOLS, A C++/PYTHON LIBRARY FOR MAGNETIC FIELD PROCESSING (IPAC2023)
+https://accelconf.web.cern.ch/ipac2023/pdf/WEPL126.pdf
+https://gitlab.esrf.fr/IDM/magfieldtools/-/tree/master?ref_type=heads
