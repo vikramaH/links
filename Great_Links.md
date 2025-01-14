@@ -57,3 +57,11 @@ planetMagFields: A Python package for analyzing and plotting planetary magnetic 
 Python Simulation of Linear and Non-Linear Accelerator Elements  ; July 27, 2016
 The PhD thesis ===>  https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=8890678&fileOId=8890685
 The code is here ===> Differential-Algebra-Tracker ===>  https://github.com/OscarES/Differential-Algebra-Tracker
+
+
+Further investigation
+=====================
+
+Study Assembly Modeling 
+Study using FreeCAD for building modeling and FEM modeling for Elmer
+
