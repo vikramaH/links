@@ -34,6 +34,26 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 Magnetic Field calculation codes
 ================================
 
+Python package for computation of magnetic fields of magnets, currents and moments.   ===> https://github.com/magpylib/magpylib
+Magpylib Documentation  ===> https://magpylib.readthedocs.io/en/latest/index.html
+https://pypi.org/project/magpylib/
+
+
+magcoilcalc - Axisymmetric circular current loops (coils) magnetic field calculator
+https://github.com/sq-meng/coilcalc
+
+
 MAGNETIC FIELD TOOLS, A C++/PYTHON LIBRARY FOR MAGNETIC FIELD PROCESSING (IPAC2023)
 https://accelconf.web.cern.ch/ipac2023/pdf/WEPL126.pdf
 https://gitlab.esrf.fr/IDM/magfieldtools/-/tree/master?ref_type=heads
+
+An Open-Source Finite Element Quench Simulation Tool for Superconducting Magnets (2023)
+https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10077402
+
+
+planetMagFields: A Python package for analyzing and plotting planetary magnetic field data (2024)
+
+
+Python Simulation of Linear and Non-Linear Accelerator Elements  ; July 27, 2016
+The PhD thesis ===>  https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=8890678&fileOId=8890685
+The code is here ===> Differential-Algebra-Tracker ===>  https://github.com/OscarES/Differential-Algebra-Tracker
