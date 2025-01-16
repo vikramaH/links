@@ -76,3 +76,18 @@ https://arxiv.org/pdf/2001.07295
 https://github.com/ml4ai/automates
 
 
+Undulator design etc
+===============
+https://github.com/radiasoft/sirepo ===> radiasoft sirepo    
+
+https://github.com/hidecode221b  ===> Radia-MPW and U4Opt etc
+
+https://github.com/hidecode221b/U4Opt ===> U4Opt : Undulator plot for the period optimization ====> good for writing python code yourself
+
+https://github.com/radiasoft/Radia-Examples/tree/master?tab=readme-ov-file ===> Radia Examples
+
+https://gitlab.esrf.fr/IDM/radia/radiaid ===> RadiaID : Python library for building undulator RADIA models. It can be used for building various undulator in Python.
+
+
+
+
