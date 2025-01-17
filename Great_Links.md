@@ -102,6 +102,11 @@ https://oscars.bnl.gov/index.php
 https://oscars.bnl.gov/examples.php
 
 
+PyB2E undulator radiation module (from ESRF)  ===> https://gitlab.esrf.fr/IDM/b2e-py
+
+Package **xrt** (XRayTracer) is a python software library for ray tracing and wave propagation in x-ray regime.  
+https://github.com/kklmn/xrt
+https://xrt.readthedocs.io/  ==> Package xrt is a python software library for ray tracing and wave propagation in x-ray regime.
 
 
 
