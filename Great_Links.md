@@ -89,5 +89,20 @@ https://github.com/radiasoft/Radia-Examples/tree/master?tab=readme-ov-file ===> 
 https://gitlab.esrf.fr/IDM/radia/radiaid ===> RadiaID : Python library for building undulator RADIA models. It can be used for building various undulator in Python.
 
 
+UNDUMAG and WAVE have been developed at **HZB/BESSY**. They are used intensively to design undulators, 
+and to understand their magnetic and synchrotron radiation properties, as well as their impact on the storage ring. 
+UNDUMAG - WAVE RECENT DEVELOPMENTS (2023) ==> https://accelconf.web.cern.ch/ipac2023/pdf/MOPM105.pdf
+http://gitlab.helmholtz-berlin.de/gep/undumag.git
+http://gitlab.helmholtz-berlin.de/gep/wave.git
+http://gitlab.helmholtz-berlin.de/gep/brill.git
+
+**OSCARS**  (from BNL)
+Open Source Code for Advanced Radiation Simulation  ===> examples are given
+https://oscars.bnl.gov/index.php
+https://oscars.bnl.gov/examples.php
+
+
+
+
 
 
