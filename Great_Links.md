@@ -41,7 +41,9 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 
 9) Modelica by Examples     https://mbe.modelica.university/
 
-10) Convert any blog or website to an interactive learning platform for data science   https://github.com/datacamp/datacamp-light
+10) Infineon  PowerEsim Switch Mode Power Supply Design Tool     https://www.poweresim.com/
+
+11) Convert any blog or website to an interactive learning platform for data science   https://github.com/datacamp/datacamp-light
 
 
 
