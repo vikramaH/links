@@ -29,6 +29,8 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 
 3) Particle Tracking Module for Python https://github.com/acanbay/apricot
 
+4) Engineering Design Utilities (Okawa Electric Design)    http://sim.okawa-denshi.jp/en/
+
 
 
 Magnetic Field calculation codes
@@ -132,3 +134,10 @@ You can install ROXIE on a private computer or within your institute. For users 
 An Open-Source Finite Element Quench Simulation Tool for Superconducting Magnets (pdf)   https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10077402
 A transient magneto-thermal quench simulation of a no-insulation HTS pancake coil with FiQuS/Pancake3D, developed at CERN. 
 https://github.com/sinaatalay/fiqus-pancake3d-example?tab=readme-ov-file
+
+----
+
+**Tools That Can be Used in Control System Design**  https://electronicsbeliever.com/tools-that-can-be-used-in-control-system-design/
+( Matlab, Simulink, Spice Based Simulation Software (With Simetrix or any spiced based simulator you don’t need to derive the transfer function anymore), SimPowerSystems, 
+    State Flow --> An emerging tool nowadays for control system design is state flow.
+    Mathcad Template
