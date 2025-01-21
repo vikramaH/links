@@ -31,6 +31,16 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 
 4) Engineering Design Utilities (Okawa Electric Design)    http://sim.okawa-denshi.jp/en/
 
+5) https://fossee.in/    FOSSEE, IIT Mumbai
+
+6) Scilab on the cloud    https://cloud.scilab.in/
+
+7) Scicos on the cloud     https://xcos.scilab.in/
+
+8) Octave Online     https://octave-online.net/
+
+9) Convert any blog or website to an interactive learning platform for data science   https://github.com/datacamp/datacamp-light
+
 
 
 Magnetic Field calculation codes
