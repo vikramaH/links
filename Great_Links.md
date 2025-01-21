@@ -114,3 +114,9 @@ https://arxiv.org/html/2410.13672v1
 The radiation emitted by the undulator exhibits distinct structures both in its spectrum, presenting peaks at some photon energies (resonances), and in its geometry (wavefront size and derived divergences). Sseveral software tools are available to compute the characteristics of the UR. Among them, SRW [codeSRW] and SPECTRA [Tanaka2001] are the most advanced.
 Ray tracing packages create undulator sources by sampling rays according to the distributions given by the undulator theory. Several codes are available in the synchrotron community to calculate the undulator emission characteristics in different cases. The codes URGENT [codeURGENT] and US [codeUS] compute undulator emission in the far-field for undulators with a sinusoidal magnetic field. The codes SRW [codeSRW] and SPECTRA [Tanaka2001] are more generic as they calculate emission in the near and far-field for any electron trajectory (with different initial conditions) and submitted to an arbitrary magnetic field. We use pySRU [pySRU], an open source code developed in Python, that calculates the emission using equation (3). It is well integrated in python ecosystems, such as OASYS [codeOASYS], which includes the SHADOW4 user interface. Portions of pySRU have been incorporated into the internal code of SHADOW4.
 
+**RadiaMM** https://gitlab.esrf.fr/IDM/radia/radiamm
+The Radia Multipole Magnets (radia_mm) module is dedicated to the simulations of accelerator electromagnet quadrupoles. radia_mm is based on the RADIA magnetostatic code. It inclules functions for building multipoles such as bending magnets, quadrupole lenses and higher order multipoles.
+
+**RadiaID**  https://gitlab.esrf.fr/IDM/radia/radiaid
+Python library for building undulator RADIA models. It can be used for building various undulator in Python. The undulators come as Python objects with longitudinal field plots, 3D geometry plots and other methods.
+
