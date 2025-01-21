@@ -122,3 +122,13 @@ Python library for building undulator RADIA models. It can be used for building 
 
 **MATLAB live scripts for Hands-on Accelerator Physics using MATLAB**  https://github.com/volkziem/HandsOnAccelerators?tab=readme-ov-file
 
+**multipoles**   https://github.com/maroba/multipoles
+It is a Python package for multipole expansions of the solutions of the Poisson equation (e.g. electrostatic or gravitational potentials). It can handle discrete and continuous charge or mass distributions. https://github.com/maroba/multipoles
+
+**ROXIE homepage**   https://roxie.docs.cern.ch/index.html
+You can install ROXIE on a private computer or within your institute. For users outside of CERN, plase note that you need an institute ROXIE license to run roxie.
+
+**Fiqus** 
+An Open-Source Finite Element Quench Simulation Tool for Superconducting Magnets (pdf)   https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10077402
+A transient magneto-thermal quench simulation of a no-insulation HTS pancake coil with FiQuS/Pancake3D, developed at CERN. 
+https://github.com/sinaatalay/fiqus-pancake3d-example?tab=readme-ov-file
