@@ -39,7 +39,9 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 
 8) Octave Online     https://octave-online.net/
 
-9) Convert any blog or website to an interactive learning platform for data science   https://github.com/datacamp/datacamp-light
+9) Modelica by Examples     https://mbe.modelica.university/
+
+10) Convert any blog or website to an interactive learning platform for data science   https://github.com/datacamp/datacamp-light
 
 
 
