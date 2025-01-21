@@ -120,3 +120,5 @@ The Radia Multipole Magnets (radia_mm) module is dedicated to the simulations of
 **RadiaID**  https://gitlab.esrf.fr/IDM/radia/radiaid
 Python library for building undulator RADIA models. It can be used for building various undulator in Python. The undulators come as Python objects with longitudinal field plots, 3D geometry plots and other methods.
 
+**MATLAB live scripts for Hands-on Accelerator Physics using MATLAB**  https://github.com/volkziem/HandsOnAccelerators?tab=readme-ov-file
+
