@@ -43,7 +43,7 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 
 10) Infineon  PowerEsim Switch Mode Power Supply Design Tool     https://www.poweresim.com/
 
-11) ZunZunSite3 Online Curve Fitting and Surface Fitting Web Site    findcurves.com
+11) ZunZunSite3 Online Curve Fitting and Surface Fitting Web Site    https://www.findcurves.com
 
 12) Convert any blog or website to an interactive learning platform for data science   https://github.com/datacamp/datacamp-light
 
