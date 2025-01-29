@@ -166,6 +166,7 @@ https://beingpax.medium.com/chatgpt-is-old-age-these-are-the-10x-better-alternat
 
 Fabric: The Best AI Tool That Nobody is Talking About    
 https://beingpax.medium.com/why-fabric-ai-can-change-the-way-you-use-ai-973e725354da
+--> **fabric** is an open-source framework for augmenting humans using AI. It provides a modular framework for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere.  https://github.com/danielmiessler/fabric
 
 Top 15 Trending GitHub Repositories For AI Developement  
 https://blog.stackademic.com/top-15-trending-github-repositories-for-ai-developement-ca05acb9d390
