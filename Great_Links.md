@@ -157,3 +157,24 @@ https://github.com/sinaatalay/fiqus-pancake3d-example?tab=readme-ov-file
 ( Matlab, Simulink, Spice Based Simulation Software (With Simetrix or any spiced based simulator you don’t need to derive the transfer function anymore), SimPowerSystems, 
     State Flow --> An emerging tool nowadays for control system design is state flow.
     Mathcad Template
+
+---
+29-12-2025
+
+ChatGPT is Old-Age. These are the 10X better Alternative Tools You Should Be Using 
+https://beingpax.medium.com/chatgpt-is-old-age-these-are-the-10x-better-alternative-tools-you-should-be-using-094d5f765a93
+
+Fabric: The Best AI Tool That Nobody is Talking About    
+https://beingpax.medium.com/why-fabric-ai-can-change-the-way-you-use-ai-973e725354da
+
+Top 15 Trending GitHub Repositories For AI Developement  
+https://blog.stackademic.com/top-15-trending-github-repositories-for-ai-developement-ca05acb9d390
+
+EASY Web Scraping with Google Gemini 2.0  
+https://ai.gopubby.com/easy-web-scraping-with-google-gemini-2-0-88d3a8d0b2a8
+
+Do Not Use LLM or Generative AI For These Use Cases 
+https://pub.towardsai.net/do-not-use-llm-or-generative-ai-for-these-use-cases-a819ae2d9779
+
+Cool SHIT you can do with DOCKER (for your home lab) 
+https://levelup.gitconnected.com/cool-shit-you-can-do-with-docker-for-your-home-lab-af857dfc206d
