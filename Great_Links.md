@@ -16,7 +16,9 @@
   https://www.academia.edu/107141004/A_software_system_for_measurement_of_accelerator_magnets_using_a_relational_database
 * 
 
+====
 
+https://manasganit.com/bhartiya-vidya-saar-bhartiya-vigyan-parampara/  
 
 
 Online Computing applications
