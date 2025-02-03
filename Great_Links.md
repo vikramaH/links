@@ -16,11 +16,6 @@
   https://www.academia.edu/107141004/A_software_system_for_measurement_of_accelerator_magnets_using_a_relational_database
 * 
 
-====
-
-https://manasganit.com/bhartiya-vidya-saar-bhartiya-vigyan-parampara/  
-
-
 Online Computing applications
 ============================
 1) https://www.rollapp.com/apps ===> many applications including paraview, gmsh  
@@ -181,3 +176,7 @@ https://pub.towardsai.net/do-not-use-llm-or-generative-ai-for-these-use-cases-a8
 
 Cool SHIT you can do with DOCKER (for your home lab) 
 https://levelup.gitconnected.com/cool-shit-you-can-do-with-docker-for-your-home-lab-af857dfc206d
+
+----
+
+https://manasganit.com/bhartiya-vidya-saar-bhartiya-vigyan-parampara/  
