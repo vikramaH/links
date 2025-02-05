@@ -180,3 +180,8 @@ https://levelup.gitconnected.com/cool-shit-you-can-do-with-docker-for-your-home-
 ----
 
 https://manasganit.com/bhartiya-vidya-saar-bhartiya-vigyan-parampara/  
+
+----
+
+Ollama
+https://dasarpai.com/dsblog/exploring-ollama
