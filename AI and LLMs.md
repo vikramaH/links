@@ -4,6 +4,49 @@ What Exactly Is an AI Engineer?
 Unlike data scientists or machine learning engineers who often train models from scratch, 
 AI engineers focus on integrating pre-trained models into applications or products.
 
+What is an AI model?
+===
+An AI model is a program that has been trained on a set of data to recognize certain patterns or make certain decisions without further human intervention.
+Simply put, an AI model is defined by its ability to autonomously make decisions or predictions, rather than simulate human intelligence.
+
+While all ML models are AI, not all AI involves ML. The most elementary AI models are a series of if-then-else statements, with rules programmed explicitly by a data scientist. Such models are alternatively called rules engines, expert systems, knowledge graphs or symbolic AI.
+
+
+Generative models vs. discriminative models  ==> One way to differentiate machine learning models is by their fundamental methodology: most can be categorized as either generative or discriminative. The distinction lies in how they model the data in a given space.
+
+
+AI models can be used to generate new data
+===
+
+A model can generate new data similar to the training data, for example, by using a Generative Adversarial Network (GAN). 
+
+AI models can also be used to generate completely new data sets (synthetic data) or artificially bloat existing data (data augmentation) to train more robust algorithms.
+
+
+AI models can be used to automate tasks
+===
+
+To apply AI models in business, they are integrated into pipelines. A pipeline consists of several steps, including data acquisition, transformation, data analysis, and data output.
+
+In computer vision applications, a vision pipeline acquires the video stream and applies image processing before feeding individual images into the DL model. When applied in manufacturing, for example, this can be used to automate visual inspection or perform automated object counting of bottles on conveyor belts.
+
+
+List of the Most Popular AI Models
+===
+
+    AI Model #1: Linear Regression
+    AI Model #2: Deep Neural Networks
+    AI Model #3: Logistic Regression
+    AI Model #4: Decision Trees
+    AI Model #5: Linear Discriminant Analysis
+    AI Model #6: Naive Bayes
+    AI Model #7: Support Vector Machines
+    AI Model #8: Learning Vector Quantization
+    AI Model #9: K-nearest Neighbors
+    AI Model #10: Random Forest
+    AI Model #11: Linear Regression
+    
+
 
 Known challenges of LLMs
 =====
@@ -143,7 +186,14 @@ Model merging is a technique that combines two or more LLMs into a single model.
 
 By combining models, we can create a powerful new LLM that leverages their collective strengths. 
 
-In this tutorial, we will implement it using the **mergekit** library. 
+In this tutorial, we will implement it using the **mergekit** library.
+
+
+Open WebUI 
+===
+Open WebUI is a Web-based application that allows you to interact with AI models.
+
+Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform designed to operate entirely offline. It supports various LLM runners like Ollama and OpenAI-compatible APIs, with built-in inference engine for RAG, making it a powerful AI deployment solution.
 
 
 GGUF
@@ -187,3 +237,20 @@ curl <http://localhost:11434/api/chat> -d '{
 }'
 
 ==> There are alternatives to Ollama, like vllm and aphrodite, but Ollama is surely the most popular one.
+
+===> Open Source AI Repository Collection  https://github.com/thebigbone/opensourceAI
+
+Best AI Model Repositories
+===
+Hugging Face
+TensorFlow Hub
+PyTorch Hub
+Model Zoo by OpenAI
+Microsoft AI GitHub
+**5 GitHub Repositories for Cutting-Edge AI Models** ===>
+karpathy/llama2.c 🦙
+facebookresearch/audiocraft 🔊🎶
+geekan/MetaGPT 🤖📚
+apple/ml-stable-diffusion 🍏🌌
+invictus717/MetaTransformer 🌐💡
+
