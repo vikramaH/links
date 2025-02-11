@@ -98,3 +98,14 @@ The main exception to this rule is models that have been modified to use smaller
 
 Unsloth
 ===
+
+OllamaTrain 
+===
+Ollama Train is a powerful tool designed to facilitate the fine-tuning of large language models (LLMs) like OLMo 1B.
+
+---
+* The Artificial Intelligence (AI) field has been fueled by **open source initiatives** from the very beginning, from data sets used in model training, frameworks, libraries and tooling, to the models themselves. 
+* A model is a representation of the patterns an algorithm has learned from analyzing data it was fed during its training phase. The goal of a Machine Learning model is to make predictions or decisions based on new, unseen data.
+* By the end of its training phase, a model will be distributed as either a set of multiple files including the patterns it learned, configuration files, or a single file containing everything it needs. The number of files will vary depending on the frameworks and tools used to train it, and most tools today can adapt to the different ways a model is distributed.
+* Ollama was originally developed with the idea of enabling people to run LLMs locally on their own computers, but that doesn’t mean you can’t use it on an H100 PCIe GPU Instance; in fact, its vast amount of resources will supercharge your experience.
+* The Ollama model library showcases a variety of models you can try out on your own helping you decide what’s the best tool for the job, be it a compact model, such as TinyLlama or a big one, like Llama2; there are multimodal models, like LLaVA, which include a vision encoder that enables both visual and language understanding. There are also models made for specific use cases, such as Code Llama, an LLM that can help in the software development process, or Samantha Mistral, a model trained in philosophy, psychology, and personal relationships.
