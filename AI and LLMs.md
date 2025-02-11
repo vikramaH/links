@@ -96,3 +96,5 @@ The actual size of the model you can run is going to be dependent on how much me
 A decent rule is that the model will occupy 2x the memory of the parameter size: 2b/4gb, 7b/14gb, etc. 
 The main exception to this rule is models that have been modified to use smaller values for stored parameters (quantization). 
 
+Unsloth
+===
