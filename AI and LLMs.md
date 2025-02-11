@@ -56,3 +56,20 @@ Building a RAG System
 ===
 RAG System === DeepSeek R1 1.5B + Ollama + 16GB RAM PC +  
                   libraries ( (1) LangChain: For document processing and retrieval (2) Streamlit: For the web interface)
+
+training options
+===
+**Proper way to train model on my data and load into Ollama?**
+Your options are RAG or fine-tuning. There are RAG implementations for ollama in the community integrations. RAG doesn't "understand" the document, though, it just searches based on a query and responds with a result synthesized from the search results. Fine-tuning options include unsloth, llama factory and axolotl. The problem with fine-tuning is it takes time to generate the new model, if you are receiving daily doc dumps it might not be fit for purpose. A new entry in to the scene is instructlab, which from the sound of it is a more iterative approach to fine-tuning, so might fit your use case better. I haven't used it yet so my understanding may be incorrect.
+
+Ollama
+==
+Aside from managing and running models locally, Ollama can also generate custom models using a Modelfile configuration file that defines the model’s behavior.
+The Ollama Modelfile is a configuration file essential for creating custom models within the Ollama framework. It facilitates the specification of a base model and the setting of various parameters, such as temperature and num_ctx, which alter the model’s behavior. 
+
+RAM requirement for running LLM
+===
+The actual size of the model you can run is going to be dependent on how much memory you have available.
+A decent rule is that the model will occupy 2x the memory of the parameter size: 2b/4gb, 7b/14gb, etc. 
+The main exception to this rule is models that have been modified to use smaller values for stored parameters (quantization). 
+Normally a model will use 16-bit floating point values for parameters; however, by clipping these values to smaller units (8/4-bit) the size can be reduced with minimal to no quality drop, resulting in lower memory usage and faster results.
