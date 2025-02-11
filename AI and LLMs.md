@@ -81,10 +81,18 @@ ollama pull llama2-uncensored:7b ==> download this model locally
 
 ollama run llama2:7b "your prompt" ==> to run a downloaded model ;  ollama run model_name:params
 
+==> Quantization is all about reducing the weights of costs of loosing model’s precision. In simple terms, quantization adjusts weight precision, decreases model size, and allows running on less powerful hardware without significant accuracy loss. **Ollama supports quantized models**
+Normally a model will use 16-bit floating point values for parameters; however, by clipping these values to smaller units (8/4-bit) the size can be reduced with minimal to no quality drop, resulting in lower memory usage and faster results.
+
+modelfile ==> for integrating models from other sources, or your own model
+
+Ollama-powered (Python) apps to make devs life easier ==> Ollama running in background is accessible as any regular REST API. 
+* pip install ollama
+* import ollama 
 
 RAM requirement for running LLM
 ===
 The actual size of the model you can run is going to be dependent on how much memory you have available.
 A decent rule is that the model will occupy 2x the memory of the parameter size: 2b/4gb, 7b/14gb, etc. 
 The main exception to this rule is models that have been modified to use smaller values for stored parameters (quantization). 
-Normally a model will use 16-bit floating point values for parameters; however, by clipping these values to smaller units (8/4-bit) the size can be reduced with minimal to no quality drop, resulting in lower memory usage and faster results.
+
