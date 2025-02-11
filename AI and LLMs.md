@@ -67,6 +67,21 @@ Ollama
 Aside from managing and running models locally, Ollama can also generate custom models using a Modelfile configuration file that defines the model’s behavior.
 The Ollama Modelfile is a configuration file essential for creating custom models within the Ollama framework. It facilitates the specification of a base model and the setting of various parameters, such as temperature and num_ctx, which alter the model’s behavior. 
 
+A few key commands:
+
+ollama list  ==> To check which models are locally available, type in cmd
+
+ollama show --modelfile llama2:7b  ==> To check which SHA file applies to a particular model, type in cmd (e.g. for instance, checking llama2:7b model)
+
+ollama rm llama2:7b  ==> To remove a model
+
+ollama serve ==> To server models
+
+ollama pull llama2-uncensored:7b ==> download this model locally
+
+ollama run llama2:7b "your prompt" ==> to run a downloaded model ;  ollama run model_name:params
+
+
 RAM requirement for running LLM
 ===
 The actual size of the model you can run is going to be dependent on how much memory you have available.
