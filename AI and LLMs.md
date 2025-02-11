@@ -64,9 +64,7 @@ Your options are RAG or fine-tuning. There are RAG implementations for ollama in
 
 Ollama
 ==
-Aside from managing and running models locally, Ollama can also generate custom models using a **Modelfile** configuration file that defines the model’s behavior.
-
-A Modelfile is a blueprint that that Ollama uses to set up and run a Large Language Model (LLM). 
+Aside from managing and running models locally, Ollama can also generate custom models using a **Modelfile** configuration file that defines the model’s behavior. In other words, you can use the Modelfile in Ollama to change how an existing LLM behaves when user interacts with it. So a Modelfile is a blueprint that that Ollama uses to set up and run a Large Language Model (LLM). 
 
 The Ollama Modelfile is a configuration file that facilitates the specification of a base model and the setting of various parameters, such as temperature and num_ctx, which alter the model’s behavior. 
 
@@ -78,13 +76,13 @@ To use your Modelfile:
 
     Create a model based on this file:
 
-    ollama create my-custom-assistant -f Custom_Assistant_modelfile
+      ollama create my-custom-assistant -f Custom_Assistant_modelfile
 
     Run the model:
 
-    ollama run my-custom-assistant
+      ollama run my-custom-assistant
 
-Ollama’s library provides a wealth of Modelfiles for different applications, from simple assistants to more complex models. Accessing these files can inspire your creations or serve as a direct foundation for your projects. The ollama show command is particularly useful for displaying the Modelfile of any local model, offering insights into its configuration and potentially serving as a template for your custom models.
+**Ollama’s library** provides a wealth of Modelfiles for different applications, from simple assistants to more complex models. Accessing these files can inspire your creations or serve as a direct foundation for your projects. The ollama show command is particularly useful for displaying the Modelfile of any local model, offering insights into its configuration and potentially serving as a template for your custom models.
 
 **A few key ollama commands:**
 
@@ -100,7 +98,7 @@ ollama pull llama2-uncensored:7b ==> download this model locally
 
 ollama run llama2:7b "your prompt" ==> to run a downloaded model ;  ollama run model_name:params
 
-==> Quantization is all about reducing the weights of costs of loosing model’s precision. In simple terms, quantization adjusts weight precision, decreases model size, and allows running on less powerful hardware without significant accuracy loss. **Ollama supports quantized models**
+==> **Quantization** is all about reducing the weights of costs of loosing model’s precision. In simple terms, quantization adjusts weight precision, decreases model size, and allows running on less powerful hardware without significant accuracy loss. **Ollama supports quantized models**
 Normally a model will use 16-bit floating point values for parameters; however, by clipping these values to smaller units (8/4-bit) the size can be reduced with minimal to no quality drop, resulting in lower memory usage and faster results.
 
 modelfile ==> for integrating models from other sources, or your own model
@@ -134,11 +132,15 @@ Model merging
 ==
 Model merging is a technique that combines two or more LLMs into a single model. It’s a relatively new and experimental method to create new models for cheap (no GPU required). Model merging works surprisingly well and produced many state-of-the-art models on the Open LLM Leaderboard.
 
+By combining models, we can create a powerful new LLM that leverages their collective strengths. 
+
 In this tutorial, we will implement it using the **mergekit** library. 
 
 
 GGUF
 ==
+GGUF models are quantized versions of large language models, enabling efficient use of system memory without sacrificing too much quality. With Ollama, you can experiment with various quantized models shared by the community on Hugging Face without needing to create new modelfiles.
+
 
 Hugging Face
 ==
@@ -146,8 +148,21 @@ Hugging Face is a machine learning (ML) and data science platform and community 
 
 It provides the infrastructure to demo, run and deploy artificial intelligence (AI) in live applications. Users can also browse through models and data sets that other people have uploaded. Hugging Face is often called the GitHub of machine learning because it lets developers share and test their work openly.
 
+Compared with Ollama, **Huggingface has more than half a million models**. Wouldn’t it be cool, if we can create custom models from Huggingface with Ollama ? 
+
+Ollama now offers easy integration with a huge vault of GGUF format language models hosted on Hugging Face. This new feature allows users to run any of the 45,000+ public GGUF checkpoints on their local machines using a single command.
+
 Hugging Face is known for its Transformers Python library, which simplifies the process of downloading and training ML models. The library gives developers an efficient way to include one of the ML models hosted on Hugging Face in their workflow and create ML pipelines.
 
 The platform is important because of its open source nature and deployment tools. It allows users to share resources, models and research and to reduce model training time, resource consumption and environmental impact of AI development.
 
 **Did you know** you could train your custom models on Hugging Face Spaces!!!? Yes, its possible and super-easy to do with AutoTrain SpaceRunner 💥 All you need is a Hugging Face account (which you probably have already) and a payment method attached to your account (in case you want to use GPUs, CPU training is free!).
+
+----
+Ollama's storage is typically located at
+/usr/share/ollama/.ollama
+
+Here’s a quick command to run any model:
+  ollama run hf.co/{username}/{repository}
+Example :
+  ollama run hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF
