@@ -64,10 +64,29 @@ Your options are RAG or fine-tuning. There are RAG implementations for ollama in
 
 Ollama
 ==
-Aside from managing and running models locally, Ollama can also generate custom models using a Modelfile configuration file that defines the model’s behavior.
-The Ollama Modelfile is a configuration file essential for creating custom models within the Ollama framework. It facilitates the specification of a base model and the setting of various parameters, such as temperature and num_ctx, which alter the model’s behavior. 
+Aside from managing and running models locally, Ollama can also generate custom models using a **Modelfile** configuration file that defines the model’s behavior.
 
-A few key commands:
+A Modelfile is a blueprint that that Ollama uses to set up and run a Large Language Model (LLM). 
+
+The Ollama Modelfile is a configuration file that facilitates the specification of a base model and the setting of various parameters, such as temperature and num_ctx, which alter the model’s behavior. 
+
+**Using the Modelfile with Ollama**
+
+To use your Modelfile:
+
+    Save the Modelfile content to a file (e.g., Custom_Assistant_modelfile).
+
+    Create a model based on this file:
+
+    ollama create my-custom-assistant -f Custom_Assistant_modelfile
+
+    Run the model:
+
+    ollama run my-custom-assistant
+
+Ollama’s library provides a wealth of Modelfiles for different applications, from simple assistants to more complex models. Accessing these files can inspire your creations or serve as a direct foundation for your projects. The ollama show command is particularly useful for displaying the Modelfile of any local model, offering insights into its configuration and potentially serving as a template for your custom models.
+
+**A few key ollama commands:**
 
 ollama list  ==> To check which models are locally available, type in cmd
 
@@ -99,7 +118,7 @@ The main exception to this rule is models that have been modified to use smaller
 Unsloth
 ===
 
-OllamaTrain 
+OllamaTrain ???
 ===
 Ollama Train is a powerful tool designed to facilitate the fine-tuning of large language models (LLMs) like OLMo 1B.
 
@@ -109,3 +128,26 @@ Ollama Train is a powerful tool designed to facilitate the fine-tuning of large 
 * By the end of its training phase, a model will be distributed as either a set of multiple files including the patterns it learned, configuration files, or a single file containing everything it needs. The number of files will vary depending on the frameworks and tools used to train it, and most tools today can adapt to the different ways a model is distributed.
 * Ollama was originally developed with the idea of enabling people to run LLMs locally on their own computers, but that doesn’t mean you can’t use it on an H100 PCIe GPU Instance; in fact, its vast amount of resources will supercharge your experience.
 * The Ollama model library showcases a variety of models you can try out on your own helping you decide what’s the best tool for the job, be it a compact model, such as TinyLlama or a big one, like Llama2; there are multimodal models, like LLaVA, which include a vision encoder that enables both visual and language understanding. There are also models made for specific use cases, such as Code Llama, an LLM that can help in the software development process, or Samantha Mistral, a model trained in philosophy, psychology, and personal relationships.
+* Ollama supports **embedding models** . Embedding models are models that are trained specifically to generate vector embeddings: long arrays of numbers that represent semantic meaning for a given sequence of text:
+
+Model merging 
+==
+Model merging is a technique that combines two or more LLMs into a single model. It’s a relatively new and experimental method to create new models for cheap (no GPU required). Model merging works surprisingly well and produced many state-of-the-art models on the Open LLM Leaderboard.
+
+In this tutorial, we will implement it using the **mergekit** library. 
+
+
+GGUF
+==
+
+Hugging Face
+==
+Hugging Face is a machine learning (ML) and data science platform and community that helps users build, deploy and train machine learning models.
+
+It provides the infrastructure to demo, run and deploy artificial intelligence (AI) in live applications. Users can also browse through models and data sets that other people have uploaded. Hugging Face is often called the GitHub of machine learning because it lets developers share and test their work openly.
+
+Hugging Face is known for its Transformers Python library, which simplifies the process of downloading and training ML models. The library gives developers an efficient way to include one of the ML models hosted on Hugging Face in their workflow and create ML pipelines.
+
+The platform is important because of its open source nature and deployment tools. It allows users to share resources, models and research and to reduce model training time, resource consumption and environmental impact of AI development.
+
+**Did you know** you could train your custom models on Hugging Face Spaces!!!? Yes, its possible and super-easy to do with AutoTrain SpaceRunner 💥 All you need is a Hugging Face account (which you probably have already) and a payment method attached to your account (in case you want to use GPUs, CPU training is free!).
