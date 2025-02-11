@@ -115,6 +115,15 @@ The main exception to this rule is models that have been modified to use smaller
 
 Unsloth
 ===
+Unsloth makes finetuning LLMs 2x faster, use 70% less memory, and with no degradation in accuracy! 
+Finetuning can be very slow and requires high end Nvidia GPUs. Unsloth.ai makes it possible to finetune models using free GPUs in Google Colab. 
+
+*By the end of this tutorial, you will create a custom chatbot by finetuning Llama-3 with Unsloth for free. It can run locally via Ollama on your PC, or in a free GPU instance through Google Colab.
+
+*A few months ago, when I needed to finetune a multi-modal model, I had to rent an Nvidia GPU from Runpod and setup a virtual environment. Then I discovered Unsloth.ai — not only is it convenient, but it’s also fast and easy to use with Google Colab! 
+
+Ollama  + Unsloth + Llama-3 + CSV finetuning.ipynb
+
 
 OllamaTrain ???
 ===
@@ -159,6 +168,7 @@ The platform is important because of its open source nature and deployment tools
 **Did you know** you could train your custom models on Hugging Face Spaces!!!? Yes, its possible and super-easy to do with AutoTrain SpaceRunner 💥 All you need is a Hugging Face account (which you probably have already) and a payment method attached to your account (in case you want to use GPUs, CPU training is free!).
 
 ----
+
 Ollama's storage is typically located at
 /usr/share/ollama/.ollama
 
@@ -166,3 +176,14 @@ Here’s a quick command to run any model:
   ollama run hf.co/{username}/{repository}
 Example :
   ollama run hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF
+
+    Use tools like curl to make HTTP requests to the Ollama API endpoint.
+
+curl <http://localhost:11434/api/chat> -d '{
+  "model": "phi",
+  "messages": [
+    { "role": "user", "content": "what is blockchain ?" }
+  ]
+}'
+
+==> There are alternatives to Ollama, like vllm and aphrodite, but Ollama is surely the most popular one.
