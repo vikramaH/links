@@ -69,6 +69,9 @@ output for tasks like answering questions, translating languages, and completing
 RAG extends the already powerful capabilities of LLMs to specific domains or an organization's internal knowledge base, 
 all without the need to retrain the model. It is a cost-effective approach to improving LLM output so it remains relevant, accurate, and useful in various contexts.
 
+* ===> Goodbye RAG? Gemini 2.0 Flash Have Just Killed It!
+* ===> Will RAG Be Killed by Long-Context LLMs? ===> From my perspective, the answer is “NO.” The development of the RAG technology has just begun and will continue to evolve.
+
 
 What is fine-tuning?
 ===
@@ -348,14 +351,14 @@ It is an AI system that understands complex instructions and acts autonomously t
 **agent frameworks** are software libraries that help you build applications that can perform tasks
 automatically.
 
-==> Autogen (Microsoft’s Framework for Autonomous AI Agents)
-==> crewai (This is a Python library to create agents, tasks, and all that stuff)
-==> RASA (he Open-Source Framework for Conversational AI Agents)
-==> Semantic Kernel
-==> Promptflow
-==> Langchain
-==> Bonus: MemGPT
-==> LangGraph (The Future of Production-ready AI Agents)
-==> Microsoft Semantic Kernel (A Framework for Building Intelligent AI Agents)
-==> Hugging Face Transformers Agents
-==> LlamaIndex
+* Autogen (Microsoft’s Framework for Autonomous AI Agents)
+* crewai (This is a Python library to create agents, tasks, and all that stuff)
+* RASA (he Open-Source Framework for Conversational AI Agents)
+* Semantic Kernel
+* Promptflow
+* Langchain
+* Bonus: MemGPT
+* LangGraph (The Future of Production-ready AI Agents)
+* Microsoft Semantic Kernel (A Framework for Building Intelligent AI Agents)
+* Hugging Face Transformers Agents
+* LlamaIndex
