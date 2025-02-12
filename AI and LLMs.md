@@ -242,15 +242,21 @@ curl <http://localhost:11434/api/chat> -d '{
 
 Best AI Model Repositories
 ===
-Hugging Face
-TensorFlow Hub
-PyTorch Hub
-Model Zoo by OpenAI
-Microsoft AI GitHub
+* Hugging Face
+* Ollama ??
+* TensorFlow Hub
+* PyTorch Hub
+* Model Zoo by OpenAI
+* Microsoft AI GitHub
+
 **5 GitHub Repositories for Cutting-Edge AI Models** ===>
-karpathy/llama2.c 🦙
-facebookresearch/audiocraft 🔊🎶
-geekan/MetaGPT 🤖📚
-apple/ml-stable-diffusion 🍏🌌
-invictus717/MetaTransformer 🌐💡
+* karpathy/llama2.c 🦙
+* facebookresearch/audiocraft 🔊🎶
+* geekan/MetaGPT 🤖📚
+* apple/ml-stable-diffusion 🍏🌌
+* invictus717/MetaTransformer 🌐💡
+
+
+# AI model architecture
+Most common AI training models include linear and logistic regression, decision trees, random forests, support vector machines (SVMs), and neural networks.
 
