@@ -324,8 +324,38 @@ PyTorch and TensorFlow both are open-source Python libraries that use graphs to 
 
 The basic data structure for both TensorFlow and PyTorch is a tensor. 
 
-Colab: An easy way to learn and use TensorFlow  
+Colab : An easy way to learn and use TensorFlow  
 https://blog.tensorflow.org/2018/05/colab-easy-way-to-learn-and-use-tensorflow.html
 
+
+# Google Colab
+Google Colab is a tool that allows you to write, run and share Python code in your browser. Colab also has multiple features that make it a popular tool for data science, machine learning and artificial intelligence. Many of the machine learning tutorials you may see online, are written in Google Colab.
+
+**Google Vertex AI** is designed for enterprises that require robust, scalable solutions for building, training, and deploying machine learning models in production environments. (pay-as-you-go pricing model)
+
+ 
 # Jupyter Notebook
 Jupyter Notebook's primary advantages include its interactive computing environment, allowing users to easily explore and analyze data with live code execution, rich documentation capabilities with Markdown and LaTeX, excellent data visualization tools, and the ability to collaborate with others on the same project simultaneously, making it ideal for data science and machine learning tasks
+
+Jupyter notebook can be converted into html, markdown, pdf, python script etc.
+
+
+# AI agents
+AI agents are separated AI entities with specific roles, goals, abilities, etc.
+
+It is an AI system that understands complex instructions and acts autonomously to solve real-world problems.
+
+**agent frameworks** are software libraries that help you build applications that can perform tasks
+automatically.
+
+==> Autogen (Microsoft’s Framework for Autonomous AI Agents)
+==> crewai (This is a Python library to create agents, tasks, and all that stuff)
+==> RASA (he Open-Source Framework for Conversational AI Agents)
+==> Semantic Kernel
+==> Promptflow
+==> Langchain
+==> Bonus: MemGPT
+==> LangGraph (The Future of Production-ready AI Agents)
+==> Microsoft Semantic Kernel (A Framework for Building Intelligent AI Agents)
+==> Hugging Face Transformers Agents
+==> LlamaIndex
