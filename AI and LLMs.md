@@ -217,6 +217,11 @@ The platform is important because of its open source nature and deployment tools
 
 **Did you know** you could train your custom models on Hugging Face Spaces!!!? Yes, its possible and super-easy to do with AutoTrain SpaceRunner 💥 All you need is a Hugging Face account (which you probably have already) and a payment method attached to your account (in case you want to use GPUs, CPU training is free!).
 
+# Model Selection and Architecture Design
+AI model's architecture and algorithm are selected based on the specific task and dataset. The architecture design involves choosing the number and type of layers, activation functions, loss functions, and optimization algorithms.
+
+Best tools for this stage include popular machine learning frameworks like TensorFlow, PyTorch, Keras, or sci-kit-learn, which offer pre-built models and libraries for different tasks and architectures.
+
 ----
 
 Ollama's storage is typically located at
@@ -258,5 +263,24 @@ Best AI Model Repositories
 
 
 # AI model architecture
+A model architecture is the choice of a machine learning algorithm along with the underlying structure or design of the machine learning model. Model architecture consists of layers of interconnected nodes or neurons, where each layer of the model performs a specific function, such as data preprocessing, feature extraction, or prediction.
+
+The choice of the model architecture depends on the type of problem being solved, the size and complexity of the dataset, and the available computing resources. Popular model architectures include decision trees for smaller datasets, and deep neural networks for larger datasets, including feedforward neural networks, convolutional neural networks, and transformers. The architecture of a machine learning model is a critical factor that determines its accuracy and performance, and it is often optimized through a process called hyperparameter tuning.
+
 Most common AI training models include linear and logistic regression, decision trees, random forests, support vector machines (SVMs), and neural networks.
 
+Learning methods include supervised, unsupervised, and semi-supervised. 
+
+**6 Common Types of AI Models**
+
+Machine Learning Models
+
+Deep Learning Models
+
+Natural Language Processing (NLP) Models
+
+Computer Vision Models
+
+Generative AI Models
+
+Hybrid AI Models
