@@ -261,15 +261,38 @@ Best AI Model Repositories
 * apple/ml-stable-diffusion 🍏🌌
 * invictus717/MetaTransformer 🌐💡
 
+# Defining Your Problem
+Start by clarifying the problem you’re solving. Is it a classification, regression, or other task? Understanding your problem helps you choose the appropriate model type and architecture.
+
+# Selecting the Right Framework
+Different machine learning frameworks offer various levels of flexibility and ease of use. Choose a framework that aligns with your expertise and project requirements. Popular choices include **TensorFlow, PyTorch, and scikit-learn**.
 
 # AI model architecture
-A model architecture is the choice of a machine learning algorithm along with the underlying structure or design of the machine learning model. Model architecture consists of layers of interconnected nodes or neurons, where each layer of the model performs a specific function, such as data preprocessing, feature extraction, or prediction.
+* Model architecture is the arrangement of layers, connections, and components that determine how data flows through your machine learning model. A well-designed architecture can significantly impact the model’s performance, training speed, and generalization ability.
 
-The choice of the model architecture depends on the type of problem being solved, the size and complexity of the dataset, and the available computing resources. Popular model architectures include decision trees for smaller datasets, and deep neural networks for larger datasets, including feedforward neural networks, convolutional neural networks, and transformers. The architecture of a machine learning model is a critical factor that determines its accuracy and performance, and it is often optimized through a process called hyperparameter tuning.
+* An AI model is an algorithm/set of algorithms (we can also call it a program) fed with data and learning from it to find patterns as well as make predictions, classifications, and decisions without being strictly programmed for every single task. There are many types of AI models by structure and ways they're trained. Most AI models used in business today are either ML or DL-based.
+
+* The choice of the model architecture depends on the type of problem being solved, the size and complexity of the dataset, and the available computing resources. Popular model architectures include decision trees for smaller datasets, and deep neural networks for larger datasets, including feedforward neural networks, convolutional neural networks, and transformers. The architecture of a machine learning model is a critical factor that determines its accuracy and performance, and it is often optimized through a process called hyperparameter tuning.
+
+**tpes**
+
+two major types--
+
+(1) Machine learming (linear regression, Logistic Regression, Decision Trees, Random Forests, k-nearest neighbors)
+
+(2) Deep learning (Neural networks (CNN, RNNs, advanced neural network architectures (e.g., transformers))
+
+others - k-means clustering, generative adversarial networks (GANs), variational autoencoders (VAEs), diffusion models, LLMs etc.
 
 Most common AI training models include linear and logistic regression, decision trees, random forests, support vector machines (SVMs), and neural networks.
 
-Learning methods include supervised, unsupervised, and semi-supervised. 
+**Learning methods**  include supervised, unsupervised, and semi-supervised. 
+
+
+# Deep Learning
+Connectionist architectures have existed for more than 70 years, but new architectures and graphical processing units (GPUs) brought them to the forefront of artificial intelligence. Deep learning isn't a single approach but rather a class of algorithms and topologies that you can apply to a broad spectrum of problems.
+
+While deep learning is certainly not new, it is experiencing explosive growth because of the intersection of deeply layered neural networks and the use of GPUs to accelerate their execution. Big data has also fed this growth.
 
 **6 Common Types of AI Models**
 
