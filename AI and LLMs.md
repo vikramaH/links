@@ -307,3 +307,25 @@ Computer Vision Models
 Generative AI Models
 
 Hybrid AI Models
+
+
+# Pytorch, TensorFlow, Keras
+
+Pytorch, Tensorflow (+ Keras), Pytorch Lightning, JAX, Flax
+
+Github popularity :: Pytorch (81k) , TensorFlow (74k), Keras (61k)
+
+Scaler (0D), vector (1D), matrix (2D), tensor (3D)
+
+The concept of Deep Learning frameworks, libraries, and numerous tools exist to reduce the large amounts of manual computations that must otherwise be calculated.
+
+PyTorch and TensorFlow both are open-source Python libraries that use graphs to perform numerical computations on data in deep learning applications. Both are used extensively in academic research and commercial code. Both are extended by a variety of APIs, cloud computing platforms, and model repositories.
+
+
+The basic data structure for both TensorFlow and PyTorch is a tensor. 
+
+Colab: An easy way to learn and use TensorFlow  
+https://blog.tensorflow.org/2018/05/colab-easy-way-to-learn-and-use-tensorflow.html
+
+# Jupyter Notebook
+Jupyter Notebook's primary advantages include its interactive computing environment, allowing users to easily explore and analyze data with live code execution, rich documentation capabilities with Markdown and LaTeX, excellent data visualization tools, and the ability to collaborate with others on the same project simultaneously, making it ideal for data science and machine learning tasks
