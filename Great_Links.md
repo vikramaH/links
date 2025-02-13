@@ -185,3 +185,8 @@ https://manasganit.com/bhartiya-vidya-saar-bhartiya-vigyan-parampara/
 
 Ollama
 https://dasarpai.com/dsblog/exploring-ollama
+
+---
+
+An introduction to preparing your own dataset for LLM training 
+https://aws.amazon.com/blogs/machine-learning/an-introduction-to-preparing-your-own-dataset-for-llm-training/
