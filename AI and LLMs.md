@@ -109,7 +109,7 @@ training options
 Your options are RAG or fine-tuning. There are RAG implementations for ollama in the community integrations. RAG doesn't "understand" the document, though, it just searches based on a query and responds with a result synthesized from the search results. Fine-tuning options include unsloth, llama factory and axolotl. The problem with fine-tuning is it takes time to generate the new model, if you are receiving daily doc dumps it might not be fit for purpose. A new entry in to the scene is instructlab, which from the sound of it is a more iterative approach to fine-tuning, so might fit your use case better. I haven't used it yet so my understanding may be incorrect.
 
 # 6 Best LLM Tools To Run Models Locally
-* LLm Studio and Jan provide intuitive front-end UIs for configuring and experimenting with LLMs
+* Lm Studio and Jan provide intuitive front-end UIs for configuring and experimenting with LLMs
 * Ollama and LLaMa.cpp
 * GPT4ALL
 * Llamafile converts LLMs into multi-platform Executable Linkable Format (ELF). It provides one of the best options to integrate AI into applications by allowing you to run LLMs with just a single executable file.
