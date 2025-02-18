@@ -194,3 +194,13 @@ https://aws.amazon.com/blogs/machine-learning/an-introduction-to-preparing-your-
 ---
 vidyalaya wiki
 https://www.vidyalayawiki.in/wiki/Main_Page
+
+---
+
+Crawl4AI: Your Ultimate Asynchronous Web Crawling Companion
+
+https://medium.com/@pankaj_pandey/crawl4ai-your-ultimate-asynchronous-web-crawling-companion-%EF%B8%8F-66a21cf57c0a
+
+---
+
+Dear IT Departments, Please Stop Trying To Build Your Own RAG  https://pub.towardsai.net/dear-it-departments-please-stop-trying-to-build-your-own-rag-4546b4638273
