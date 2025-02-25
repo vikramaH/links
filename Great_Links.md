@@ -204,3 +204,19 @@ https://medium.com/@pankaj_pandey/crawl4ai-your-ultimate-asynchronous-web-crawli
 ---
 
 Dear IT Departments, Please Stop Trying To Build Your Own RAG  https://pub.towardsai.net/dear-it-departments-please-stop-trying-to-build-your-own-rag-4546b4638273
+
+---
+
+QuillBot : Your ideas, better writing
+https://quillbot.com/
+
+Online-Utility.org ( online tool including simple English converter)
+https://www.online-utility.org/english/simple_basic_helper.jsp
+
+Basic-english-translator
+https://anythingtranslate.com/translators/basic-english-translator/
+
+Simple English Translator
+https://www.yeschat.ai/gpts-ZxX5OUbM-Simple-English-Translator
+
+
