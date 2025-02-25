@@ -379,3 +379,8 @@ https://medium.com/@amosgyamfi/the-6-best-llm-tools-to-run-models-locally-eedd0f
 ---
 
 How to Build a Wikipedia AI Assistant on WhatsApp with Python, LangChain, OpenAI, and Twilio https://www.twilio.com/en-us/blog/wikipedia-ai-assistant-whatsapp-python-langchain-openai 
+
+----
+
+Large language models for human-machine collaborative particle accelerator tuning through natural language  
+https://www.science.org/doi/10.1126/sciadv.adr4173
