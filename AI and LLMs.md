@@ -384,3 +384,8 @@ How to Build a Wikipedia AI Assistant on WhatsApp with Python, LangChain, OpenAI
 
 Large language models for human-machine collaborative particle accelerator tuning through natural language  
 https://www.science.org/doi/10.1126/sciadv.adr4173
+
+---
+
+Large Language Models for Design and Manufacturing  
+https://mit-genai.pubpub.org/pub/nmypmnhs/release/2
