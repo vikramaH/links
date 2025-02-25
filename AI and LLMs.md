@@ -369,3 +369,9 @@ automatically.
 * Microsoft Semantic Kernel (A Framework for Building Intelligent AI Agents)
 * Hugging Face Transformers Agents
 * LlamaIndex
+
+----
+
+The 6 Best LLM Tools To Run Models Locally  
+(LM Studio, Ollama, Chat4GPT, Jan etc)
+https://medium.com/@amosgyamfi/the-6-best-llm-tools-to-run-models-locally-eedd0f7c2bbd
