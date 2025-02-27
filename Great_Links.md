@@ -234,6 +234,11 @@ https://en.wikiversity.org/wiki/Computer-aided_design/History,_Present_and_Futur
 
 Five breathtaking homes that master the art of Indian maximalism
 
+
+MUKTABODHA-LIBRARY-DEVANAGARI
+https://muktalib7.com/DL_CATALOG_ROOT/MUKTABODHA-LIBRARY-DEVANAGARI/
+(download the txt files, then open in text editor, instead of firefox)
+
 ---
 
 # What is systems engineering?
