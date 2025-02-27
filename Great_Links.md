@@ -242,6 +242,21 @@ https://muktalib7.com/DL_CATALOG_ROOT/MUKTABODHA-LIBRARY-DEVANAGARI/
 Tantrasaar
 http://tantrarasa.com/radiancesutras/radiance/
 
+
+Trikshivism
+https://www.sanskrit-trikashaivism.com/en/malinivijayottaratantra-chapter-3-pure-trika-scriptures-non-dual-shaivism-of-kashmir/834#Stanzas51to61
+
+
+Sanskrit Glossary of Yoga Tantra Terms – 1  
+https://www.yesvedanta.com/sanskrit-glossary-3/
+
+
+Tantrik Texts to download  
+https://shivashakti.com/texts
+
+
+https://tripuratallika.org/etexts/
+
 ---
 
 # What is systems engineering?
