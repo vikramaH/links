@@ -421,10 +421,10 @@ While larger models remain a technology of choice for many enterprises, smaller 
 
 ● Granite
 
-● Llama
+● Llama 2 (7B)
 
-● Ministral
+● Ministral 7B
 
-● Phi
+● Phi-2, Phi-4
 
 
