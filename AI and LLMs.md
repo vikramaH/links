@@ -271,14 +271,17 @@ Best AI Model Repositories
 * apple/ml-stable-diffusion 🍏🌌
 * invictus717/MetaTransformer 🌐💡
 
-# Defining Your Problem
+# Creating Your Own Model Architecture in Machine Learning
+**Defining Your Problem**
 Start by clarifying the problem you’re solving. Is it a classification, regression, or other task? Understanding your problem helps you choose the appropriate model type and architecture.
 
-# Selecting the Right Framework
+**Selecting the Right Framework**
 Different machine learning frameworks offer various levels of flexibility and ease of use. Choose a framework that aligns with your expertise and project requirements. Popular choices include **TensorFlow, PyTorch, and scikit-learn**.
 
-# AI model architecture
-* Model architecture is the arrangement of layers, connections, and components that determine how data flows through your machine learning model. A well-designed architecture can significantly impact the model’s performance, training speed, and generalization ability.
+**AI model architecture**
+Model architecture is the arrangement of layers, connections, and components that determine how data flows through your machine learning model. A well-designed architecture can significantly impact the model’s performance, training speed, and generalization ability.
+
+# How to Build an AI Model for a Business
 
 * An AI model is an algorithm/set of algorithms (we can also call it a program) fed with data and learning from it to find patterns as well as make predictions, classifications, and decisions without being strictly programmed for every single task. There are many types of AI models by structure and ways they're trained. Most AI models used in business today are either ML or DL-based.
 
@@ -389,3 +392,39 @@ https://www.science.org/doi/10.1126/sciadv.adr4173
 
 Large Language Models for Design and Manufacturing  
 https://mit-genai.pubpub.org/pub/nmypmnhs/release/2
+
+# Large Language Model vs Short language Model
+
+==> While large language models (LLMs) have dominated headlines, companies are increasingly recognizing the strategic value of SLMs as a more targeted, efficient and cost-effective approach to implementing AI.
+
+==> Small language models trained on very specific data are actually quite effective…
+
+==> SLMs also present an opportunity to address the linguistic diversity gap in AI. Currently, most AI chatbots are only trained on around 100 of the world's 7,000-plus languages, with a strong bias towards English.
+
+An SLM focuses on specific AI tasks that are less resource-intensive, making them more accessible and cost-effective. SLMs can respond to the same queries as LLMs, sometimes with deeper expertise for domain-specific tasks and at a much lower latency, but they can be less accurate with broad queries. 
+
+LLMs are an excellent choice for building your own enterprise custom agent or generative AI applications because of how capable they are.
+
+Smaller models typically require less computational power, reducing costs, but might not be well-suited for more complex tasks.
+
+**Why Domain-Specific SLMs Are the Future for Indian Businesses?**
+SLMs trained on niche datasets—be it legal documents, agricultural data, or regional languages—offer more accurate and actionable insights.
+
+**Examples of small language models**
+While larger models remain a technology of choice for many enterprises, smaller models are quickly gaining ground. Here are some examples of popular SLMs:
+
+● DistilBERT
+
+● Gemma
+
+● GPT-4o mini
+
+● Granite
+
+● Llama
+
+● Ministral
+
+● Phi
+
+
