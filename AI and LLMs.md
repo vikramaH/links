@@ -427,4 +427,15 @@ While larger models remain a technology of choice for many enterprises, smaller 
 
 ● Phi-2, Phi-4
 
+# The Workflow of Fine-Tuning
+There are different kinds of fine-tuning techniques for adapting language models, each serving a specific purpose. There are so many different ways that this training can be done, which makes the concept of fine tuning **incredibly vague**.
 
+(1) Supervised Fine-Tuning (SFT)
+
+(2) Reinforcement Learning with Human Feedback (RLHF)
+
+(2a) Reward Model Training
+
+(2b) Reinforcement Learning
+
+(3) Combining Techniques
