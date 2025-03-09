@@ -449,6 +449,7 @@ With built-in support for multiple document types including PDFs, word documents
 
 
 There are a few programs that let you run AI language models locally on your own computer. **LM Studio, Ollama, GPT4All, and AnythingLLM** are some options. 
+
 **others**
 
     HuggingChat
