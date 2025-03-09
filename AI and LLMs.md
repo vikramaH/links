@@ -439,3 +439,26 @@ There are different kinds of fine-tuning techniques for adapting language models
 (2b) Reinforcement Learning
 
 (3) Combining Techniques
+
+# AnythingLLM
+AnythingLLM is a comprehensive desktop AI application that enables users to chat with documents, use AI agents, and leverage custom models with complete privacy and offline capabilities.
+
+AnythingLLM delivers a powerful suite of AI capabilities through a sleek, user-friendly desktop interface. The application supports custom models, allowing users to run their preferred LLM locally or connect to enterprise models from OpenAI, Azure, and AWS without complex setup requirements.
+
+With built-in support for multiple document types including PDFs, word documents, CSV files, and codebases, AnythingLLM prioritizes privacy by running all operations locally. The platform features sensible defaults for LLM, embedder, vector database, storage, and agents, ensuring nothing is shared unless explicitly permitted.
+
+
+There are a few programs that let you run AI language models locally on your own computer. **LM Studio, Ollama, GPT4All, and AnythingLLM** are some options. 
+**others**
+
+    HuggingChat
+    AnythingLLM
+    LibreChat
+    Lobe Chat
+    Chatbot UI
+    Text Generation WebUI
+    Msty
+    Hollama
+    Chatbox
+    Ollama UI
+
