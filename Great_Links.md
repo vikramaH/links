@@ -279,4 +279,14 @@ At NASA, **systems engineering** is defined as a methodical, multi-disciplinary 
 
 Systems engineering is the art and science of developing an operable system capable of meeting requirements within often opposed constraints. Systems engineering is a holistic, integrative discipline, wherein the contributions of structural engineers, electrical engineers, mechanism designers, power engineers, human factors engineers, and many more disciplines are evaluated and balanced, one against another, to produce a coherent whole that is not dominated by the perspective of a single discipline.
 
+# Some Vaastu links
+18-3-2025
+
+mandir hetu prashasta bhumi  https://egyankosh.ac.in/bitstream/123456789/95475/1/Unit-2.pdf
+
+vrihattrayee me vastushastra  https://egyankosh.ac.in/bitstream/123456789/98465/1/Unit-18.pdf
+
+Mahabharat me vaastu vigyan   https://egyankosh.ac.in/bitstream/123456789/98460/1/Unit-13.pdf
+
+
 
