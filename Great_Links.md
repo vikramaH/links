@@ -282,6 +282,8 @@ Systems engineering is the art and science of developing an operable system capa
 # Some Vaastu links
 18-3-2025
 
+Appendix I — A Sketch of Sanskrit Treatises on Architecture   https://architexturez.net/doc/az-cf-167073
+
 mandir hetu prashasta bhumi  https://egyankosh.ac.in/bitstream/123456789/95475/1/Unit-2.pdf
 
 vrihattrayee me vastushastra  https://egyankosh.ac.in/bitstream/123456789/98465/1/Unit-18.pdf
