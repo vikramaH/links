@@ -86,7 +86,7 @@ def calculate_total_power(N, K, energy_GeV, beam_current_mA):
     P = 6.33e-2 * I * (energy_GeV**2) * N * K**2  # W
     return P
 
-def calculate_brilliance(N, K, gamma, wavelength, beam_current_mA, emittance_x, emittance_y, n=1):
+def calculate_brilliance(lambda_u, N, K, gamma, wavelength, beam_current_mA, emittance_x, emittance_y, n=1):
     """Estimate brilliance for harmonic n."""
     flux = calculate_photon_flux(N, K, gamma * m_e_c2, beam_current_mA, n)
     L = N * lambda_u
