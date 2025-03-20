@@ -292,3 +292,13 @@ Mahabharat me vaastu vigyan   https://egyankosh.ac.in/bitstream/123456789/98460/
 
 Asian Agri-History Foundation  https://www.asianagrihistory.org
 
+# Online Python compilers
+
+ Online Python Compiler (tutorialspoint)     https://www.tutorialspoint.com/online_python_compiler.php
+
+Online Python 3 IDE (jdoodle)   https://www.jdoodle.com/python3-programming-online
+
+
+
+
+
