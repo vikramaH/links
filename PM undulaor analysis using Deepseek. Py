@@ -1,0 +1,64 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Constants
+e = 1.602176634e-19  # Electron charge (C)
+m_e = 9.10938356e-31  # Electron mass (kg)
+c = 299792458  # Speed of light (m/s)
+mu_0 = 4 * np.pi * 1e-7  # Permeability of free space (H/m)
+epsilon_0 = 8.854187817e-12  # Permittivity of free space (F/m)
+
+# Function to calculate undulator parameters
+def undulator_design():
+    print("Permanent Magnet Undulator Design and Analysis")
+    print("--------------------------------------------")
+    
+    # User inputs with suggested values
+    print("Enter the following parameters (suggested values in brackets):")
+    lambda_u = float(input("Undulator period, λu (mm) [e.g., 20.0]: ")) * 1e-3  # Convert to meters
+    B_r = float(input("Remanent magnetic field, Br (T) [e.g., 1.2]: "))
+    h = float(input("Gap height, h (mm) [e.g., 5.0]: ")) * 1e-3  # Convert to meters
+    M = int(input("Number of magnet blocks per period, M [e.g., 4]: "))
+    gamma = float(input("Lorentz factor, γ [e.g., 1000]: "))
+    N = int(input("Number of undulator periods, N [e.g., 100]: "))
+    
+    # Calculate peak magnetic field (B0)
+    B0 = 2 * B_r * (1 - np.exp(-2 * np.pi * h / lambda_u)) * np.sin(np.pi / M)
+    
+    # Calculate undulator parameter (K)
+    K = (e * B0 * lambda_u) / (2 * np.pi * m_e * c)
+    
+    # Calculate radiation wavelength (λr)
+    lambda_r = (lambda_u / (2 * gamma**2)) * (1 + K**2 / 2)
+    
+    # Calculate electron trajectory amplitude
+    x_amplitude = (K / gamma) * (lambda_u / (2 * np.pi))
+    
+    # Calculate total radiation power (P)
+    P = (e**2 * gamma**2 * K**2) / (3 * epsilon_0 * lambda_u)
+    
+    # Calculate angular distribution parameters
+    theta_0 = 1 / gamma  # Characteristic angle
+    delta_theta = np.linspace(-2 * theta_0, 2 * theta_0, 1000)  # Angular range
+    angular_distribution = (np.sin(N * np.pi * delta_theta / theta_0) / (N * np.sin(np.pi * delta_theta / theta_0)))**2
+    
+    # Output results
+    print("\n--- Results ---")
+    print(f"Peak magnetic field, B0: {B0:.4f} T")
+    print(f"Undulator parameter, K: {K:.4f}")
+    print(f"Radiation wavelength, λr: {lambda_r * 1e9:.4f} nm")
+    print(f"Electron trajectory amplitude: {x_amplitude * 1e6:.4f} µm")
+    print(f"Total radiation power, P: {P:.4f} W")
+    
+    # Plot angular distribution of radiation
+    plt.figure(figsize=(8, 6))
+    plt.plot(delta_theta / theta_0, angular_distribution, label="Angular Distribution")
+    plt.xlabel(r"$\Delta \theta / \theta_0$")
+    plt.ylabel("Normalized Intensity")
+    plt.title("Angular Distribution of Undulator Radiation")
+    plt.grid(True)
+    plt.legend()
+    plt.show()
+
+# Run the program
+undulator_design()
