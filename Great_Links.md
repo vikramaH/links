@@ -298,7 +298,9 @@ Asian Agri-History Foundation  https://www.asianagrihistory.org
 
 Online Python 3 IDE (jdoodle)   https://www.jdoodle.com/python3-programming-online
 
+====================================================================================
 
 
+LLB Notes ( हिन्दी )  https://llbwp.ransomtechnoman.com/home/
 
 
