@@ -1,0 +1,23 @@
+The focus on scientific practices has been a major concern to science educators given the ‘practice turn’ 
+more broadly in science studies (Berland et al., Citation2016) which highlighted the importance of students’ 
+engagement in how scientists do science. Next Generation Science Standards (NGSS) (NGSS Lead States, Citation2013) 
+in the USA were guided by the recommendations of NRC (Citation 2012) which defined science and engineering practices as follows:
+
+    Asking questions (for science) and defining problems (for engineering)
+
+    Developing and using models
+
+    Planning and carrying out investigations
+
+    Analysing and interpreting data
+
+    Using mathematics and computational thinking
+
+    Constructing explanations (for science) and designing solutions (for engineering)
+
+    Engaging in argument from evidence
+
+    Obtaining, evaluating, and communicating information.
+
+Such characterisation of scientific practices has been used explicitly for curriculum analysis internationally, 
+for example by Nguyen et al. (Citation2023) who examined the national science curricula of Taiwan and Vietnam.
