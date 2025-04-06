@@ -1,0 +1,27 @@
+The Best AI Tools by Category
+
+https://www.synthesia.io/post/ai-tools
+
+    AI Assistants (Chatbots): ChatGPT, Claude, Gemini, DeepSeek, Grok
+    Video Generation and Editing: Synthesia, Runway, Filmora, OpusClip
+    Image Generation: GPT-4o, Midjourney
+    Notetakers and Meeting Assistants: Fathom, Nyota
+    Research: Deep Research
+    Writing: Rytr, Sudowrite
+    Grammar and Writing Improvement: Grammarly, Wordtune
+    Search Engines: Perplexity, ChatGPT search
+    Social Media Management: Vista Social, FeedHive
+    Graphic Design: Canva Magic Studio, Looka
+    App Builders & Coding: Bubble, Bolt, Lovable, Cursor, v0
+    Project Management: Asana, ‎ClickUp
+    Scheduling: Reclaim, Clockwise
+    Customer Service: Tidio AI, Hiver
+    Recruitment: Textio, CVViZ
+    Knowledge Management: Notion AI Q&A, Guru
+    Email: Hubspot Email Writer, SaneBox, Shortwave
+    Presentations: Gamma, Presentations.ai
+    Resume Builders: Teal, Kickresume
+    Voice Generation: ElevenLabs, Murf
+    Music Generation: Suno, Udio
+    Marketing: AdCreative
+    Sales: Clay
