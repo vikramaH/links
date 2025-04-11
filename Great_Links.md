@@ -261,6 +261,10 @@ https://tripuratallika.org/etexts/
 Muktabodha Library
 https://muktabodha.org/
 
+
+[Sanskrit Texts by Vedic Engineering] A large collection (almost 30 megabytes) of Sanskrit texts in machine-readable form. 
+https://indology.info/virtual-e-text-archive-of-indic-texts/
+
 ---
 
 # What is systems engineering?
