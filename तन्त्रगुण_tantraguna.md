@@ -86,4 +86,6 @@ The work should provide scientific definitions, captions etc. In addition, scien
 
 वाक् योजना का अर्थ है वाक्यों का सही संदेश प्राप्त करने के लिए वाक्यों को पुनर्व्यवस्थित करना। अर्थ योजना का अर्थ है शब्दों के अर्थ को पुनर्व्यवस्थित करना जो स्पष्ट नहीं है या संदर्भ के अनुकूल नहीं है।
 
-
+https://aamjournal.in/fulltext/70-1636974073.pdf?1744548701 
+Annals of Ayurvedic Medicine Vol-13 Issue-2 Apr.-Jun., 2024 131 Review Article 
+Tantrayukti in Relation to Vakya Yojana and Artha Yojana
