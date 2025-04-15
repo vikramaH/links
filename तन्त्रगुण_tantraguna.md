@@ -228,8 +228,49 @@ The work should provide scientific definitions, captions etc. In addition, scien
     संगतिः पौनरुक्त्यानां समाधानमनाकुलम् ।। 
     संग्रहश्चेत्ययं व्याख्याप्रकारोऽत्र समाश्रितः ।।
 
--------
+--------------------------------------------------------------
 
 https://aamjournal.in/fulltext/70-1636974073.pdf?1744548701 
 Annals of Ayurvedic Medicine Vol-13 Issue-2 Apr.-Jun., 2024 131 Review Article 
 Tantrayukti in Relation to Vakya Yojana and Artha Yojana
+
+
+-------------------------------
+----------------------------------
+
+
+Methodology of Ancient Indian Sciences
+ सुश्रुत. : सुश्रुतसंहिता ( ed.) जा. त्रि. आचार्य. : तन्त्रयुक्ति: - anonymous author. : तन्त्रयुक्तिविचारः -- नीलमेघ. 
+ 
+ ---
+ 
+TANTRAYUKTI AS A TEACHING-LEARNING TOOL
+
+
+---
+
+Tantrayukti – Indic Method of Thesis Construction
+
+
+-----
+
+Tantrayukti in Relation to VakyaYojana and Arthayojana
+
+------------
+
+adhikara tantrayukti
+
+
+--------------------
+
+arthashastreeya tantrayukti ka vishleshana
+
+
+Concept of Tantrayukti with special emphasis on Adhikarana
+
+
+Adhikarana Tantra Yukti and its Application
+
+-------------------
+
+
