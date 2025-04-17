@@ -35,7 +35,7 @@ predictions are valid and mimic experimental results within the given uncertaint
 
 ------------------------------
 
-n particle physics, a shower is a cascade of secondary particles produced as the result of a 
+In particle physics, a shower is a cascade of secondary particles produced as the result of a 
 high-energy particle interacting with dense matter. The incoming particle interacts, producing multiple new particles 
 with lesser energy; each of these then interacts, in the same way, a process that continues until many thousands, 
 millions, or even billions of low-energy particles are produced. These are then stopped in the matter and absorbed.[1]
@@ -100,5 +100,5 @@ experimental data. It includes both the comparison of predic-
 tions of individual models to measurement results (e.g.,
 particle angular distributions and multiplicities) as well as
 benchmarks in complex situations as, for example, those
-arising during accelerator operation. Thus, in this paper the
+arising during accelerator operation.
 
