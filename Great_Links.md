@@ -307,4 +307,4 @@ Online Python 3 IDE (jdoodle)   https://www.jdoodle.com/python3-programming-onli
 
 LLB Notes ( हिन्दी )  https://llbwp.ransomtechnoman.com/home/
 
-
+https://olmocr.allenai.org '''olmOCR''' is an open-source tool designed for high-throughput conversion of PDFs
