@@ -312,8 +312,33 @@ https://olmocr.allenai.org '''olmOCR''' is an open-source tool designed for high
 ======
 
 25-4-2025
-Palace: 3D Finite Element Solver for Computational Electromagnetics
-https://awslabs.github.io/palace/stable/
+
+Palace: 3D Finite Element Solver for Computational Electromagnetics  https://awslabs.github.io/palace/stable/
+
 
 3D finite element solver for computational electromagnetics 
+
 https://welsim.com/2023/04/05/welsim-releases-2023r2-supporting-open-source-electromagnetic-simulation-solver.html
+
+
+COULOMB 3D Electric Field Simulation Software
+
+Integrated Engineering Software, Inc.
+Request a Quote
+Image of COULOMB 3D Electric Field Simulation Software
+
+COULOMB is INTEGRATED's powerful 3D electric design and analysis software. COULOMB is well suited for applications where the design requires a large open field analysis and exact modeling of the boundaries. COULOMB combines the capabilities to analyze corona ring & partial discharge effects, electric field stress, lightning, transient events, maximum field strength and dielectric breakdown, among others,
+
+Engineers/Scientists choose COULOMB for the design and analysis of electrical components such as:
+
+    transformers 
+    insulators, bushings, grounding electrodes
+    high voltage shields
+    power transmission lines
+    high voltage switchgear
+    telecommunication cables
+    lenses for beam deflection
+    capacitive transducers
+    microelectromechanical systems
+    parts and assemblies subject to electrical fields
+
