@@ -308,3 +308,12 @@ Online Python 3 IDE (jdoodle)   https://www.jdoodle.com/python3-programming-onli
 LLB Notes ( हिन्दी )  https://llbwp.ransomtechnoman.com/home/
 
 https://olmocr.allenai.org '''olmOCR''' is an open-source tool designed for high-throughput conversion of PDFs
+
+======
+
+25-4-2025
+Palace: 3D Finite Element Solver for Computational Electromagnetics
+https://awslabs.github.io/palace/stable/
+
+3D finite element solver for computational electromagnetics 
+https://welsim.com/2023/04/05/welsim-releases-2023r2-supporting-open-source-electromagnetic-simulation-solver.html
