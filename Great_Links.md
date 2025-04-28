@@ -54,11 +54,21 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 17) https://www.sirepo.com/en/  Bringing Scientific Computing to the Cloud
 
 
-**Online Python compilers**
+**Online Python tools**
 
  Online Python Compiler (tutorialspoint)     https://www.tutorialspoint.com/online_python_compiler.php
 
-Online Python 3 IDE (jdoodle)   https://www.jdoodle.com/python3-programming-online
+ Online Python 3 IDE (jdoodle)   https://www.jdoodle.com/python3-programming-online
+
+ https://jupyter.org/try  ===> This page has links to interactive demos that allow you to try some of our tools for free online
+
+ **AI related**
+ https://colab.google/ ===> Google Colaboratory : Colab is a hosted Jupyter Notebook service that requires no setup to use and provides free access to computing resources, including GPUs and TPUs. Colab is especially well suited to machine learning, data science, and education.
+
+https://www.kaggle.com/code ===> Explore and run machine learning code with Kaggle Notebooks. Kaggle provides access to GPUs for free.
+
+https://gradient.paperspace.com/?ref=blog.paperspace.com  Gradient Notebooks are a web-based Jupyter IDE with high-powered GPUs which use a pre-build runtime from Paperspace.
+
 
 
 Magnetic Field calculation codes
