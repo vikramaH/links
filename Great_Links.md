@@ -63,7 +63,10 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
  https://jupyter.org/try  ===> This page has links to interactive demos that allow you to try some of our tools for free online
 
  **AI related**
- https://colab.google/ ===> Google Colaboratory : Colab is a hosted Jupyter Notebook service that requires no setup to use and provides free access to computing resources, including GPUs and TPUs. Colab is especially well suited to machine learning, data science, and education.
+7 best Kaggle Kernels alternatives in 2024 ===> Kaggle Kernels, Deepnote, JupyterLab, Microsoft Azure Notebooks,
+                                       Google Colab, Databricks Community Edition, Amazon SageMaker Studio
+ 
+https://colab.google/ ===> Google Colaboratory : Colab is a hosted Jupyter Notebook service that requires no setup to use and provides free access to computing resources, including GPUs and TPUs. Colab is especially well suited to machine learning, data science, and education.
 
 https://www.kaggle.com/code ===> Explore and run machine learning code with Kaggle Notebooks. Kaggle provides access to GPUs for free.
 
