@@ -2,8 +2,6 @@
 
 (2) https://pypi.org/project/PyMultiDictionary/ ===> PyMultiDictionary is a Dictionary Module for Python 2 to get meanings, translations, synonyms and antonyms of words in 20 different languages
 
-(3) <b>ZunZunSite3 Online Curve Fitting and Surface Fitting Web Site</b> http://findcurves.com/   
-
 **procedure for using this application**
 (1) select any 'field of use' from 2D or 3D  (eg, 3D Bioscience)
 (2) from there, choose a particular function (eg,  Logistic Growth 3D)
@@ -47,6 +45,16 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 13) https://www.falstad.com/vector3dm/ ===> This java applet is a magnetostatics demonstration which displays the magnetic field in a number of situations.
 
 14) CalcForge.com ==> CalcForge provides a suite of open-source engineering calculation tools for structural, geotechnical, tunneling, and contractor applications.
+
+15) Online-Utility.org ( online tool including simple English converter)
+        https://www.online-utility.org/english/simple_basic_helper.jsp
+
+
+**Online Python compilers**
+
+ Online Python Compiler (tutorialspoint)     https://www.tutorialspoint.com/online_python_compiler.php
+
+Online Python 3 IDE (jdoodle)   https://www.jdoodle.com/python3-programming-online
 
 
 Magnetic Field calculation codes
@@ -243,9 +251,6 @@ Dear IT Departments, Please Stop Trying To Build Your Own RAG  https://pub.towar
 QuillBot : Your ideas, better writing
 https://quillbot.com/
 
-Online-Utility.org ( online tool including simple English converter)
-https://www.online-utility.org/english/simple_basic_helper.jsp
-
 Basic-english-translator
 https://anythingtranslate.com/translators/basic-english-translator/
 
@@ -329,11 +334,6 @@ Mahabharat me vaastu vigyan   https://egyankosh.ac.in/bitstream/123456789/98460/
 
 Asian Agri-History Foundation  https://www.asianagrihistory.org
 
-# Online Python compilers
-
- Online Python Compiler (tutorialspoint)     https://www.tutorialspoint.com/online_python_compiler.php
-
-Online Python 3 IDE (jdoodle)   https://www.jdoodle.com/python3-programming-online
 
 ====================================================================================
 
