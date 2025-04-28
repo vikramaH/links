@@ -1,0 +1,107 @@
+(1) https://github.com/AI4Bharat/indicnlp_catalog ===> This is a Github repository named <b>indicnlp_catalog</b>. There is a great list of advanced language computing resources here.
+
+(2) https://pypi.org/project/PyMultiDictionary/ ===> PyMultiDictionary is a Dictionary Module for Python 2 to get meanings, translations, synonyms and antonyms of words in 20 different languages
+
+**procedure for using this application**
+(1) select any 'field of use' from 2D or 3D  (eg, 3D Bioscience)
+(2) from there, choose a particular function (eg,  Logistic Growth 3D)
+(3) select 'fitting target' from the menu and it will give options such as 'Lowest sum of squared absolute error' ,
+    'Lowest sum of squared orthogonal distance' and several others.
+
+**Database for particle accelerator centres**
+* DABATASE FOR NSLS-II ACCELERATOR OPERATION_2017  https://epaper.kek.jp/ipac2017/papers/wepab121.pdf
+* A Software System for Measurement of  Accelerator Magnets Using a Relational  Database
+  https://www.academia.edu/107141004/A_software_system_for_measurement_of_accelerator_magnets_using_a_relational_database
+
+
+Online Computing applications
+============================
+1) https://www.rollapp.com/apps ===> many applications including paraview, gmsh  
+
+             also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
+   
+     https://www.onworks.net/ ==> OnWorks is a free hosting provider that allows to run your workstations only using your web browser. It allows to run free online  CentOS, Fedora, Ubuntu and Debian; free Windows online emulators and free Pear OS emulators.
+
+3) 109 Useful Websites & Online Applications You Should Know About
+
+4) Particle Tracking Module for Python https://github.com/acanbay/apricot
+
+5) Engineering Design Utilities (Okawa Electric Design)    http://sim.okawa-denshi.jp/en/
+
+6) https://fossee.in/    FOSSEE, IIT Mumbai
+
+7) Scilab on the cloud    https://cloud.scilab.in/
+
+8) Scicos on the cloud     https://xcos.scilab.in/
+
+9) Octave Online     https://octave-online.net/
+
+10) Modelica by Examples     https://mbe.modelica.university/
+
+11) Infineon  PowerEsim Switch Mode Power Supply Design Tool     https://www.poweresim.com/
+
+12) ZunZunSite3 Online Curve Fitting and Surface Fitting Web Site    https://www.findcurves.com
+
+13) Convert any blog or website to an interactive learning platform for data science   https://github.com/datacamp/datacamp-light
+
+14) https://www.falstad.com/vector3dm/ ===> This java applet is a magnetostatics demonstration which displays the magnetic field in a number of situations.
+
+15) CalcForge.com ==> CalcForge provides a suite of open-source engineering calculation tools for structural, geotechnical, tunneling, and contractor applications.
+
+16) Online-Utility.org ( online tool including simple English converter)
+        https://www.online-utility.org/english/simple_basic_helper.jsp
+
+17) nanoHub online tools ===> https://nanohub.org/usage/tools
+
+18) https://www.sirepo.com/en/  Bringing Scientific Computing to the Cloud
+
+19) https://www.kjmagnetics.com/magnetic-field-calculator.asp  Magnetic Field Calculator ===> Calculate magnetic field of magnets in free space [very useful, many features]
+
+20) https://allianceorg.com/design-tools/magnetic-field-calculator/  Magnetic Field Strength Calculator (for cylindrical and rectangular magnets)
+
+
+**Online programming tools**
+
+https://onecompiler.com/   ==> OneCompiler is a free online compiler. It helps users to write, run and share code online for more than 50 programming languages & databases.
+
+
+**Online Python tools**
+
+ Online Python Compiler (tutorialspoint)     https://www.tutorialspoint.com/online_python_compiler.php
+
+ Online Python 3 IDE (jdoodle)   https://www.jdoodle.com/python3-programming-online
+
+ https://jupyter.org/try  ===> This page has links to interactive demos that allow you to try some of our tools for free online
+
+
+ **Artificial Intelligence (AI) related**
+ 
+7 best Kaggle Kernels alternatives in 2024 ===> Kaggle Kernels, Deepnote, JupyterLab, Microsoft Azure Notebooks,
+                                               Google Colab, Databricks Community Edition, Amazon SageMaker Studio
+ 
+https://colab.google/ ===> Google Colaboratory : Colab is a hosted Jupyter Notebook service that requires no setup to use and provides free access to                     computing resources, including GPUs and TPUs. Colab is especially well suited to machine learning, data science, and education.
+
+https://www.kaggle.com/code ===> Explore and run machine learning code with Kaggle Notebooks. Kaggle provides access to GPUs for free.
+
+https://gradient.paperspace.com/?ref=blog.paperspace.com  Gradient Notebooks are a web-based Jupyter IDE with high-powered GPUs which use a pre-build runtime from Paperspace.
+
+**Online Circuit Simulation**
+
+CircuitLab  ===> https://www.circuitlab.com/editor/#?id=7pq5wm&from=homepage  
+
+https://www.falstad.com/circuit/   (https://www.falstad.com/ ===> Physics , circuit, )
+
+https://app.arduino.cc/  Arduino Cloud
+
+
+
+Magnetic Field calculation codes
+================================
+
+***Magpylib*** : Python package for computation of magnetic fields of magnets, currents and moments.   ===> https://github.com/magpylib/magpylib
+Documentation  ===> https://magpylib.readthedocs.io/en/latest/index.html
+https://pypi.org/project/magpylib/
+
+
+***magcoilcalc*** - Axisymmetric circular current loops (coils) magnetic field calculator
+https://github.com/sq-meng/coilcalc
