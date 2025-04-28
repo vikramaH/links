@@ -44,6 +44,13 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 
 12) Convert any blog or website to an interactive learning platform for data science   https://github.com/datacamp/datacamp-light
 
+13) https://www.falstad.com/vector3dm/ ===> This java applet is a magnetostatics demonstration which displays the magnetic field in a number of situations.
+
+14) CalcForge.com ==> CalcForge provides a suite of open-source engineering calculation tools for structural, geotechnical, tunneling, and contractor applications.
+
+15) WELSIM is the #1 engineering simulation software for the open-source community. Website: https://welsim.com.  (Quantify the Uncertain)
+    WELSIM is a pre- and post-processor for open-source solvers, including Elmer FEM. WELSIM has released the 2025R1, supporting molecular dynamics analysis. Also see https://github.com/WelSimLLC/welsim-apps/discussions
+
 
 
 Magnetic Field calculation codes
