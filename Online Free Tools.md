@@ -44,20 +44,20 @@ Online Computing applications
 
 13) Convert any blog or website to an interactive learning platform for data science   https://github.com/datacamp/datacamp-light
 
-14) https://www.falstad.com/vector3dm/ ===> This java applet is a magnetostatics demonstration which displays the magnetic field in a number of situations.
+14) https://www.falstad.com/vector3dm/ ===> This java applet is a magnetostatics demonstration which displays the magnetic field in a number of situations.       Oscillations and Waves ===> https://www.falstad.com/mathphysics.html     
 
-15) CalcForge.com ==> CalcForge provides a suite of open-source engineering calculation tools for structural, geotechnical, tunneling, and contractor applications.
+16) CalcForge.com ==> CalcForge provides a suite of open-source engineering calculation tools for structural, geotechnical, tunneling, and contractor applications.
 
-16) Online-Utility.org ( online tool including simple English converter)
+17) Online-Utility.org ( online tool including simple English converter)
         https://www.online-utility.org/english/simple_basic_helper.jsp
 
-17) nanoHub online tools ===> https://nanohub.org/usage/tools
+18) nanoHub online tools ===> https://nanohub.org/usage/tools
 
-18) https://www.sirepo.com/en/  Bringing Scientific Computing to the Cloud
+19) https://www.sirepo.com/en/  Bringing Scientific Computing to the Cloud
 
-19) https://www.kjmagnetics.com/magnetic-field-calculator.asp  Magnetic Field Calculator ===> Calculate magnetic field of magnets in free space [very useful, many features]
+20) https://www.kjmagnetics.com/magnetic-field-calculator.asp  Magnetic Field Calculator ===> Calculate magnetic field of magnets in free space [very useful, many features]
 
-20) https://allianceorg.com/design-tools/magnetic-field-calculator/  Magnetic Field Strength Calculator (for cylindrical and rectangular magnets)
+21) https://allianceorg.com/design-tools/magnetic-field-calculator/  Magnetic Field Strength Calculator (for cylindrical and rectangular magnets)
 
 
 **Online programming tools**
@@ -89,19 +89,7 @@ https://gradient.paperspace.com/?ref=blog.paperspace.com  Gradient Notebooks are
 
 CircuitLab  ===> https://www.circuitlab.com/editor/#?id=7pq5wm&from=homepage  
 
-https://www.falstad.com/circuit/   (https://www.falstad.com/ ===> Physics , circuit, )
+https://www.falstad.com/circuit/
 
 https://app.arduino.cc/  Arduino Cloud
 
-
-
-Magnetic Field calculation codes
-================================
-
-***Magpylib*** : Python package for computation of magnetic fields of magnets, currents and moments.   ===> https://github.com/magpylib/magpylib
-Documentation  ===> https://magpylib.readthedocs.io/en/latest/index.html
-https://pypi.org/project/magpylib/
-
-
-***magcoilcalc*** - Axisymmetric circular current loops (coils) magnetic field calculator
-https://github.com/sq-meng/coilcalc
