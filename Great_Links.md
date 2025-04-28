@@ -111,9 +111,7 @@ https://welsim.com/2023/04/05/welsim-releases-2023r2-supporting-open-source-elec
 
 ***COULOMB*** 3D Electric Field Simulation Software
 
-Integrated Engineering Software, Inc.
-Request a Quote
-Image of COULOMB 3D Electric Field Simulation Software
+Integrated Engineering Software, Inc. (not a freeware)
 
 COULOMB is INTEGRATED's powerful 3D electric design and analysis software. COULOMB is well suited for applications where the design requires a large open field analysis and exact modeling of the boundaries. COULOMB combines the capabilities to analyze corona ring & partial discharge effects, electric field stress, lightning, transient events, maximum field strength and dielectric breakdown, among others,
 
