@@ -12,7 +12,7 @@
 * DABATASE FOR NSLS-II ACCELERATOR OPERATION_2017  https://epaper.kek.jp/ipac2017/papers/wepab121.pdf
 * A Software System for Measurement of  Accelerator Magnets Using a Relational  Database
   https://www.academia.edu/107141004/A_software_system_for_measurement_of_accelerator_magnets_using_a_relational_database
-* 
+
 
 Online Computing applications
 ============================
@@ -53,6 +53,10 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 
 17) https://www.sirepo.com/en/  Bringing Scientific Computing to the Cloud
 
+18) https://www.kjmagnetics.com/magnetic-field-calculator.asp  Magnetic Field Calculator ===> Calculate magnetic field of magnets in free space [very useful, many features]
+
+19) https://allianceorg.com/design-tools/magnetic-field-calculator/  Magnetic Field Strength Calculator (for cylindrical and rectangular magnets)
+
 
 **Online Python tools**
 
@@ -62,7 +66,8 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 
  https://jupyter.org/try  ===> This page has links to interactive demos that allow you to try some of our tools for free online
 
- **AI related**
+ **Artificial Intelligence (AI) related**
+ 
 7 best Kaggle Kernels alternatives in 2024 ===> Kaggle Kernels, Deepnote, JupyterLab, Microsoft Azure Notebooks,
                                        Google Colab, Databricks Community Edition, Amazon SageMaker Studio
  
