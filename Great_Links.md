@@ -58,6 +58,11 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 19) https://allianceorg.com/design-tools/magnetic-field-calculator/  Magnetic Field Strength Calculator (for cylindrical and rectangular magnets)
 
 
+**Online programming tools**
+
+https://onecompiler.com/   ==> OneCompiler is a free online compiler. It helps users to write, run and share code online for more than 50 programming languages & databases.
+
+
 **Online Python tools**
 
  Online Python Compiler (tutorialspoint)     https://www.tutorialspoint.com/online_python_compiler.php
@@ -66,12 +71,13 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 
  https://jupyter.org/try  ===> This page has links to interactive demos that allow you to try some of our tools for free online
 
+
  **Artificial Intelligence (AI) related**
  
 7 best Kaggle Kernels alternatives in 2024 ===> Kaggle Kernels, Deepnote, JupyterLab, Microsoft Azure Notebooks,
-                                       Google Colab, Databricks Community Edition, Amazon SageMaker Studio
+                                               Google Colab, Databricks Community Edition, Amazon SageMaker Studio
  
-https://colab.google/ ===> Google Colaboratory : Colab is a hosted Jupyter Notebook service that requires no setup to use and provides free access to computing resources, including GPUs and TPUs. Colab is especially well suited to machine learning, data science, and education.
+https://colab.google/ ===> Google Colaboratory : Colab is a hosted Jupyter Notebook service that requires no setup to use and provides free access to                     computing resources, including GPUs and TPUs. Colab is especially well suited to machine learning, data science, and education.
 
 https://www.kaggle.com/code ===> Explore and run machine learning code with Kaggle Notebooks. Kaggle provides access to GPUs for free.
 
@@ -129,7 +135,6 @@ Integrated Engineering Software, Inc. (not a freeware)
 COULOMB is INTEGRATED's powerful 3D electric design and analysis software. COULOMB is well suited for applications where the design requires a large open field analysis and exact modeling of the boundaries. COULOMB combines the capabilities to analyze corona ring & partial discharge effects, electric field stress, lightning, transient events, maximum field strength and dielectric breakdown, among others,
 
 Engineers/Scientists choose COULOMB for the design and analysis of electrical components such as:
-
     transformers 
     insulators, bushings, grounding electrodes
     high voltage shields
@@ -161,7 +166,7 @@ https://github.com/ml4ai/automates
 
 
 Undulator design etc
-===============
+====================
 https://github.com/radiasoft/sirepo ===> radiasoft sirepo    
 
 https://github.com/hidecode221b  ===> Radia-MPW and U4Opt etc
