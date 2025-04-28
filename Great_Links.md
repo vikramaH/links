@@ -77,6 +77,14 @@ https://www.kaggle.com/code ===> Explore and run machine learning code with Kagg
 
 https://gradient.paperspace.com/?ref=blog.paperspace.com  Gradient Notebooks are a web-based Jupyter IDE with high-powered GPUs which use a pre-build runtime from Paperspace.
 
+**Online Circuit Simulation**
+
+CircuitLab  ===> https://www.circuitlab.com/editor/#?id=7pq5wm&from=homepage  
+
+https://www.falstad.com/circuit/   (https://www.falstad.com/ ===> Physics , circuit, )
+
+https://app.arduino.cc/  Arduino Cloud
+
 
 
 Magnetic Field calculation codes
