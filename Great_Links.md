@@ -48,20 +48,16 @@ also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
 
 14) CalcForge.com ==> CalcForge provides a suite of open-source engineering calculation tools for structural, geotechnical, tunneling, and contractor applications.
 
-15) WELSIM is the #1 engineering simulation software for the open-source community. Website: https://welsim.com.  (Quantify the Uncertain)
-    WELSIM is a pre- and post-processor for open-source solvers, including Elmer FEM. WELSIM has released the 2025R1, supporting molecular dynamics analysis. Also see https://github.com/WelSimLLC/welsim-apps/discussions
-
-
 
 Magnetic Field calculation codes
 ================================
 
-Python package for computation of magnetic fields of magnets, currents and moments.   ===> https://github.com/magpylib/magpylib
-Magpylib Documentation  ===> https://magpylib.readthedocs.io/en/latest/index.html
+***Magpylib*** : Python package for computation of magnetic fields of magnets, currents and moments.   ===> https://github.com/magpylib/magpylib
+Documentation  ===> https://magpylib.readthedocs.io/en/latest/index.html
 https://pypi.org/project/magpylib/
 
 
-magcoilcalc - Axisymmetric circular current loops (coils) magnetic field calculator
+***magcoilcalc*** - Axisymmetric circular current loops (coils) magnetic field calculator
 https://github.com/sq-meng/coilcalc
 
 
@@ -73,12 +69,42 @@ An Open-Source Finite Element Quench Simulation Tool for Superconducting Magnets
 https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10077402
 
 
-planetMagFields: A Python package for analyzing and plotting planetary magnetic field data (2024)
+***planetMagFields*** : A Python package for analyzing and plotting planetary magnetic field data (2024)
 
 
 Python Simulation of Linear and Non-Linear Accelerator Elements  ; July 27, 2016
 The PhD thesis ===>  https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=8890678&fileOId=8890685
 The code is here ===> Differential-Algebra-Tracker ===>  https://github.com/OscarES/Differential-Algebra-Tracker
+
+
+***Palace***: 3D Finite Element Solver for Computational Electromagnetics  https://awslabs.github.io/palace/stable/
+
+***WELSIM*** : WELSIM is the world's leading pre- and post-processor for the open-source solvers, including but not limited to CalculiX, Elmer FEM, FrontISTR, LAMMPS, MFEM,...
+
+https://welsim.com/2023/04/05/welsim-releases-2023r2-supporting-open-source-electromagnetic-simulation-solver.html
+
+
+***COULOMB*** 3D Electric Field Simulation Software
+
+Integrated Engineering Software, Inc.
+Request a Quote
+Image of COULOMB 3D Electric Field Simulation Software
+
+COULOMB is INTEGRATED's powerful 3D electric design and analysis software. COULOMB is well suited for applications where the design requires a large open field analysis and exact modeling of the boundaries. COULOMB combines the capabilities to analyze corona ring & partial discharge effects, electric field stress, lightning, transient events, maximum field strength and dielectric breakdown, among others,
+
+Engineers/Scientists choose COULOMB for the design and analysis of electrical components such as:
+
+    transformers 
+    insulators, bushings, grounding electrodes
+    high voltage shields
+    power transmission lines
+    high voltage switchgear
+    telecommunication cables
+    lenses for beam deflection
+    capacitive transducers
+    microelectromechanical systems
+    parts and assemblies subject to electrical fields
+
 
 
 Further investigation
@@ -272,7 +298,7 @@ https://muktabodha.org/
 [Sanskrit Texts by Vedic Engineering] A large collection (almost 30 megabytes) of Sanskrit texts in machine-readable form. 
 https://indology.info/virtual-e-text-archive-of-indic-texts/
 
----
+-----
 
 # What is systems engineering?
 
@@ -316,36 +342,5 @@ LLB Notes ( हिन्दी )  https://llbwp.ransomtechnoman.com/home/
 
 https://olmocr.allenai.org '''olmOCR''' is an open-source tool designed for high-throughput conversion of PDFs
 
-======
 
-25-4-2025
-
-Palace: 3D Finite Element Solver for Computational Electromagnetics  https://awslabs.github.io/palace/stable/
-
-
-3D finite element solver for computational electromagnetics 
-
-https://welsim.com/2023/04/05/welsim-releases-2023r2-supporting-open-source-electromagnetic-simulation-solver.html
-
-
-COULOMB 3D Electric Field Simulation Software
-
-Integrated Engineering Software, Inc.
-Request a Quote
-Image of COULOMB 3D Electric Field Simulation Software
-
-COULOMB is INTEGRATED's powerful 3D electric design and analysis software. COULOMB is well suited for applications where the design requires a large open field analysis and exact modeling of the boundaries. COULOMB combines the capabilities to analyze corona ring & partial discharge effects, electric field stress, lightning, transient events, maximum field strength and dielectric breakdown, among others,
-
-Engineers/Scientists choose COULOMB for the design and analysis of electrical components such as:
-
-    transformers 
-    insulators, bushings, grounding electrodes
-    high voltage shields
-    power transmission lines
-    high voltage switchgear
-    telecommunication cables
-    lenses for beam deflection
-    capacitive transducers
-    microelectromechanical systems
-    parts and assemblies subject to electrical fields
 
