@@ -93,3 +93,75 @@ https://www.falstad.com/circuit/
 
 https://app.arduino.cc/  Arduino Cloud
 
+-----------------------------------------------------
+
+
+Free Online/Cloud services for important softwares (sept 2020)
+=============================================================
+
+1) Acc physics – Sirepo  , sirepo-bluesky0.1.0
+
+2) Testing Linux distros – Distrotest.net , Onworks (tested , even installed a python package)
+
+3)  Python testing --- jupytor.org , https://www.rextester.com –All language compilers available here
+
+4) Other language testing --- https://www.tio.run/#
+
+5) Online circuit simulation --- U-Spice ;  there are many
+
+6) Online PCB and netlist services --- easyEDA,
+
+7) Online FEM services --- Simscale  (aeroplane simulation)
+
+8) Online javascript testing  --- fiddle Meta
+
+9) Online Arduino simulator --- UnoArduSim  and many others
+
+10) Online Raspbery simulator --- Raspbery Pi Azure IOT online simulator
+
+11) Online API creation and management --- Informatica
+
+12) Online natural language translators --- Google translate and many more
+
+13) Online Devanagari OCR --- SanskritCR
+
+14) Online drawing file converters / CAD exchanger --- eMachineShop --> Free online .step file viewer
+
+15) FPGA Libre --- SymbiFlow
+
+16) Project Libre --- alternative to MS project
+
+17) nanoHUB ---
+
+18) Simulator for PIC microcontrollers --- gpsim
+
+19) 8051 simulator  ---  EdSim51
+
+20)  TINAcloud online simulator --- PIC , AVR , Arduino , 8051 ,  ARM
+
+21) ARM simulator --- ARMulator (ARM instruction set simulator) , ARMware , Microsoft device emulator 3.0 ,  softgun ,  SkyEye ,  QEMU
+
+22) CPU emultor ---  Unicorn
+
+23) Online Octave --- octaveonline.net
+
+24) Online Scilab --- https://cloud.scilab.in
+
+25) Free PLC simulator --- Do-more designer , PLC open editor , PLC ladder simulator android App , etc and many more
+
+26)
+
+
+Some famous sites :
+
+1) nanoHUB --- Interactive simulation tools for nanotechnology and related fields
+
+2) FreeFEM  ---  https://freefem.org/tryit
+
+3) Image to schematic generator  ---  https://www.blankstare.net/
+
+4) Spice netlist to schematic generator --- net2gex
+
+5)
+
+
