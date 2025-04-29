@@ -7,13 +7,13 @@ Online Computing applications
    
      https://www.onworks.net/ ==> OnWorks is a free hosting provider that allows to run your workstations only using your web browser. It allows to run free online  CentOS, Fedora, Ubuntu and Debian; free Windows online emulators and free Pear OS emulators.
 
-3) 109 Useful Websites & Online Applications You Should Know About
+3) FOSSEE, IIT Mumbai    https://fossee.in/
 
-4)
+4) 109 Useful Websites & Online Applications You Should Know About
 
 5) Engineering Design Utilities (Okawa Electric Design)    http://sim.okawa-denshi.jp/en/
 
-6) https://fossee.in/    FOSSEE, IIT Mumbai
+6) 
 
 7) Scilab on the cloud    https://cloud.scilab.in/
 
@@ -31,7 +31,7 @@ Online Computing applications
 
 14) https://www.falstad.com/vector3dm/ ===> This java applet is a magnetostatics demonstration which displays the magnetic field in a number of situations.       Oscillations and Waves ===> https://www.falstad.com/mathphysics.html     
 
-16) CalcForge.com ==> CalcForge provides a suite of open-source engineering calculation tools for structural, geotechnical, tunneling, and contractor applications.
+16) http://calcforge.com/ ==> CalcForge provides a suite of open-source engineering calculation tools for structural, geotechnical, tunneling, and contractor applications.
 
 17) Online-Utility.org ( online tool including simple English converter)
         https://www.online-utility.org/english/simple_basic_helper.jsp
