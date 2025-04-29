@@ -2,18 +2,14 @@
 Online Computing applications
 ============================
 1) https://www.rollapp.com/apps ===> many applications including paraview, gmsh  
-
-             also see : OnWorks ,  Distrowatch, https://gnuplot.io/ (for gnuplot)
-   
-     https://www.onworks.net/ ==> OnWorks is a free hosting provider that allows to run your workstations only using your web browser. It allows to run free online  CentOS, Fedora, Ubuntu and Debian; free Windows online emulators and free Pear OS emulators.
-
-3) FOSSEE, IIT Mumbai    https://fossee.in/
+  
+3) https://www.onworks.net/ ==> OnWorks is a free hosting provider that allows to run your workstations only using your web browser. It allows to run free online  CentOS, Fedora, Ubuntu and Debian; free Windows online emulators and free Pear OS emulators.
 
 4) 109 Useful Websites & Online Applications You Should Know About
 
 5) Engineering Design Utilities (Okawa Electric Design)    http://sim.okawa-denshi.jp/en/
 
-6) 
+6) FOSSEE, IIT Mumbai    https://fossee.in/   (The tools are not available online?)
 
 7) Scilab on the cloud    https://cloud.scilab.in/
 
@@ -43,6 +39,10 @@ Online Computing applications
 20) https://www.kjmagnetics.com/magnetic-field-calculator.asp  Magnetic Field Calculator ===> Calculate magnetic field of magnets in free space [very useful, many features]
 
 21) https://allianceorg.com/design-tools/magnetic-field-calculator/  Magnetic Field Strength Calculator (for cylindrical and rectangular magnets)
+
+22) gnuplot demo plots  http://gnuplot.info/demos/         
+
+23) https://gnuplot.io/ (for gnuplot)
 
 
 **Online programming tools**
