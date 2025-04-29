@@ -44,6 +44,8 @@ Online Computing applications
 
 23) https://gnuplot.io/ (for gnuplot)
 
+24) GeoGebra calculator   https://www.geogebra.org/calculator  
+
 
 **Online programming tools**
 
