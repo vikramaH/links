@@ -74,6 +74,8 @@ https://gradient.paperspace.com/?ref=blog.paperspace.com  Gradient Notebooks are
 
 **Online Circuit Simulation**
 
+Free SMPS Design Software & Transformer Calculation / Simulation Tool.    http://www.poweresim.com/   
+
 CircuitLab  ===> https://www.circuitlab.com/editor/#?id=7pq5wm&from=homepage  
 
 https://www.falstad.com/circuit/
