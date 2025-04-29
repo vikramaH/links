@@ -8,16 +8,6 @@ https://welsim.com/2023/04/05/welsim-releases-2023r2-supporting-open-source-elec
 https://awslabs.github.io/palace/stable/
 
 
-MAGNETIC FIELD TOOLS, A C++/PYTHON LIBRARY FOR MAGNETIC FIELD PROCESSING (IPAC2023)
-https://accelconf.web.cern.ch/ipac2023/pdf/WEPL126.pdf
-https://gitlab.esrf.fr/IDM/magfieldtools/-/tree/master?ref_type=heads
-
-
-An Open-Source Finite Element Quench Simulation Tool for Superconducting Magnets (2023)
-
-https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10077402
-
-
 ***planetMagFields*** : A Python package for analyzing and plotting planetary magnetic field data (2024)
 
 
@@ -37,33 +27,14 @@ https://pypi.org/project/magpylib/
 https://github.com/sq-meng/coilcalc
 
 
-
-***COULOMB*** 3D Electric Field Simulation Software
-
-Integrated Engineering Software, Inc. (not a freeware)
-
-COULOMB is INTEGRATED's powerful 3D electric design and analysis software. COULOMB is well suited for applications where the design requires a large open field analysis and exact modeling of the boundaries. COULOMB combines the capabilities to analyze corona ring & partial discharge effects, electric field stress, lightning, transient events, maximum field strength and dielectric breakdown, among others,
-
-Engineers/Scientists choose COULOMB for the design and analysis of electrical components such as:
-    transformers 
-    insulators, bushings, grounding electrodes
-    high voltage shields
-    power transmission lines
-    high voltage switchgear
-    telecommunication cables
-    lenses for beam deflection
-    capacitive transducers
-    microelectromechanical systems
-    parts and assemblies subject to electrical fields
+MAGNETIC FIELD TOOLS, A C++/PYTHON LIBRARY FOR MAGNETIC FIELD PROCESSING (IPAC2023)
+https://accelconf.web.cern.ch/ipac2023/pdf/WEPL126.pdf
+https://gitlab.esrf.fr/IDM/magfieldtools/-/tree/master?ref_type=heads
 
 
-Choosing the Best 3D CAD Software: A Comprehensive Guide 
-https://formlabs.com/asia/blog/cad-software/?srsltid=AfmBOoqwzfuT-Ok1Jt3VCqhmh6XDxdxHCHa09aBDAJ689Gy2XLmXMq9G
+An Open-Source Finite Element Quench Simulation Tool for Superconducting Magnets (2023)
 
-
-**AutoMATES**: Automated Model Assembly from Text, Equations,and Software (2020)
-https://arxiv.org/pdf/2001.07295
-https://github.com/ml4ai/automates
+https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10077402
 
 
 Undulator design etc
@@ -125,21 +96,7 @@ An Open-Source Finite Element Quench Simulation Tool for Superconducting Magnets
 A transient magneto-thermal quench simulation of a no-insulation HTS pancake coil with FiQuS/Pancake3D, developed at CERN. 
 https://github.com/sinaatalay/fiqus-pancake3d-example?tab=readme-ov-file
 
-----
-
-**Tools That Can be Used in Control System Design**  
-
-https://electronicsbeliever.com/tools-that-can-be-used-in-control-system-design/
-
-( Matlab, Simulink, Spice Based Simulation Software (With Simetrix or any spiced based simulator you don’t need to derive the transfer function anymore), SimPowerSystems, 
-
-    State Flow --> An emerging tool nowadays for control system design is state flow.
-    Mathcad Template
-
----
-
-Cool SHIT you can do with DOCKER (for your home lab) 
-https://levelup.gitconnected.com/cool-shit-you-can-do-with-docker-for-your-home-lab-af857dfc206d
+-----
 
 
 **gprMax** is open source software that simulates electromagnetic wave propagation. 
@@ -155,6 +112,52 @@ https://sourceforge.net/projects/maxfem/
 **Meep** is a free and open-source software package for electromagnetics simulation via the finite-difference time-domain (FDTD) method.  
 https://meep-hr.readthedocs.io/en/latest/
 
+
+------------
+
+***COULOMB*** 3D Electric Field Simulation Software
+
+Integrated Engineering Software, Inc. (not a freeware)
+
+COULOMB is INTEGRATED's powerful 3D electric design and analysis software. COULOMB is well suited for applications where the design requires a large open field analysis and exact modeling of the boundaries. COULOMB combines the capabilities to analyze corona ring & partial discharge effects, electric field stress, lightning, transient events, maximum field strength and dielectric breakdown, among others,
+
+Engineers/Scientists choose COULOMB for the design and analysis of electrical components such as:
+    transformers 
+    insulators, bushings, grounding electrodes
+    high voltage shields
+    power transmission lines
+    high voltage switchgear
+    telecommunication cables
+    lenses for beam deflection
+    capacitive transducers
+    microelectromechanical systems
+    parts and assemblies subject to electrical fields
+
+
+Choosing the Best 3D CAD Software: A Comprehensive Guide 
+https://formlabs.com/asia/blog/cad-software/?srsltid=AfmBOoqwzfuT-Ok1Jt3VCqhmh6XDxdxHCHa09aBDAJ689Gy2XLmXMq9G
+
+
+**AutoMATES**: Automated Model Assembly from Text, Equations,and Software (2020)
+https://arxiv.org/pdf/2001.07295
+https://github.com/ml4ai/automates
+
+
+**Particle Tracking** Module for Python     https://github.com/acanbay/apricot
+
+
+**Tools That Can be Used in Control System Design**  
+
+https://electronicsbeliever.com/tools-that-can-be-used-in-control-system-design/
+
+( Matlab, Simulink, Spice Based Simulation Software (With Simetrix or any spiced based simulator you don’t need to derive the transfer function anymore), SimPowerSystems, 
+
+    State Flow --> An emerging tool nowadays for control system design is state flow.
+    Mathcad Template
+
+
+Cool SHIT you can do with **DOCKER** (for your home lab) 
+https://levelup.gitconnected.com/cool-shit-you-can-do-with-docker-for-your-home-lab-af857dfc206d
 
 
 Further investigation
