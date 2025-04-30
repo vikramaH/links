@@ -1,4 +1,4 @@
-https://olmocr.allenai.org '''olmOCR''' is an open-source tool designed for high-throughput conversion of PDFs
+'''olmOCR''' an open-source Python toolkit for processing PDFs into clean, linearized plain text in natural reading order while preserving structured content like sections, tables, lists, equations, and more. https://olmocr.allenai.org and  https://www.eliteai.tools/tool/olmocr  are powerful and free online OCR tools. 
 
 QuillBot : Your ideas, better writing
 https://quillbot.com/
