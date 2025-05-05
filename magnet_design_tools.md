@@ -43,3 +43,8 @@ https://supermagnet.sourceforge.io/notes/CRYO-06-034.pdf
 Magnum: 3D finite-element magnetic-field solutions with permanent magnets and non-linear materials (September 2024)
 
 http://www.fieldp.com
+
+
+**others**
+https://inspirehep.net/files/6a35392e8f838a697f38044d894fc25e
+A PROGRAM ON MAGNET OPTIMIZATION DESIGN (China, earlier than 1995)
