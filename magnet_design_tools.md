@@ -17,3 +17,11 @@ Free tools available
 ESRF Insertion devices and magnets group     https://gitlab.esrf.fr/IDM
 
 MAGNETIC FIELD TOOLS, A C++/PYTHON LIBRARY FOR MAGNETIC FIELD PROCESSING https://accelconf.web.cern.ch/ipac2023/pdf/WEPL126.pdf
+
+
+
+**Commercial tools**
+Magnum: 3D finite-element magnetic-field solutions with permanent magnets and non-linear materials (September 2024)
+
+http://www.fieldp.com
+
