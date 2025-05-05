@@ -7,7 +7,12 @@ tools magnet designers need
 * optimization tools
 * visualization tool
 * magnetic field analysis tools (or, magnetic field processing tools) -- such as one created by ESRF (magfieldtools https://gitlab.esrf.fr/IDM/magfield)
-* 
+
+
+**Optimization tools**
+(1) pole shape optimization
+(2) senstivity analysis
+(3) fast computation
 
 
 
