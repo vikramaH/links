@@ -120,6 +120,26 @@ https://github.com/ElmerCSC/elmerfem  This is the official source code repositor
 https://github.com/tzwinger/tzwinger-elmerfem  Official git repository of Elmer FEM software  
 
 
+**MagnetiCalc**  calculates the static magnetic flux density, vector potential, energy, self-inductance and magnetic dipole moment of arbitrary coils.  
+
+https://github.com/shredEngineer/MagnetiCalc
+
+
+**MagTetris** : A simulator for fast magnetic field and force calculation for permanent magnet array designs
+
+https://github.com/BioMed-EM-lab/MagTetris
+
+
+**Biot-Savart**  Magnetic Field Calculator -- This tool numerically solves for the 3D vector magnetic field around an arbitrarily shaped coil specified by the user, in a discrete and finite volume surrounding the coil. 
+
+https://github.com/vuthalab/biot-savart
+
+
+**FEMMT**  Python toolbox to generate preconfigured figures for FEM simulation tools in power electronics.
+
+https://github.com/upb-lea/FEM_Magnetics_Toolbox
+
+
 
 **GetDP**
 
