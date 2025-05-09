@@ -173,6 +173,10 @@ A PROGRAM ON MAGNET OPTIMIZATION DESIGN (China, earlier than 1995)
 https://openmagnetics.com/
 
 
+**PSMagnet**  Small scale of cern PS main magnet (CERN)
+
+https://github.com/pierre-muth/PSMagnet
+
 
 **List of electromagnetic modelling software**
 This page lists various names used in literature and practical applications. This list is not exhaustive.
@@ -360,14 +364,10 @@ https://cds.cern.ch/record/1162829/files/p168.pdf
 
 We summarize the equations that have been derived in the past three years to evaluate the short sample field, stresses and forces, and the magnetic energy in superconducting quadrupoles and dipoles.
 
-During the conceptual phase of design of an accelerator
-or of part of it, it can be useful to have equations
-providing the expected level of field, coil width, stress
-and stored energy in an accelerator magnet using a given
-technology. 
-These equations are usually precise within 10% in a
-rather wide validity range, and can be used for a fast
-exploration of different solutions without the need of
-going for the complete magnet design. A relevant spin-off
-of these equations is also that they provide a benchmark
-for judging the efficiency of a coil design.
+During the conceptual phase of design of an accelerator or of part of it, it can be useful to have equations
+providing the expected level of field, coil width, stress and stored energy in an accelerator magnet using a given
+technology.
+
+These equations are usually precise within 10% in a rather wide validity range, and can be used for a fast
+exploration of different solutions without the need of going for the complete magnet design. A relevant spin-off
+of these equations is also that they provide a benchmark for judging the efficiency of a coil design.
