@@ -37,6 +37,8 @@ https://accelconf.web.cern.ch/ipac2023/pdf/WEPL126.pdf
   
   https://github.com/radiasoft/rsradia
 
+  (https://github.com/radiasoft ==> contains many other tools)
+
 
 **magpylib**  Python package for computation of magnetic fields of magnets, currents and moments. 
   
