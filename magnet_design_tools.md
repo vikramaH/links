@@ -142,13 +142,23 @@ https://github.com/vuthalab/biot-savart
 https://github.com/upb-lea/FEM_Magnetics_Toolbox
 
 
+**LANL Poisson Superfish**
+
+https://github.com/tnakaicode/LANL-PoissonSuperfish/tree/master
+
+
+**DssPyLib**
+
+is a Python library for calculating 2-D integral and finite element numerical solutions for Poisson equation with simple non-overlapping shapes.  https://github.com/nithingoona/DssPyLib/tree/master
+
+https://github.com/nithingoona/DssPyLib/tree/master
+
 
 **GetDP**
 
 Introduction and Overview Gmsh, GetDP & ONELAB (CERN, 2021)
 
 https://indico.cern.ch/event/1015906/contributions/4264253/attachments/2231196/3780607/onelab_cern_210422.pdf
-
 
 
 
