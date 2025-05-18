@@ -154,6 +154,13 @@ is a Python library for calculating 2-D integral and finite element numerical so
 https://github.com/nithingoona/DssPyLib/tree/master
 
 
+**Open-Source Electromagnetic Simulation: FDTD, FEM, MoM**
+
+(Meep , ElmerFEM etc)
+
+https://www.epsilonforge.com/post/open-source-electromagnetics/
+
+
 **GetDP**
 
 Introduction and Overview Gmsh, GetDP & ONELAB (CERN, 2021)
@@ -190,8 +197,16 @@ https://openmagnetics.com/
 https://github.com/pierre-muth/PSMagnet
 
 
+**Large language models** for human-machine collaborative particle accelerator tuning through natural language
+
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11691695/ 
+
+
+
 **List of electromagnetic modelling software**
+
 This page lists various names used in literature and practical applications. This list is not exhaustive.
+
 A
 
     Abaqus
