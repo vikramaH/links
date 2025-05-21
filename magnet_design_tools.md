@@ -201,7 +201,26 @@ https://github.com/pierre-muth/PSMagnet
 
 https://pmc.ncbi.nlm.nih.gov/articles/PMC11691695/ 
 
+≠======
 
+Pynoza: A Python framework for the time-domain multipole
+
+
+U4opt  : Optimization of the undulator period in the K vs period with flux vs energy spaces.
+
+
+MIINERVA is a simulation code to model free-electron lasers
+
+
+Coilcollection   A collection of various coil wire geometries
+
+
+CNPEM Magnet Group
+On github
+
+
+https://gitlab.esrf.fr/IDM/magfieldtools-swig
+≠=====((==
 
 **List of electromagnetic modelling software**
 
