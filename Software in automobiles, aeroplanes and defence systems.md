@@ -1,7 +1,4 @@
-Keywords
-========
-
-AUTOSOR , Android Auto , Android Automobile, software defined vehicle, 
+** Keywords** -- AUTOSOR , Android Auto , Android Automobile, software defined vehicle, 
 
 
 **Software-defined compute** is when a compute function is virtualized and abstracted from the hardware it resides on.
@@ -86,3 +83,8 @@ https://www.eetimes.com/perspectives-on-automotive-operating-systems/
 
 
 Software-defined Defence: Algorithms at War (2023)
+
+
+**speeduino** project is a flexible, fully featured Engine Management Systems (EMS aka ECU) based on the low cost and open source Arduino platform. 
+
+https://github.com/speeduino/speeduino
