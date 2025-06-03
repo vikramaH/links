@@ -14,6 +14,17 @@ In a **software-defined data center**, all elements of the infrastructure — ne
 
 **Digital obsolescence** is the risk of data loss because of inabilities to access digital assets, due to the hardware or software required for information retrieval being repeatedly replaced by newer devices and systems, resulting in increasingly incompatible formats.
 
+**Data: the golden thread of military defence** 
+2 Jan 2024 — Data is the thread that connects all aspects of defence, from the soldier, sailor or aviator on the front line, to logistics, manufacturing, R&D, and 
+
+**From Data to Decisive Action: How Defence Can Unlock Information Advantage** Modern warfare is no longer defined by firepower alone. It's shaped by the speed, clarity and confidence with which data enables decisions.
+Technological agility - not just military size - can determine battlefield outcomes. 
+Make timely decisions with enough information and not wait for certainty. Wait too long, and you’re reacting to the enemy rather than shaping the fight.
+
+**Artificial intelligence** has emerged as a key enabler of next-generation defense capabilities, offering militaries the potential to identify meaningful patterns hidden within massive datasets, anticipate critical logistical demands, and detect hostilities before they materialize.
+
+The most useful military applications of AI enhance productivity, reduce the need for human input, and increase efficiency.
+
 ----
 
 Software obsolescence
