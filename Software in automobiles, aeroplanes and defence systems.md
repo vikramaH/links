@@ -6,7 +6,31 @@ AUTOSOR , Android Auto , Android Automobile, software defined vehicle,
 
 **Software-defined compute** is when a compute function is virtualized and abstracted from the hardware it resides on.
 
+**software-defined defence** is defined as the ability to be modified continuously and easily without sacrificing performance or operational utility and without having to
+modify underlying hardware. The rate of technological progress in software and
+related hardware components is superior to the rate of technological breakthroughs in conventional military hardware in a three to five-year period. Because of the rate of technological renewal in software, it can add new or improved functionality in weeks or months, whereas military hardware can only achieve similar impact over decade-long time frames.
+
 In a **software-defined data center**, all elements of the infrastructure — networking, storage, CPU and security – are virtualized and delivered as a service.
+
+**Digital obsolescence** is the risk of data loss because of inabilities to access digital assets, due to the hardware or software required for information retrieval being repeatedly replaced by newer devices and systems, resulting in increasingly incompatible formats.
+
+----
+
+Software obsolescence
+==
+
+refers to the status of legacy software being outdated or no longer usable due to technological advancements. 
+
+Ignoring software obsolescence has consequences, namely:
+
+    Security risks: Outdated software is more likely to have known security vulnerabilities that can be exploited by attackers.
+    Compliance risks: Organisations that use outdated software may be in violation of government regulations.
+    Performance issues: Outdated software may not run as efficiently as newer software and may not be compatible with newer hardware.
+    Compatibility issues: Outdated software may not be compatible with newer software or operating systems.
+    Increased costs: Organisations may need to spend more money on support and maintenance for outdated software.
+    Reduced productivity: Outdated software may be less efficient and user-friendly than newer software, which can lead to reduced productivity.
+
+----
 
 software content in modern fighter jets
 ===
@@ -34,3 +58,6 @@ Links
 Perspectives on Automotive Operating Systems 
 
 https://www.eetimes.com/perspectives-on-automotive-operating-systems/
+
+
+Software-defined Defence: Algorithms at War (2023)
