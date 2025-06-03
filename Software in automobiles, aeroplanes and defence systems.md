@@ -25,6 +25,15 @@ Make timely decisions with enough information and not wait for certainty. Wait t
 
 The most useful military applications of AI enhance productivity, reduce the need for human input, and increase efficiency.
 
+**The Power of Open-Source Code in Automotive Systems** Accelerated Innovation · Cost Efficiency · Increased Security and Transp​​arency · Interoperability and Standardization.
+
+**An electronic control unit (ECU)**, also known as an **electronic control module (ECM)**, is an embedded system in automotive electronics that controls one or more of the electrical systems or subsystems in a car or other motor vehicle. 
+Some modern motor vehicles have up to 150 ECUs.
+
+**Android Automotive** is a full-stack, open source, highly customizable platform running directly on in-vehicle hardware. 
+
+**AUTOSAR** is a global development partnership founded in 2003 by automotive manufacturers, suppliers and other companies from the electronics, semiconductor and software industries.
+
 ----
 
 Software obsolescence
