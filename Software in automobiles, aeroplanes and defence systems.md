@@ -35,10 +35,15 @@ refers to the status of legacy software being outdated or no longer usable due t
 Ignoring software obsolescence has consequences, namely:
 
     Security risks: Outdated software is more likely to have known security vulnerabilities that can be exploited by attackers.
+    
     Compliance risks: Organisations that use outdated software may be in violation of government regulations.
+    
     Performance issues: Outdated software may not run as efficiently as newer software and may not be compatible with newer hardware.
+    
     Compatibility issues: Outdated software may not be compatible with newer software or operating systems.
+    
     Increased costs: Organisations may need to spend more money on support and maintenance for outdated software.
+    
     Reduced productivity: Outdated software may be less efficient and user-friendly than newer software, which can lead to reduced productivity.
 
 ----
