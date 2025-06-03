@@ -1,4 +1,4 @@
-** Keywords** -- AUTOSOR , Android Auto , Android Automobile, software defined vehicle, 
+**Keywords** -- AUTOSOR , Android Auto , Android Automobile, software defined vehicle, 
 
 
 **Software-defined compute** is when a compute function is virtualized and abstracted from the hardware it resides on.
