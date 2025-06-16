@@ -57,12 +57,12 @@ Mahabharat me vaastu vigyan   https://egyankosh.ac.in/bitstream/123456789/98460/
 Asian Agri-History Foundation  https://www.asianagrihistory.org
 
 
-====================================================================================
+=========================================================================
 
 
 LLB Notes ( हिन्दी )  https://llbwp.ransomtechnoman.com/home/
 
 
-
+42 Top AI Apps to Know https://builtin.com/artificial-intelligence/ai-apps
 
 
