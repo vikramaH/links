@@ -66,3 +66,8 @@ LLB Notes ( हिन्दी )  https://llbwp.ransomtechnoman.com/home/
 42 Top AI Apps to Know https://builtin.com/artificial-intelligence/ai-apps
 
 
+Best OCR for Hindi Software in 2025 
+https://pdf.wondershare.com/ocr/ocr-for-hindi.html
+
+Top 4 Hindi OCR Tools for Accurate Text Recognition 
+https://updf.com/ocr/hindi-ocr/?srsltid=AfmBOorvIhQ0mr8e6Ra9xN90Vr5JMoBC-uPfzzTkH2Mo_TauWY8Jj-s3
