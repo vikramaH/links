@@ -101,6 +101,14 @@ Misc
 * A Software System for Measurement of  Accelerator Magnets Using a Relational  Database
   https://www.academia.edu/107141004/A_software_system_for_measurement_of_accelerator_magnets_using_a_relational_database
 
+  **code hosting**
+
+  github
+
+  PythonAnywhere
+
+  Render
+
 
 -----------------------------------------------------
 
@@ -161,7 +169,7 @@ Free Online/Cloud services for important softwares (sept 2020)
 26)
 
 
-Some famous sites :
+**Some famous sites :**
 
 1) nanoHUB --- Interactive simulation tools for nanotechnology and related fields
 
