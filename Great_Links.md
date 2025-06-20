@@ -79,3 +79,5 @@ India Typing
 https://indiatyping.com/index.php/translate/hindi-to-marathi
 
 Top 10 Online PDF to Text Converters https://pdf.wondershare.com/online/pdf-to-text.html
+
+**Docling** https://docling-project.github.io/docling/
