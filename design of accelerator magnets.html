@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnet Analytical Design</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a clean look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align to top to prevent jumping on content load */
+            min-height: 100vh;
+            padding: 20px;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e0e7ff; /* Light purple-blue */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #6366f1; /* Indigo */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4f46e5; /* Darker indigo */
+        }
+    </style>
+</head>
+<body class="p-4">
+    <div class="bg-white p-6 md:p-8 rounded-xl shadow-xl max-w-4xl w-full border border-blue-200">
+        <h1 class="text-3xl md:text-4xl font-bold text-blue-800 mb-6 text-center">
+            कण त्वरक चुंबक विश्लेषणात्मक डिज़ाइन
+        </h1>
+        <p class="text-gray-600 text-center mb-8">
+            चुंबक के प्रकार और मुख्य विशिष्टताएँ दर्ज करें ताकि डिज़ाइन पैरामीटर और FEM विश्लेषण के लिए इनपुट प्राप्त हो सकें।
+        </p>
+
+        <!-- Magnet Type Selection -->
+        <div class="mb-6">
+            <label for="magnetType" class="block text-gray-700 text-sm font-semibold mb-2">चुंबक का प्रकार चुनें:</label>
+            <div class="relative">
+                <select id="magnetType" onchange="updateInputFields()"
+                        class="block appearance-none w-full bg-white border border-blue-300 text-gray-700 py-3 px-4 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+                    <option value="dipole">द्विध्रुवीय चुंबक (Dipole Magnet)</option>
+                    <option value="quadrupole">चतुर्ध्रुवीय चुंबक (Quadrupole Magnet)</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 6.757 7.586 5.343 9z"/></svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Fields (Dynamic based on magnet type) -->
+        <div id="inputParameters" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <!-- Dipole Inputs (Default) -->
+            <div id="dipoleInputs">
+                <div class="mb-4">
+                    <label for="dipoleField" class="block text-gray-700 text-sm font-semibold mb-2">
+                        चुंबकीय क्षेत्र शक्ति (B) [टेस्ला]:
+                    </label>
+                    <input type="number" id="dipoleField" value="1.0" step="0.1"
+                           class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="dipoleGap" class="block text-gray-700 text-sm font-semibold mb-2">
+                        पोल गैप (g) [मीटर]:
+                    </label>
+                    <input type="number" id="dipoleGap" value="0.05" step="0.001"
+                           class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg">
+                </div>
+            </div>
+
+            <!-- Quadrupole Inputs (Hidden by default) -->
+            <div id="quadrupoleInputs" class="hidden">
+                <div class="mb-4">
+                    <label for="quadrupoleGradient" class="block text-gray-700 text-sm font-semibold mb-2">
+                        चुंबकीय क्षेत्र ग्रेडिएंट (G) [टेस्ला/मीटर]:
+                    </label>
+                    <input type="number" id="quadrupoleGradient" value="10.0" step="0.1"
+                           class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="quadrupoleAperture" class="block text-gray-700 text-sm font-semibold mb-2">
+                        एपर्चर त्रिज्या (R) [मीटर]:
+                    </label>
+                    <input type="number" id="quadrupoleAperture" value="0.03" step="0.001"
+                           class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Common Inputs (e.g., Current Density, Relative Permeability) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+                <label for="currentDensity" class="block text-gray-700 text-sm font-semibold mb-2">
+                    कॉइल करंट घनत्व (J) [A/mm²]:
+                    <span class="text-xs text-gray-500">(आमतौर पर 3-8 A/mm² के बीच)</span>
+                </label>
+                <input type="number" id="currentDensity" value="5.0" step="0.1"
+                       class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg">
+            </div>
+            <div>
+                <label for="relativePermeability" class="block text-gray-700 text-sm font-semibold mb-2">
+                    लोहे की सापेक्ष पारगम्यता (μr):
+                    <span class="text-xs text-gray-500">(FEMM इनपुट के लिए)</span>
+                </label>
+                <input type="number" id="relativePermeability" value="1000" step="1"
+                       class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg">
+            </div>
+        </div>
+
+        <!-- Calculate Button -->
+        <button onclick="calculateDesign()"
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-500 focus:ring-opacity-75">
+            डिज़ाइन की गणना करें
+        </button>
+
+        <!-- Output Display -->
+        <div id="outputDisplay" class="mt-8 bg-blue-50 p-6 rounded-lg border border-blue-200 shadow-inner">
+            <h2 class="text-xl md:text-2xl font-bold text-blue-700 mb-4">डिज़ाइन परिणाम:</h2>
+            <div id="designResults" class="text-gray-800 leading-relaxed">
+                <p class="text-center text-gray-500">यहाँ डिज़ाइन पैरामीटर प्रदर्शित होंगे।</p>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-bold text-blue-700 mt-8 mb-4">FEM विश्लेषण के लिए पैरामीटर:</h2>
+            <div id="femParameters" class="text-gray-800 leading-relaxed bg-gray-100 p-4 rounded-lg border border-gray-300">
+                <p class="text-center text-gray-500">यहाँ FEM इनपुट पैरामीटर प्रदर्शित होंगे।</p>
+                <p class="text-sm text-gray-600 mt-4">
+                    <strong class="text-blue-600">नोट:</strong> ये पैरामीटर FEM सॉफ्टवेयर में मैन्युअल इनपुट के लिए हैं। आप मुफ्त 2D FEM सॉफ्टवेयर जैसे <a href="http://www.femm.info/wiki/HomePage" target="_blank" class="text-blue-500 hover:underline">FEMM</a> का उपयोग कर सकते हैं।
+                </p>
+            </div>
+
+            <h2 class="text-xl md:text-2xl font-bold text-blue-700 mt-8 mb-4">FEMM Lua स्क्रिप्ट:</h2>
+            <div class="relative">
+                <textarea id="femmLuaScript" rows="15" readonly
+                          class="w-full p-4 bg-gray-900 text-green-300 font-mono text-sm rounded-lg border border-gray-700 overflow-auto whitespace-pre-wrap"></textarea>
+                <button onclick="copyToClipboard('femmLuaScript')"
+                        class="absolute top-2 right-2 bg-gray-700 hover:bg-gray-600 text-white text-xs px-3 py-1 rounded-md transition duration-200 ease-in-out">
+                    कॉपी करें
+                </button>
+            </div>
+            <p class="text-sm text-gray-600 mt-2">
+                इस स्क्रिप्ट को FEMM के "Lua Console" में पेस्ट करें और चलाएं।
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Physical constants
+        const MU0 = 4 * Math.PI * 1e-7; // Permeability of free space (H/m)
+
+        // Get DOM elements
+        const magnetTypeSelect = document.getElementById('magnetType');
+        const dipoleInputs = document.getElementById('dipoleInputs');
+        const quadrupoleInputs = document.getElementById('quadrupoleInputs');
+        const dipoleFieldInput = document.getElementById('dipoleField');
+        const dipoleGapInput = document.getElementById('dipoleGap');
+        const quadrupoleGradientInput = document.getElementById('quadrupoleGradient');
+        const quadrupoleApertureInput = document.getElementById('quadrupoleAperture');
+        const currentDensityInput = document.getElementById('currentDensity');
+        const relativePermeabilityInput = document.getElementById('relativePermeability');
+        const designResultsDiv = document.getElementById('designResults');
+        const femParametersDiv = document.getElementById('femParameters');
+        const femmLuaScriptTextArea = document.getElementById('femmLuaScript');
+
+        /**
+         * Updates the visibility of input fields based on the selected magnet type.
+         */
+        function updateInputFields() {
+            const selectedType = magnetTypeSelect.value;
+            if (selectedType === 'dipole') {
+                dipoleInputs.classList.remove('hidden');
+                quadrupoleInputs.classList.add('hidden');
+            } else if (selectedType === 'quadrupole') {
+                dipoleInputs.classList.add('hidden');
+                quadrupoleInputs.classList.remove('hidden');
+            }
+            // Clear previous results when magnet type changes
+            designResultsDiv.innerHTML = '<p class="text-center text-gray-500">यहाँ डिज़ाइन पैरामीटर प्रदर्शित होंगे।</p>';
+            femParametersDiv.innerHTML = '<p class="text-center text-gray-500">यहाँ FEM इनपुट पैरामीटर प्रदर्शित होंगे।</p>';
+            femmLuaScriptTextArea.value = ''; // Clear Lua script area
+        }
+
+        /**
+         * Performs analytical design calculations based on magnet type and inputs.
+         */
+        function calculateDesign() {
+            const selectedType = magnetTypeSelect.value;
+            const currentDensity_A_per_mm2 = parseFloat(currentDensityInput.value);
+            const mu_r_iron = parseFloat(relativePermeabilityInput.value);
+
+            if (isNaN(currentDensity_A_per_mm2) || currentDensity_A_per_mm2 <= 0) {
+                displayError("कृपया एक वैध (धनात्मक) कॉइल करंट घनत्व दर्ज करें।");
+                return;
+            }
+            if (isNaN(mu_r_iron) || mu_r_iron < 1) {
+                displayError("कृपया लोहे के लिए वैध (1 या अधिक) सापेक्ष पारगम्यता दर्ज करें।");
+                return;
+            }
+
+            // Convert current density from A/mm^2 to A/m^2 for SI calculations
+            const J_A_per_m2 = currentDensity_A_per_mm2 * 1e6; // 1 mm^2 = 1e-6 m^2, so A/mm^2 * 1e6 = A/m^2
+
+            let resultsHtml = '';
+            let femHtml = '';
+            let femmLuaScript = '';
+
+            if (selectedType === 'dipole') {
+                const B = parseFloat(dipoleFieldInput.value); // Magnetic field strength (Tesla)
+                const g = parseFloat(dipoleGapInput.value);   // Pole gap (meters)
+
+                if (isNaN(B) || B <= 0 || isNaN(g) || g <= 0) {
+                    displayError("द्विध्रुवीय चुंबक के लिए कृपया वैध (धनात्मक) चुंबकीय क्षेत्र और पोल गैप दर्ज करें।");
+                    return;
+                }
+
+                // Analytical calculations for Dipole (H-magnet)
+                const NI = B * g / MU0; // Ampere-Turns
+                const poleWidth = 2.0 * g; // A common rule of thumb for good field uniformity
+                const yokeHeight = 0.5 * poleWidth; // Rough estimate for flux return path
+                const yokeWidth = 0.5 * poleWidth; // Rough estimate for flux return path
+
+                // Estimate coil cross-section area (assuming rectangular coil)
+                // This is a total area, not per coil side.
+                const coilTotalArea = NI / J_A_per_m2; // Total area of current carrying conductors
+
+                // For a simple rectangular coil, let's assume coil height is 1.5 * gap
+                // and coil width is calculated from total area.
+                const coilHeight = 1.5 * g;
+                const coilWidth = coilTotalArea / (2 * coilHeight); // Width of one coil side (two coil sides per magnet)
+
+                // Overall magnet dimensions for FEMM
+                const magnetHeight = g + 2 * yokeHeight + 2 * coilHeight; // Gap + 2*yoke_top/bottom + 2*coil_height
+                const magnetWidth = poleWidth + 2 * yokeWidth + 2 * coilWidth; // Pole + 2*yoke_sides + 2*coil_width
+
+                resultsHtml = `
+                    <p><strong class="text-blue-600">चुंबकीय क्षेत्र (B):</strong> ${B.toFixed(3)} टेस्ला</p>
+                    <p><strong class="text-blue-600">पोल गैप (g):</strong> ${g.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">आवश्यक एम्पीयर-टर्न (NI):</strong> ${NI.toFixed(2)} एम्पीयर-टर्न</p>
+                    <p><strong class="text-blue-600">अनुमानित पोल की चौड़ाई:</strong> ${poleWidth.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">अनुमानित योक की ऊँचाई:</strong> ${yokeHeight.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">अनुमानित योक की चौड़ाई:</strong> ${yokeWidth.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">कुल कॉइल क्रॉस-सेक्शन क्षेत्र (अनुमानित):</strong> ${coilTotalArea.toExponential(2)} m²</p>
+                    <p class="text-sm text-gray-600">(यह सभी कॉइल कंडक्टरों का कुल क्षेत्र है)</p>
+                `;
+
+                femHtml = `
+                    <p><strong class="text-blue-600">मैग्नेट प्रकार:</strong> द्विध्रुवीय (Dipole)</p>
+                    <p><strong class="text-blue-600">पोल गैप (g):</strong> ${g.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">पोल की चौड़ाई:</strong> ${poleWidth.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">योक की ऊँचाई:</strong> ${yokeHeight.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">योक की चौड़ाई:</strong> ${yokeWidth.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">कॉइल करंट घनत्व (J):</strong> ${J_A_per_m2.toExponential(2)} A/m²</p>
+                    <p><strong class="text-blue-600">लोहे की सापेक्ष पारगम्यता (μr):</strong> ${mu_r_iron}</p>
+                    <p><strong class="text-blue-600">अनुमानित कॉइल ऊँचाई:</strong> ${coilHeight.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">अनुमानित कॉइल चौड़ाई:</strong> ${coilWidth.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">कुल चुंबक ऊँचाई:</strong> ${magnetHeight.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">कुल चुंबक चौड़ाई:</strong> ${magnetWidth.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">सामग्री:</strong>
+                        <ul>
+                            <li>पोल और योक: फेरोमैग्नेटिक सामग्री (μr = ${mu_r_iron})</li>
+                            <li>कॉइल: कॉपर (J = ${J_A_per_m2.toExponential(2)} A/m²)</li>
+                            <li>वैक्यूम/एयर गैप: एयर (μr = 1)</li>
+                        </ul>
+                    </p>
+                    <p class="text-sm text-gray-600 mt-2">
+                        FEM में, आप इन ज्यामितीय मापदंडों का उपयोग करके चुंबक का क्रॉस-सेक्शन बनाएंगे,
+                        कॉइल क्षेत्रों को परिभाषित करेंगे, और निर्दिष्ट करंट घनत्व लागू करेंगे।
+                        योक और पोल के लिए चुंबकीय गुणों (B-H वक्र) को परिभाषित करना महत्वपूर्ण होगा।
+                    </p>
+                `;
+                femmLuaScript = generateFemmDipoleLuaScript(g, poleWidth, yokeHeight, yokeWidth, coilHeight, coilWidth, J_A_per_m2, mu_r_iron);
+
+            } else if (selectedType === 'quadrupole') {
+                const G = parseFloat(quadrupoleGradientInput.value); // Field gradient (Tesla/meter)
+                const R = parseFloat(quadrupoleApertureInput.value); // Aperture radius (meters)
+
+                if (isNaN(G) || G <= 0 || isNaN(R) || R <= 0) {
+                    displayError("चतुर्ध्रुवीय चुंबक के लिए कृपया वैध (धनात्मक) चुंबकीय क्षेत्र ग्रेडिएंट और एपर्चर त्रिज्या दर्ज करें।");
+                    return;
+                }
+
+                // Analytical calculations for Quadrupole
+                const poleTipRadius = R; // For ideal hyperbolic poles
+                const NI_per_pole = (G * R * R) / (2 * MU0); // Ampere-Turns per pole
+
+                // Estimate coil cross-section area per pole
+                const coilAreaPerPole = NI_per_pole / J_A_per_m2;
+
+                // For quadrupole, let's assume a simple square coil cross-section around the pole
+                // This is a very rough estimate for simplification in FEMM.
+                const coilSideLength = Math.sqrt(coilAreaPerPole); // Assuming square coil cross-section per pole
+
+                // Rough estimate for outer dimensions of the yoke (e.g., 2.5 times aperture radius)
+                const yokeOuterRadius = 2.5 * R; // Example estimate
+
+                resultsHtml = `
+                    <p><strong class="text-blue-600">चुंबकीय क्षेत्र ग्रेडिएंट (G):</strong> ${G.toFixed(3)} टेस्ला/मीटर</p>
+                    <p><strong class="text-blue-600">एपर्चर त्रिज्या (R):</strong> ${R.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">पोल टिप त्रिज्या:</strong> ${poleTipRadius.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">प्रति पोल आवश्यक एम्पीयर-टर्न (NI/pole):</strong> ${NI_per_pole.toFixed(2)} एम्पीयर-टर्न</p>
+                    <p><strong class="text-blue-600">प्रति पोल कॉइल क्रॉस-सेक्शन क्षेत्र (अनुमानित):</strong> ${coilAreaPerPole.toExponential(2)} m²</p>
+                    <p><strong class="text-blue-600">अनुमानित योक बाहरी त्रिज्या:</strong> ${yokeOuterRadius.toFixed(4)} मीटर</p>
+                `;
+
+                femHtml = `
+                    <p><strong class="text-blue-600">मैग्नेट प्रकार:</strong> चतुर्ध्रुवीय (Quadrupole)</p>
+                    <p><strong class="text-blue-600">एपर्चर त्रिज्या (R):</strong> ${R.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">पोल टिप त्रिज्या:</strong> ${poleTipRadius.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">कॉइल करंट घनत्व (J):</strong> ${J_A_per_m2.toExponential(2)} A/m²</p>
+                    <p><strong class="text-blue-600">लोहे की सापेक्ष पारगम्यता (μr):</strong> ${mu_r_iron}</p>
+                    <p><strong class="text-blue-600">अनुमानित कॉइल साइड की लंबाई:</strong> ${coilSideLength.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">अनुमानित योक बाहरी त्रिज्या:</strong> ${yokeOuterRadius.toFixed(4)} मीटर</p>
+                    <p><strong class="text-blue-600">सामग्री:</strong>
+                        <ul>
+                            <li>पोल और योक: फेरोमैग्नेटिक सामग्री (μr = ${mu_r_iron})</li>
+                            <li>कॉइल: कॉपर (J = ${J_A_per_m2.toExponential(2)} A/m²)</li>
+                            <li>वैक्यूम/एयर गैप: एयर (μr = 1)</li>
+                        </ul>
+                    </p>
+                    <p class="text-sm text-gray-600 mt-2">
+                        FEM में, आप इन ज्यामितीय मापदंडों का उपयोग करके चुंबक का क्रॉस-सेक्शन बनाएंगे,
+                        आदर्श हाइपरबॉलिक पोल सतहों को परिभाषित करेंगे, कॉइल क्षेत्रों को परिभाषित करेंगे,
+                        और निर्दिष्ट करंट घनत्व लागू करेंगे।
+                        योक और पोल के लिए चुंबकीय गुणों (B-H वक्र) को परिभाषित करना महत्वपूर्ण होगा।
+                    </p>
+                `;
+                femmLuaScript = generateFemmQuadrupoleLuaScript(R, coilSideLength, yokeOuterRadius, J_A_per_m2, mu_r_iron);
+            }
+
+            designResultsDiv.innerHTML = resultsHtml;
+            femParametersDiv.innerHTML = femHtml;
+            femmLuaScriptTextArea.value = femmLuaScript;
+        }
+
+        /**
+         * Generates a basic FEMM Lua script for a Dipole magnet.
+         * @param {number} g - Pole gap in meters.
+         * @param {number} poleWidth - Pole width in meters.
+         * @param {number} yokeHeight - Yoke height in meters.
+         * @param {number} yokeWidth - Yoke width in meters.
+         * @param {number} coilHeight - Coil height in meters.
+         * @param {number} coilWidth - Coil width in meters.
+         * @param {number} J_A_per_m2 - Current density in A/m^2.
+         * @param {number} mu_r_iron - Relative permeability of iron.
+         * @returns {string} The FEMM Lua script.
+         */
+        function generateFemmDipoleLuaScript(g, poleWidth, yokeHeight, yokeWidth, coilHeight, coilWidth, J_A_per_m2, mu_r_iron) {
+            const halfGap = g / 2;
+            const halfPoleWidth = poleWidth / 2;
+
+            // Coordinates for the top half of the magnet for simplicity (FEMM can use symmetry)
+            // We'll draw the full magnet for clarity in the script.
+
+            let script = `
+-- FEMM Lua Script for Dipole Magnet Design
+-- Generated by Magnet Analytical Design Tool
+
+-- Define problem properties
+mi_newdocument(0) -- Create a new magnetics problem
+mi_probdef(0, 'meters', 'planar', 1e-8, 1, 0, 0) -- Units: meters, Planar, Precision, Depth, MinAngle, Solver, OldSolver
+
+-- Define Materials
+mi_addmaterial('Air', 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0) -- Name, mu_x, mu_y, H_c, J, Cduct, Lam_d, Phi_h, Phi_hx, Beta, d_lam, n_lam, o_lam
+mi_addmaterial('Iron', ${mu_r_iron}, ${mu_r_iron}, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) -- Linear Iron with specified mu_r
+mi_addmaterial('Coil_Positive', 1, 1, 0, ${J_A_per_m2}, 5.8e7) -- Copper, J, Conductivity
+mi_addmaterial('Coil_Negative', 1, 1, 0, -${J_A_per_m2}, 5.8e7) -- Copper, -J, Conductivity
+
+-- Define Circuits (for coils)
+mi_addcircprop('Coil_Circuit_Pos', 0, 1) -- Name, I, circuit_type (1 for series)
+mi_addcircprop('Coil_Circuit_Neg', 0, 1)
+
+-- Define Boundary Conditions (Optional, for open boundaries)
+-- mi_makeABC(0, 0, 0, 0, 0) -- Example: A=0 on outer boundary
+
+-- Draw Geometry
+-- Yoke and Poles
+-- Top Pole
+mi_addnode(-halfPoleWidth, halfGap)
+mi_addnode(halfPoleWidth, halfGap)
+mi_addnode(halfPoleWidth, halfGap + yokeHeight)
+mi_addnode(-halfPoleWidth, halfGap + yokeHeight)
+mi_addsegment(-halfPoleWidth, halfGap, halfPoleWidth, halfGap)
+mi_addsegment(halfPoleWidth, halfGap, halfPoleWidth, halfGap + yokeHeight)
+mi_addsegment(halfPoleWidth, halfGap + yokeHeight, -halfPoleWidth, halfGap + yokeHeight)
+mi_addsegment(-halfPoleWidth, halfGap + yokeHeight, -halfPoleWidth, halfGap)
+mi_addblocklabel(0, halfGap + yokeHeight/2)
+mi_setblockprop('Iron', 0, 1, '', 0, 0, 0)
+
+-- Bottom Pole
+mi_addnode(-halfPoleWidth, -halfGap)
+mi_addnode(halfPoleWidth, -halfGap)
+mi_addnode(halfPoleWidth, -halfGap - yokeHeight)
+mi_addnode(-halfPoleWidth, -halfGap - yokeHeight)
+mi_addsegment(-halfPoleWidth, -halfGap, halfPoleWidth, -halfGap)
+mi_addsegment(halfPoleWidth, -halfGap, halfPoleWidth, -halfGap - yokeHeight)
+mi_addsegment(halfPoleWidth, -halfGap - yokeHeight, -halfPoleWidth, -halfGap - yokeHeight)
+mi_addsegment(-halfPoleWidth, -halfGap - yokeHeight, -halfPoleWidth, -halfGap)
+mi_addblocklabel(0, -halfGap - yokeHeight/2)
+mi_setblockprop('Iron', 0, 1, '', 0, 0, 0)
+
+-- Yoke Sides (connecting top and bottom poles)
+-- Left Yoke
+mi_addnode(-halfPoleWidth - yokeWidth, halfGap + yokeHeight)
+mi_addnode(-halfPoleWidth, halfGap + yokeHeight)
+mi_addnode(-halfPoleWidth, -halfGap - yokeHeight)
+mi_addnode(-halfPoleWidth - yokeWidth, -halfGap - yokeHeight)
+mi_addsegment(-halfPoleWidth - yokeWidth, halfGap + yokeHeight, -halfPoleWidth, halfGap + yokeHeight)
+mi_addsegment(-halfPoleWidth, halfGap + yokeHeight, -halfPoleWidth, -halfGap - yokeHeight)
+mi_addsegment(-halfPoleWidth, -halfGap - yokeHeight, -halfPoleWidth - yokeWidth, -halfGap - yokeHeight)
+mi_addsegment(-halfPoleWidth - yokeWidth, -halfGap - yokeHeight, -halfPoleWidth - yokeWidth, halfGap + yokeHeight)
+mi_addblocklabel(-halfPoleWidth - yokeWidth/2, 0)
+mi_setblockprop('Iron', 0, 1, '', 0, 0, 0)
+
+-- Right Yoke
+mi_addnode(halfPoleWidth + yokeWidth, halfGap + yokeHeight)
+mi_addnode(halfPoleWidth, halfGap + yokeHeight)
+mi_addnode(halfPoleWidth, -halfGap - yokeHeight)
+mi_addnode(halfPoleWidth + yokeWidth, -halfGap - yokeHeight)
+mi_addsegment(halfPoleWidth + yokeWidth, halfGap + yokeHeight, halfPoleWidth, halfGap + yokeHeight)
+mi_addsegment(halfPoleWidth, halfGap + yokeHeight, halfPoleWidth, -halfGap - yokeHeight)
+mi_addsegment(halfPoleWidth, -halfGap - yokeHeight, halfPoleWidth + yokeWidth, -halfGap - yokeHeight)
+mi_addsegment(halfPoleWidth + yokeWidth, -halfGap - yokeHeight, halfPoleWidth + yokeWidth, halfGap + yokeHeight)
+mi_addblocklabel(halfPoleWidth + yokeWidth/2, 0)
+mi_setblockprop('Iron', 0, 1, '', 0, 0, 0)
+
+
+-- Coils
+-- Right Coil (Positive Current)
+mi_addnode(halfPoleWidth + yokeWidth, halfGap + yokeHeight)
+mi_addnode(halfPoleWidth + yokeWidth + coilWidth, halfGap + yokeHeight)
+mi_addnode(halfPoleWidth + yokeWidth + coilWidth, -halfGap - yokeHeight)
+mi_addnode(halfPoleWidth + yokeWidth, -halfGap - yokeHeight)
+mi_addsegment(halfPoleWidth + yokeWidth, halfGap + yokeHeight, halfPoleWidth + yokeWidth + coilWidth, halfGap + yokeHeight)
+mi_addsegment(halfPoleWidth + yokeWidth + coilWidth, halfGap + yokeHeight, halfPoleWidth + yokeWidth + coilWidth, -halfGap - yokeHeight)
+mi_addsegment(halfPoleWidth + yokeWidth + coilWidth, -halfGap - yokeHeight, halfPoleWidth + yokeWidth, -halfGap - yokeHeight)
+mi_addsegment(halfPoleWidth + yokeWidth, -halfGap - yokeHeight, halfPoleWidth + yokeWidth, halfGap + yokeHeight)
+mi_addblocklabel(halfPoleWidth + yokeWidth + coilWidth/2, 0)
+mi_setblockprop('Coil_Positive', 0, 1, 'Coil_Circuit_Pos', 0, 0, 0)
+
+-- Left Coil (Negative Current)
+mi_addnode(-halfPoleWidth - yokeWidth, halfGap + yokeHeight)
+mi_addnode(-halfPoleWidth - yokeWidth - coilWidth, halfGap + yokeHeight)
+mi_addnode(-halfPoleWidth - yokeWidth - coilWidth, -halfGap - yokeHeight)
+mi_addnode(-halfPoleWidth - yokeWidth, -halfGap - yokeHeight)
+mi_addsegment(-halfPoleWidth - yokeWidth, halfGap + yokeHeight, -halfPoleWidth - yokeWidth - coilWidth, halfGap + yokeHeight)
+mi_addsegment(-halfPoleWidth - yokeWidth - coilWidth, halfGap + yokeHeight, -halfPoleWidth - yokeWidth - coilWidth, -halfGap - yokeHeight)
+mi_addsegment(-halfPoleWidth - yokeWidth - coilWidth, -halfGap - yokeHeight, -halfPoleWidth - yokeWidth, -halfGap - yokeHeight)
+mi_addsegment(-halfPoleWidth - yokeWidth, -halfGap - yokeHeight, -halfPoleWidth - yokeWidth, halfGap + yokeHeight)
+mi_addblocklabel(-halfPoleWidth - yokeWidth - coilWidth/2, 0)
+mi_setblockprop('Coil_Negative', 0, 1, 'Coil_Circuit_Neg', 0, 0, 0)
+
+-- Air Gap
+mi_addblocklabel(0, 0)
+mi_setblockprop('Air', 0, 1, '', 0, 0, 0)
+
+-- Add a large air region around the magnet for open boundary conditions
+-- Define outer boundary coordinates
+local outer_x = (${poleWidth} + 2*${yokeWidth} + 2*${coilWidth}) * 0.75; -- Adjust as needed
+local outer_y = (${g} + 2*${yokeHeight} + 2*${coilHeight}) * 0.75; -- Adjust as needed
+mi_addnode(-outer_x, outer_y)
+mi_addnode(outer_x, outer_y)
+mi_addnode(outer_x, -outer_y)
+mi_addnode(-outer_x, -outer_y)
+mi_addsegment(-outer_x, outer_y, outer_x, outer_y)
+mi_addsegment(outer_x, outer_y, outer_x, -outer_y)
+mi_addsegment(outer_x, -outer_y, -outer_x, -outer_y)
+mi_addsegment(-outer_x, -outer_y, -outer_x, outer_y)
+mi_addblocklabel(0, outer_y * 0.9) -- Label inside the air region
+mi_setblockprop('Air', 0, 1, '', 0, 0, 0)
+
+
+-- Save and analyze
+mi_saveas('dipole_magnet_design.fem')
+mi_analyze()
+mi_loadsolution()
+`;
+            return script;
+        }
+
+        /**
+         * Generates a basic FEMM Lua script for a Quadrupole magnet.
+         * Assumes ideal hyperbolic poles for simplicity in geometry.
+         * @param {number} R - Aperture radius in meters.
+         * @param {number} coilSideLength - Side length of the square coil cross-section per pole in meters.
+         * @param {number} yokeOuterRadius - Outer radius of the circular yoke in meters.
+         * @param {number} J_A_per_m2 - Current density in A/m^2.
+         * @param {number} mu_r_iron - Relative permeability of iron.
+         * @returns {string} The FEMM Lua script.
+         */
+        function generateFemmQuadrupoleLuaScript(R, coilSideLength, yokeOuterRadius, J_A_per_m2, mu_r_iron) {
+            // For ideal quadrupole, pole tips are hyperbolic.
+            // We'll approximate with straight lines for simplicity in FEMM script.
+            // A more accurate FEMM model would involve arcs and segments to approximate hyperbola.
+
+            let script = `
+-- FEMM Lua Script for Quadrupole Magnet Design
+-- Generated by Magnet Analytical Design Tool
+
+-- Define problem properties
+mi_newdocument(0) -- Create a new magnetics problem
+mi_probdef(0, 'meters', 'planar', 1e-8, 1, 0, 0) -- Units: meters, Planar, Precision, Depth, MinAngle, Solver, OldSolver
+
+-- Define Materials
+mi_addmaterial('Air', 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0)
+mi_addmaterial('Iron', ${mu_r_iron}, ${mu_r_iron}, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) -- Linear Iron with specified mu_r
+mi_addmaterial('Coil_Pos_X', 1, 1, 0, ${J_A_per_m2}, 5.8e7)
+mi_addmaterial('Coil_Neg_X', 1, 1, 0, -${J_A_per_m2}, 5.8e7)
+mi_addmaterial('Coil_Pos_Y', 1, 1, 0, ${J_A_per_m2}, 5.8e7)
+mi_addmaterial('Coil_Neg_Y', 1, 1, 0, -${J_A_per_m2}, 5.8e7)
+
+-- Define Circuits
+mi_addcircprop('Coil_Circuit_1', 0, 1) -- Top-right coil
+mi_addcircprop('Coil_Circuit_2', 0, 1) -- Top-left coil
+mi_addcircprop('Coil_Circuit_3', 0, 1) -- Bottom-left coil
+mi_addcircprop('Coil_Circuit_4', 0, 1) -- Bottom-right coil
+
+-- Draw Geometry
+-- Air Aperture (Inner circle)
+mi_addnode(0,0) -- Center node for block label
+mi_addblocklabel(0,0)
+mi_setblockprop('Air', 0, 1, '', 0, 0, 0)
+
+-- Poles (Approximation for hyperbolic poles)
+-- Pole 1 (Top)
+mi_addnode(-R, R)
+mi_addnode(R, R)
+mi_addnode(R, R + R*0.5) -- Extend pole outwards
+mi_addnode(-R, R + R*0.5)
+mi_addsegment(-R, R, R, R)
+mi_addsegment(R, R, R, R + R*0.5)
+mi_addsegment(R, R + R*0.5, -R, R + R*0.5)
+mi_addsegment(-R, R + R*0.5, -R, R)
+mi_addblocklabel(0, R + R*0.25)
+mi_setblockprop('Iron', 0, 1, '', 0, 0, 0)
+
+-- Pole 2 (Bottom)
+mi_addnode(-R, -R)
+mi_addnode(R, -R)
+mi_addnode(R, -R - R*0.5)
+mi_addnode(-R, -R - R*0.5)
+mi_addsegment(-R, -R, R, -R)
+mi_addsegment(R, -R, R, -R - R*0.5)
+mi_addsegment(R, -R - R*0.5, -R, -R - R*0.5)
+mi_addsegment(-R, -R - R*0.5, -R, -R)
+mi_addblocklabel(0, -R - R*0.25)
+mi_setblockprop('Iron', 0, 1, '', 0, 0, 0)
+
+-- Pole 3 (Left)
+mi_addnode(-R, -R)
+mi_addnode(-R, R)
+mi_addnode(-R - R*0.5, R)
+mi_addnode(-R - R*0.5, -R)
+mi_addsegment(-R, -R, -R, R)
+mi_addsegment(-R, R, -R - R*0.5, R)
+mi_addsegment(-R - R*0.5, R, -R - R*0.5, -R)
+mi_addsegment(-R - R*0.5, -R, -R, -R)
+mi_addblocklabel(-R - R*0.25, 0)
+mi_setblockprop('Iron', 0, 1, '', 0, 0, 0)
+
+-- Pole 4 (Right)
+mi_addnode(R, -R)
+mi_addnode(R, R)
+mi_addnode(R + R*0.5, R)
+mi_addnode(R + R*0.5, -R)
+mi_addsegment(R, -R, R, R)
+mi_addsegment(R, R, R + R*0.5, R)
+mi_addsegment(R + R*0.5, R, R + R*0.5, -R)
+mi_addsegment(R + R*0.5, -R, R, -R)
+mi_addblocklabel(R + R*0.25, 0)
+mi_setblockprop('Iron', 0, 1, '', 0, 0, 0)
+
+-- Coils (Simplified square cross-section around poles)
+-- Coil 1 (Top-Right)
+local coil_offset = R * 0.7; -- Offset from pole tip
+mi_addnode(coil_offset, coil_offset)
+mi_addnode(coil_offset + ${coilSideLength}, coil_offset)
+mi_addnode(coil_offset + ${coilSideLength}, coil_offset + ${coilSideLength})
+mi_addnode(coil_offset, coil_offset + ${coilSideLength})
+mi_addsegment(coil_offset, coil_offset, coil_offset + ${coilSideLength}, coil_offset)
+mi_addsegment(coil_offset + ${coilSideLength}, coil_offset, coil_offset + ${coilSideLength}, coil_offset + ${coilSideLength})
+mi_addsegment(coil_offset + ${coilSideLength}, coil_offset + ${coilSideLength}, coil_offset, coil_offset + ${coilSideLength})
+mi_addsegment(coil_offset, coil_offset + ${coilSideLength}, coil_offset, coil_offset)
+mi_addblocklabel(coil_offset + ${coilSideLength}/2, coil_offset + ${coilSideLength}/2)
+mi_setblockprop('Coil_Pos_X', 0, 1, 'Coil_Circuit_1', 0, 0, 0)
+
+-- Coil 2 (Top-Left)
+mi_addnode(-coil_offset, coil_offset)
+mi_addnode(-coil_offset - ${coilSideLength}, coil_offset)
+mi_addnode(-coil_offset - ${coilSideLength}, coil_offset + ${coilSideLength})
+mi_addnode(-coil_offset, coil_offset + ${coilSideLength})
+mi_addsegment(-coil_offset, coil_offset, -coil_offset - ${coilSideLength}, coil_offset)
+mi_addsegment(-coil_offset - ${coilSideLength}, coil_offset, -coil_offset - ${coilSideLength}, coil_offset + ${coilSideLength})
+mi_addsegment(-coil_offset - ${coilSideLength}, coil_offset + ${coilSideLength}, -coil_offset, coil_offset + ${coilSideLength})
+mi_addsegment(-coil_offset, coil_offset + ${coilSideLength}, -coil_offset, coil_offset)
+mi_addblocklabel(-coil_offset - ${coilSideLength}/2, coil_offset + ${coilSideLength}/2)
+mi_setblockprop('Coil_Neg_X', 0, 1, 'Coil_Circuit_2', 0, 0, 0)
+
+-- Coil 3 (Bottom-Left)
+mi_addnode(-coil_offset, -coil_offset)
+mi_addnode(-coil_offset - ${coilSideLength}, -coil_offset)
+mi_addnode(-coil_offset - ${coilSideLength}, -coil_offset - ${coilSideLength})
+mi_addnode(-coil_offset, -coil_offset - ${coilSideLength})
+mi_addsegment(-coil_offset, -coil_offset, -coil_offset - ${coilSideLength}, -coil_offset)
+mi_addsegment(-coil_offset - ${coilSideLength}, -coil_offset, -coil_offset - ${coilSideLength}, -coil_offset - ${coilSideLength})
+mi_addsegment(-coil_offset - ${coilSideLength}, -coil_offset - ${coilSideLength}, -coil_offset, -coil_offset - ${coilSideLength})
+mi_addsegment(-coil_offset, -coil_offset - ${coilSideLength}, -coil_offset, -coil_offset)
+mi_addblocklabel(-coil_offset - ${coilSideLength}/2, -coil_offset - ${coilSideLength}/2)
+mi_setblockprop('Coil_Pos_Y', 0, 1, 'Coil_Circuit_3', 0, 0, 0)
+
+-- Coil 4 (Bottom-Right)
+mi_addnode(coil_offset, -coil_offset)
+mi_addnode(coil_offset + ${coilSideLength}, -coil_offset)
+mi_addnode(coil_offset + ${coilSideLength}, -coil_offset - ${coilSideLength})
+mi_addnode(coil_offset, -coil_offset - ${coilSideLength})
+mi_addsegment(coil_offset, -coil_offset, coil_offset + ${coilSideLength}, -coil_offset)
+mi_addsegment(coil_offset + ${coilSideLength}, -coil_offset, coil_offset + ${coilSideLength}, -coil_offset - ${coilSideLength})
+mi_addsegment(coil_offset + ${coilSideLength}, -coil_offset - ${coilSideLength}, coil_offset, -coil_offset - ${coilSideLength})
+mi_addsegment(coil_offset, -coil_offset - ${coilSideLength}, coil_offset, -coil_offset)
+mi_addblocklabel(coil_offset + ${coilSideLength}/2, -coil_offset - ${coilSideLength}/2)
+mi_setblockprop('Coil_Neg_Y', 0, 1, 'Coil_Circuit_4', 0, 0, 0)
+
+
+-- Outer Yoke (Circular approximation)
+mi_addnode(${yokeOuterRadius}, 0)
+mi_addarc(${yokeOuterRadius}, 0, -${yokeOuterRadius}, 0, 180, 5) -- Semi-circle top
+mi_addarc(-${yokeOuterRadius}, 0, ${yokeOuterRadius}, 0, 180, 5) -- Semi-circle bottom
+mi_addblocklabel(${yokeOuterRadius} * 0.9, 0)
+mi_setblockprop('Iron', 0, 1, '', 0, 0, 0)
+
+-- Add a large air region around the magnet for open boundary conditions
+local air_region_radius = ${yokeOuterRadius} * 1.5; -- Adjust as needed
+mi_addnode(air_region_radius, 0)
+mi_addarc(air_region_radius, 0, -air_region_radius, 0, 180, 5)
+mi_addarc(-air_region_radius, 0, air_region_radius, 0, 180, 5)
+mi_addblocklabel(air_region_radius * 0.9, 0)
+mi_setblockprop('Air', 0, 1, '', 0, 0, 0)
+
+
+-- Save and analyze
+mi_saveas('quadrupole_magnet_design.fem')
+mi_analyze()
+mi_loadsolution()
+`;
+            return script;
+        }
+
+        /**
+         * Displays an error message in the results area.
+         * @param {string} message - The error message to display.
+         */
+        function displayError(message) {
+            designResultsDiv.innerHTML = `<p class="text-red-600 font-semibold text-center">${message}</p>`;
+            femParametersDiv.innerHTML = `<p class="text-red-600 font-semibold text-center">FEM पैरामीटर त्रुटि के कारण उपलब्ध नहीं हैं।</p>`;
+            femmLuaScriptTextArea.value = ''; // Clear Lua script area on error
+        }
+
+        /**
+         * Copies the content of a specified textarea to the clipboard.
+         * @param {string} elementId - The ID of the textarea element.
+         */
+        function copyToClipboard(elementId) {
+            const textarea = document.getElementById(elementId);
+            textarea.select();
+            document.execCommand('copy');
+            // Provide visual feedback
+            const originalText = textarea.parentNode.querySelector('button').textContent;
+            textarea.parentNode.querySelector('button').textContent = 'कॉपी किया गया!';
+            setTimeout(() => {
+                textarea.parentNode.querySelector('button').textContent = originalText;
+            }, 2000);
+        }
+
+        // Initialize input fields on page load
+        document.addEventListener('DOMContentLoaded', updateInputFields);
+    </script>
+</body>
+</html>
