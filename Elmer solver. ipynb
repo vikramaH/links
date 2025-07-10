@@ -1,0 +1,191 @@
+# -*- coding: utf-8 -*-
+"""
+ElmerFEM Simulation from Geo/SIF to VTU
+
+This Colab notebook demonstrates how to run an ElmerFEM simulation in Google Colab.
+It takes a .geo file (Gmsh geometry) and a .sif file (Elmer solver input),
+generates the mesh using Gmsh, solves the problem using ElmerFEM, and
+outputs the results in .vtu format for visualization.
+
+Author: Your Name (Optional)
+Date: July 10, 2025
+"""
+
+# -----------------------------------------------------------------------------
+# 1. Setup Environment and Install Dependencies
+# -----------------------------------------------------------------------------
+
+print("1. Setting up environment and installing dependencies...")
+
+# Install ElmerFEM (via Conda-forge)
+# This is the most reliable way to get ElmerFEM on Colab.
+!conda install -c conda-forge elmerfem -y
+
+# Install Gmsh (if not already present, though often it is)
+# We'll use the pre-built binaries for simplicity.
+# Check for a more recent version on the Gmsh website if needed.
+GMSH_VERSION = "4.12.2" # Example version, check Gmsh website for latest
+GMSH_ARCH = "Linux64"
+GMSH_TAR_GZ = f"gmsh-{GMSH_VERSION}-{GMSH_ARCH}.tgz"
+GMSH_URL = f"http://gmsh.info/bin/{GMSH_ARCH}/{GMSH_TAR_GZ}"
+
+!wget {GMSH_URL}
+!tar -xf {GMSH_TAR_GZ}
+!mv gmsh-{GMSH_VERSION}-{GMSH_ARCH} gmsh
+!ln -s /content/gmsh/bin/gmsh /usr/local/bin/gmsh
+
+# Verify installations
+!which elmergrid
+!which elmersolver
+!which gmsh
+!elmergrid --version
+!gmsh --version
+
+print("\nDependencies installed successfully!")
+
+# -----------------------------------------------------------------------------
+# 2. Upload Input Files (.geo and .sif)
+# -----------------------------------------------------------------------------
+
+print("\n2. Uploading input files (.geo and .sif)...")
+
+# You'll need to upload your .geo and .sif files to the Colab environment.
+# You can do this manually by dragging and dropping them into the file browser
+# on the left sidebar, or use the following Python code for a more interactive way.
+
+from google.colab import files
+
+# --- Replace these with your actual filenames ---
+GEO_FILENAME = "my_geometry.geo"
+SIF_FILENAME = "my_solver.sif"
+# -----------------------------------------------
+
+print(f"Please upload your '{GEO_FILENAME}' and '{SIF_FILENAME}' files.")
+uploaded = files.upload()
+
+if GEO_FILENAME not in uploaded:
+    print(f"Warning: '{GEO_FILENAME}' not uploaded. Please ensure it's in the current directory.")
+if SIF_FILENAME not in uploaded:
+    print(f"Warning: '{SIF_FILENAME}' not uploaded. Please ensure it's in the current directory.")
+
+print("Files uploaded (or assumed to be present).")
+
+# Optional: Display content of uploaded files for verification
+# print(f"\n--- Content of {GEO_FILENAME} ---")
+# with open(GEO_FILENAME, 'r') as f:
+#     print(f.read())
+
+# print(f"\n--- Content of {SIF_FILENAME} ---")
+# with open(SIF_FILENAME, 'r') as f:
+#     print(f.read())
+
+
+# -----------------------------------------------------------------------------
+# 3. Generate Mesh (.msh) from .geo using Gmsh
+# -----------------------------------------------------------------------------
+
+print("\n3. Generating mesh (.msh) from .geo using Gmsh...")
+
+# Output mesh filename (ElmerGrid expects .mesh or .msh)
+MSH_FILENAME = "mesh.msh" # Standard Gmsh output format
+
+# Gmsh command to generate the mesh
+# -2 for 2D mesh, -3 for 3D mesh (adjust as needed for your geometry)
+# -o specifies the output file
+# Make sure your .geo file is correctly defining volumes/surfaces for meshing.
+!gmsh -2 {GEO_FILENAME} -o {MSH_FILENAME}
+
+# Verify if the mesh file was created
+if not os.path.exists(MSH_FILENAME):
+    print(f"Error: Mesh file '{MSH_FILENAME}' was not created. Check your {GEO_FILENAME} and Gmsh command.")
+else:
+    print(f"Mesh '{MSH_FILENAME}' created successfully.")
+
+# -----------------------------------------------------------------------------
+# 4. Convert .msh to ElmerGrid Format (mesh.nodes, mesh.elements, etc.)
+# -----------------------------------------------------------------------------
+
+print("\n4. Converting .msh to ElmerGrid format...")
+
+# ElmerGrid requires its own format. The .msh file needs to be converted.
+# -autoclean will remove previous mesh files if they exist.
+# -f will force overwrite existing files.
+# -gmsh will tell ElmerGrid that the input is a Gmsh file.
+!elmergrid 1 2 {MSH_FILENAME} -autoclean -f -gmsh
+
+# Verify if ElmerGrid generated the necessary files (e.g., mesh.nodes, mesh.elements, mesh.boundary)
+ELMER_MESH_FILES = ["mesh.nodes", "mesh.elements", "mesh.boundary"]
+all_elmer_mesh_files_present = True
+for f in ELMER_MESH_FILES:
+    if not os.path.exists(f):
+        print(f"Error: ElmerGrid did not create '{f}'. Check ElmerGrid command and your .msh file.")
+        all_elmer_mesh_files_present = False
+    else:
+        print(f"Elmer mesh file '{f}' created.")
+
+if all_elmer_mesh_files_present:
+    print("ElmerGrid conversion complete.")
+else:
+    print("ElmerGrid conversion failed or incomplete.")
+
+
+# -----------------------------------------------------------------------------
+# 5. Run Elmer Solver
+# -----------------------------------------------------------------------------
+
+print("\n5. Running Elmer Solver...")
+
+# The elmersolver command takes the .sif file as input.
+# Elmer will look for the mesh files (mesh.nodes, mesh.elements, etc.)
+# in the current directory by default.
+!elmersolver {SIF_FILENAME}
+
+# Check for solver output (e.g., "ELMERSOLVER_STARTUP", "ELMERSOLVER_EXIT")
+# This is a basic check. For more robust error checking, you'd parse Elmer output.
+if os.path.exists("ELMERSOLVER_STARTUP") and os.path.exists("ELMERSOLVER_EXIT"):
+    print("Elmer Solver ran to completion. Check for results files.")
+else:
+    print("Elmer Solver might have failed or not completed. Check the console output for errors.")
+
+# -----------------------------------------------------------------------------
+# 6. Post-processing and Output (e.g., to .vtu)
+# -----------------------------------------------------------------------------
+
+print("\n6. Post-processing and Output...")
+
+# Elmer generally outputs results in its own format (e.g., .result files).
+# The .sif file typically defines what to save and in what format.
+# If your SIF requests VTU output (e.g., "Save Result File = True", "Output File Type = Vtu"),
+# then Elmer will directly produce .vtu files.
+
+# List all files in the current directory to see outputs
+print("\nFiles in current directory after solver run:")
+!ls -lh
+
+# Identify potential .vtu output files (assuming your SIF generates them)
+import glob
+vtu_files = glob.glob("*.vtu")
+if vtu_files:
+    print(f"\nFound .vtu output files: {vtu_files}")
+    print("These files can be downloaded and visualized with ParaView.")
+else:
+    print("\nNo .vtu files found. Ensure your .sif file is configured to output .vtu format (e.g., Save Result File = True, Output File Type = Vtu).")
+    print("If your .sif outputs other formats (e.g., Elmer result files), you might need to use ElmerPost or another tool to convert them.")
+
+# -----------------------------------------------------------------------------
+# 7. Download Results
+# -----------------------------------------------------------------------------
+
+print("\n7. Downloading results...")
+
+# You can download specific files. Let's download all .vtu files found.
+from google.colab import files
+
+for vtu_file in vtu_files:
+    try:
+        files.download(vtu_file)
+        print(f"Downloaded: {vtu_file}")
+    except Exception as e:
+        print(f"Could not download {vtu_file}: {e}")
+
+print("\nNotebook execution complete.")
