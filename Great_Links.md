@@ -90,3 +90,5 @@ Magnetics
 
 **LANL-PoissonSuperfish**
 https://github.com/tnakaicode/LANL-PoissonSuperfish
+
+https://gitlab.esrf.fr/accelerators/Magnets/MagnetModel
