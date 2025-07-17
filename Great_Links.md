@@ -96,3 +96,10 @@ https://gitlab.esrf.fr/accelerators/Magnets/MagnetModel   ---> gives important d
 CERN -- > AccGPT
 
 https://github.com/desy-ml/cheetah  --> Cheetah : Fast and differentiable particle accelerator optics simulation for reinforcement learning and optimisation applications. 
+
+MRI4ALL ---> Open-Source Tools for Design of the Hallbach-Array Magnet  ---> https://github.com/mri4all/magnet_design
+
+HalbachMRIDesigner ---> https://github.com/menkueclab/HalbachMRIDesigner  
+This tool can create an OpenSCAD geometry of a halbach cylinder which generates a homogeneous magnetic field inside.
+
+HalbachOptimisation ---> https://github.com/LUMC-LowFieldMRI/HalbachOptimisation ---> An implementation of a genetic algorithm to optimise the homogeneity of a Halbach array by varying the ring diameters along the length of the Halbach cylinder   
