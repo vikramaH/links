@@ -102,4 +102,8 @@ MRI4ALL ---> Open-Source Tools for Design of the Hallbach-Array Magnet  ---> htt
 HalbachMRIDesigner ---> https://github.com/menkueclab/HalbachMRIDesigner  
 This tool can create an OpenSCAD geometry of a halbach cylinder which generates a homogeneous magnetic field inside.
 
-HalbachOptimisation ---> https://github.com/LUMC-LowFieldMRI/HalbachOptimisation ---> An implementation of a genetic algorithm to optimise the homogeneity of a Halbach array by varying the ring diameters along the length of the Halbach cylinder   
+HalbachOptimisation ---> https://github.com/LUMC-LowFieldMRI/HalbachOptimisation ---> An implementation of a genetic algorithm to optimise the homogeneity of a Halbach array by varying the ring diameters along the length of the Halbach cylinder  
+
+
+TEAM Workshop (see its website)
+The ultimate goal is to show the effectivness of numerical techniques and associated computer codes in solving electromagnetic field problems, and to gain ...
