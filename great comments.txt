@@ -1,2 +1,14 @@
 The fusion of AI with simulation is set to transform a broad spectrum of fields, from physics to synthetic data generation. 
 This powerful synergy is poised to significantly boost our capabilities and drive rapid innovation.
+
+-----
+
+gmsh installed in the Windows 7 computer does not seem to provide option for selecting .DXF files for import. ==> One can convert DXF files to .step or BREP etc using another software and then open that in gmsh.
+
+-----
+
+FEMM can also import DXF files but it does not initially show in File menu. Once you create a new problem or open a .fem file, 'import' starts to appear in the file menu.
+
+-----
+
+Agros2D can export mesh also. It exports with .msh extension but its internal format is different than .msh file that gmsh creates. So GMSH cannot open the file exported by Agros2D.
