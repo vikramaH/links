@@ -107,3 +107,6 @@ HalbachOptimisation ---> https://github.com/LUMC-LowFieldMRI/HalbachOptimisation
 
 TEAM Workshop (see its website)
 The ultimate goal is to show the effectivness of numerical techniques and associated computer codes in solving electromagnetic field problems, and to gain ...
+
+**GMSH**
+https://github.com/live-clones/gmsh/tree/master
