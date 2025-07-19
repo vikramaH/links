@@ -53,9 +53,29 @@ Generative AI can automatically generate test cases based on application require
 
 -----
 
-#Application of generative AI to automate numerical analysis and synthetic data generation in geotechnical engineering
+# Application of generative AI to automate numerical analysis and synthetic data generation in geotechnical engineering
 
 This study explores the integration of generative artificial intelligence (AI) into numerical analysis workflows in geotechnical engineering to address the challenges of generating synthetic datasets. This study aims to create a framework that allows practitioners with limited programming skills to automate complex simulations, enabling the development of extensive data sets for AI and machine learning applications.
  It serves as a valuable tool for advancing AI applications in geotechnical engineering.
  The study proposes a seven-step methodology using the finite element method and Python programming to
-auotmate numerical modelling. Generative AI, specifically ChatGPT, is used as a virtual assistant to guide practitioners through automation. T
+auotmate numerical modelling. Generative AI, specifically ChatGPT, is used as a virtual assistant to guide practitioners through automation.
+
+------
+
+# Some Python frontends
+pyFEMM -- A Python Interface to FEMM
+
+pygmsh
+
+pygetdp
+
+pyelmer
+
+
+-----
+
+# Python and Finite Element Methods: A Match Made in Heaven?
+
+It’s amazing how much computer technology has progressed in the last 50 years. We often take it for granted and do not fully appreciate how far we have come. Thanks to the PC revolution and the increase in computing power, it’s now possible to have ‘numerical laboratories’ right at your disposal any time any place. The accessibility of it is truly remarkable.
+
+Segerlind’s book, despite being classic, is a good introductory book for both learning how to develop your own finite element code from scratch with the programming language of your choice and prepare yourself for using advanced commercial software. 
