@@ -51,4 +51,11 @@ Gartner forecasts that by 2026, over 80% of organizations will have implemented 
 
 Generative AI can automatically generate test cases based on application requirements, prompts, documentation, or requirements to create relevant test cases. This capability helps achieve good test coverage that even covers edge cases.
 
+-----
 
+#Application of generative AI to automate numerical analysis and synthetic data generation in geotechnical engineering
+
+This study explores the integration of generative artificial intelligence (AI) into numerical analysis workflows in geotechnical engineering to address the challenges of generating synthetic datasets. This study aims to create a framework that allows practitioners with limited programming skills to automate complex simulations, enabling the development of extensive data sets for AI and machine learning applications.
+ It serves as a valuable tool for advancing AI applications in geotechnical engineering.
+ The study proposes a seven-step methodology using the finite element method and Python programming to
+auotmate numerical modelling. Generative AI, specifically ChatGPT, is used as a virtual assistant to guide practitioners through automation. T
