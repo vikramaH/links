@@ -79,3 +79,21 @@ pyelmer
 It’s amazing how much computer technology has progressed in the last 50 years. We often take it for granted and do not fully appreciate how far we have come. Thanks to the PC revolution and the increase in computing power, it’s now possible to have ‘numerical laboratories’ right at your disposal any time any place. The accessibility of it is truly remarkable.
 
 Segerlind’s book, despite being classic, is a good introductory book for both learning how to develop your own finite element code from scratch with the programming language of your choice and prepare yourself for using advanced commercial software. 
+
+# A very simple example of FEM analysis for structure with Python
+
+Nowadays Python can be used to perform finite element method, abbreviated as FEM, analysis with several lines of code using some libraries such as anastruct (Samaila, 2023), SfePy (Cimrman et al., 2019), scikit-fem (Gustafsson & McBain, 2020), and GetFEM (Renard & Poulios, 2020), or with only math, matplotlib, and numpy (Jorgen, 2022). 
+
+# APIs in simulations:
+
+**Interfacing with Simulation Software:**
+Many specialized simulation tools (e.g., Ansys Optics, AnyLogic, CARLA, CoppeliaSim) provide Python APIs. These APIs allow users to programmatically interact with the simulation environment, control simulation parameters, run experiments, and extract data, without needing to directly use the software's graphical user interface.
+
+**Custom API Development:**
+For complex or custom simulation setups, developers might create their own APIs in Python to manage communication between different simulation components or external systems.
+
+# AI Automation: Using Claude to Help Write Python Automations
+
+One of my favourite ways to use GenAI is as a cheap and cheerful automations coder.
+
+Every time I find myself doing something boring or repetitive, I ask whether there’s part of it that can be automated. I know a little python, html, and css, but not enough to build anything useful from scratch. But I have found that, as long as you know the right questions to ask, it is possible to write functioning code with GenAI.
