@@ -15,6 +15,9 @@ The results shocked me. Not because I pulled it off, but because it was so much 
 
 -----
 
+FEMM, Agros2d, GMSH etc
+====
+
 gmsh installed in the Windows 7 computer does not seem to provide option for selecting .DXF files for import. ==> One can convert DXF files to .step or BREP etc using another software and then open that in gmsh.
 
 -----
