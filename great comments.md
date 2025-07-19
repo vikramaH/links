@@ -71,6 +71,13 @@ pygetdp
 
 pyelmer
 
+pyAnsys -- for Ansys tools
+
+pyvista
+
+PySpice (Python Frontend for SPICE simulators) -- This is a Python module that acts as a high-level interface to existing SPICE simulators like Ngspice and Xyce.
+
+OMPython serves as a powerful interface that allows you to interact with the OpenModelica Compiler (OMC) and its simulation capabilities directly from Python scripts. 
 
 -----
 
