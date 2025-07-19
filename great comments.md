@@ -35,3 +35,17 @@ Agros2D can export mesh also. It exports with .msh extension but its internal fo
 Keeping up with the Python ecosystem used to feel like playing whack-a-mole with libraries. Every time I finally mastered one tool, a shinier, smarter version would pop up somewhere on GitHub or Hacker News. But now? The game has changed.
 
 Thanks to recent advances in AI — and I’m not just talking about GPT-4o or Llama 3.2 — we’re seeing an entirely new category of tools that don’t just help you code, they think with you. Tools that used to take hours of config and duct-tape scripting now come together with just a few lines of Python and a well-crafted prompt.
+
+-----
+
+**This NumPy Alternative is built for GPUs and is 25X faster**
+CuPy — a drop-in replacement for NumPy. It implements NumPy’s API on NVIDIA GPUs. Thus, you can write GPU-accelerated code with a familiar syntax.
+
+-----
+
+**Generative AI with Python**
+Today, ChatGPT and other conversational LLMs have changed how students learn, how programmers code, how emails are written, and so forth.
+
+Gartner forecasts that by 2026, over 80% of organizations will have implemented generative AI applications or integrated generative AI APIs into their workflows.
+
+
