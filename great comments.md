@@ -97,3 +97,22 @@ For complex or custom simulation setups, developers might create their own APIs 
 One of my favourite ways to use GenAI is as a cheap and cheerful automations coder.
 
 Every time I find myself doing something boring or repetitive, I ask whether there’s part of it that can be automated. I know a little python, html, and css, but not enough to build anything useful from scratch. But I have found that, as long as you know the right questions to ask, it is possible to write functioning code with GenAI.
+
+# Using Generative AI as a tool for Learning in a Python Programming Assignment
+
+# Datamatics's post
+june 2025
+
+Developers used to speak the machine’s language - #Java, #Python, and what not - to get things done.
+ Now, thanks to Generative AI, machines understand ours.
+
+Generative AI is revolutionizing software development by bridging the long-standing gap between natural language and machine logic.
+
+🧠 Developers can describe what they want in natural language, and #AI does the rest - from writing and #testing code to generating documentation.
+This isn’t just automation. It’s a collaboration.
+ Developers and AI now work side-by-side - accelerating delivery, reducing rework, and driving innovation.
+ 
+📈 The impact? Shorter cycles. Higher quality. Happier teams.
+ And that’s just the beginning.
+ 
+
