@@ -44,8 +44,11 @@ CuPy — a drop-in replacement for NumPy. It implements NumPy’s API on NVIDIA 
 -----
 
 **Generative AI with Python**
+
 Today, ChatGPT and other conversational LLMs have changed how students learn, how programmers code, how emails are written, and so forth.
 
 Gartner forecasts that by 2026, over 80% of organizations will have implemented generative AI applications or integrated generative AI APIs into their workflows.
+
+Generative AI can automatically generate test cases based on application requirements, prompts, documentation, or requirements to create relevant test cases. This capability helps achieve good test coverage that even covers edge cases.
 
 
