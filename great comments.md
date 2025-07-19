@@ -1,4 +1,4 @@
-The fusion of AI with simulation is set to transform a broad spectrum of fields, from physics to synthetic data generation. 
+===> The fusion of AI with simulation is set to transform a broad spectrum of fields, from physics to synthetic data generation. 
 This powerful synergy is poised to significantly boost our capabilities and drive rapid innovation.
 
 
