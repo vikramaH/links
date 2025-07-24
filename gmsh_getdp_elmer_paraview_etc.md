@@ -27,3 +27,17 @@ that limit the ability of accelerator scientists and engineers to work efficient
  Application code input file formats differ, so translation codes are needed to take the output from one code and use it as input for another.
 
  Particle accelerator application codes are often executed on clusters, and efficiently managing parallel computing resources is difficult.
+
+=====
+steam-FiQuS  
+
+https://gitlab.cern.ch/steam/fiqus
+
+FiQuS is based solely on open-source software and uses Python to generate geometries and meshes with Gmsh and compute solutions with GetDP. FiQuS scripts have a modular structure to accommodate a broad range of geometries and simulation requirements, focusing mainly on superconducting accelerator magnets. FiQuS is organized into multiple Python scripts. The code is constituted by a mix of built-in functions, third-party libraries, and Gmsh API commands and command-line interface (CLI) calls to GetDP. Its structure is modular.
+
+Three specific capabilities of FiQuS that represent the basis upon which the future modules will be built,
+mainly: 
+(1) enabling cooperative simulations and the Single Source Of Truth (SSOT) practice;
+(2) seamlessly integrating magnet design details around a set of input files;
+(3) enabling parametric analysis and multi-objective optimization with Dakota software developed by Sandia National Laboratories.
+
