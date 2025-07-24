@@ -1,3 +1,5 @@
+https://github.com/jeromerobert/gmsh/tree/master
+
 1. gmsh can be very useful for
 
    (a) creating magnet design workflow starting from chosing type of magnet followed by main specs to
@@ -15,8 +17,11 @@
    so it simplifies the .pro (problem file) creation.
 
 4. The "Run Control" section in ElmerSolver's .sif file is a relatively newer and very powerful addition that significantly enhances E
+ 
    lmer's capabilities for parametric studies, optimization, and complex transient simulations within a single input file.
+
    Before "Run Control," if you wanted to run, say, 10 different simulations where only one parameter varied (e.g., material conductivity),
+
    you would typically need 10 separate .sif files or manage the variations with an external script (e.g., Python, Bash). "Run Control" streamlines this.
 
 ==============
@@ -34,8 +39,7 @@ that limit the ability of accelerator scientists and engineers to work efficient
 
  Particle accelerator application codes are often executed on clusters, and efficiently managing parallel computing resources is difficult.
 
-=====
-steam-FiQuS  
+**steam-FiQuS**  
 
 https://gitlab.cern.ch/steam/fiqus
 
@@ -43,7 +47,10 @@ FiQuS is based solely on open-source software and uses Python to generate geomet
 
 Three specific capabilities of FiQuS that represent the basis upon which the future modules will be built,
 mainly: 
+
 (1) enabling cooperative simulations and the Single Source Of Truth (SSOT) practice;
+
 (2) seamlessly integrating magnet design details around a set of input files;
+
 (3) enabling parametric analysis and multi-objective optimization with Dakota software developed by Sandia National Laboratories.
 
