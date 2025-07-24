@@ -12,3 +12,18 @@
    lmer's capabilities for parametric studies, optimization, and complex transient simulations within a single input file.
    Before "Run Control," if you wanted to run, say, 10 different simulations where only one parameter varied (e.g., material conductivity),
    you would typically need 10 separate .sif files or manage the variations with an external script (e.g., Python, Bash). "Run Control" streamlines this.
+
+==============
+
+Generally, coupling of application codes requires taking output data from one application code simulation and
+transforming it to input (e.g., boundary conditions or electromagnetic field maps) for a different application code
+simulation. Coupling different application codes involves finding solutions for a number of inherent complexities
+that limit the ability of accelerator scientists and engineers to work efficiently:
+
+ Application codes perform simulations on different, often incompatible computational meshes.
+
+ Application codes have developed their own data formats that are generally incompatible with other application codes.
+
+ Application code input file formats differ, so translation codes are needed to take the output from one code and use it as input for another.
+
+ Particle accelerator application codes are often executed on clusters, and efficiently managing parallel computing resources is difficult.
