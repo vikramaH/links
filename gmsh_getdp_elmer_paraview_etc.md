@@ -56,18 +56,22 @@ mainly:
 
 # Components of a good tool-chain for design of Accelerator Magnets
 
-1) Preprocessor -- powerful script for parametric modelling, able to import/export in other file formats
-2) Solver -- parallel, fast, rugged, 
+1) Preprocessor -- powerful script for parametric modelling, able to import/export in other file formats, good and flexible meshing capability
+2) Solver -- parallel, nonlinear, adaptive time, fast, rugged, 
 3) Postprocessor -- shaould have a minimal beam dynamics calculator in it, 
 4) Optimizer
-5) 'App developer'
+5) 'App developer' -- applictin deployment
 
 **Other characteristics**
+* easy to learn and use
 * available on multiple plateforms (Linux, windows, Mac etc..)
 * free / open sourve ,
 * with good GUI, good API and good control through scripts
 * input and output file formats should be open and standard,
-* should have good materials library, should be easy to configure,
+* should have good materials library,
+* easy and flexible boundary conditions
+* easy and flexible sources specification (linear & nonlinear materials, anisotropic materials, ..)
+* should be easy to configure,
 * should be able to do multiphysics (at least electromagnetics, thermal, structural) 
 * should be able to do 1D, 2D and 3D simulation,
 * should be able to do steady state, harmonic or time analysys,
@@ -75,4 +79,4 @@ mainly:
 * well validated and discussed (should not be very new)
 * sufficiently big user base
 * active discussion group
-
+* good documentation
