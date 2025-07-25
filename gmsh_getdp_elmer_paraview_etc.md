@@ -31,13 +31,13 @@ transforming it to input (e.g., boundary conditions or electromagnetic field map
 simulation. Coupling different application codes involves finding solutions for a number of inherent complexities
 that limit the ability of accelerator scientists and engineers to work efficiently:
 
- Application codes perform simulations on different, often incompatible computational meshes.
+* Application codes perform simulations on different, often incompatible computational meshes.
 
- Application codes have developed their own data formats that are generally incompatible with other application codes.
+* Application codes have developed their own data formats that are generally incompatible with other application codes.
 
- Application code input file formats differ, so translation codes are needed to take the output from one code and use it as input for another.
+* Application code input file formats differ, so translation codes are needed to take the output from one code and use it as input for another.
 
- Particle accelerator application codes are often executed on clusters, and efficiently managing parallel computing resources is difficult.
+* Particle accelerator application codes are often executed on clusters, and efficiently managing parallel computing resources is difficult.
 
 **steam-FiQuS**  
 
