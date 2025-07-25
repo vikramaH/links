@@ -54,3 +54,25 @@ mainly:
 
 (3) enabling parametric analysis and multi-objective optimization with Dakota software developed by Sandia National Laboratories.
 
+# Components of a good tool-chain for design of Accelerator Magnets
+
+1) Preprocessor -- powerful script for parametric modelling, able to import/export in other file formats
+2) Solver -- parallel, fast, rugged, 
+3) Postprocessor -- shaould have a minimal beam dynamics calculator in it, 
+4) Optimizer
+5) 'App developer'
+
+**Other characteristics**
+* available on multiple plateforms (Linux, windows, Mac etc..)
+* free / open sourve ,
+* with good GUI, good API and good control through scripts
+* input and output file formats should be open and standard,
+* should have good materials library, should be easy to configure,
+* should be able to do multiphysics (at least electromagnetics, thermal, structural) 
+* should be able to do 1D, 2D and 3D simulation,
+* should be able to do steady state, harmonic or time analysys,
+* should have facilities, such as library of in-built coils
+* well validated and discussed (should not be very new)
+* sufficiently big user base
+* active discussion group
+
