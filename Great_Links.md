@@ -108,6 +108,10 @@ HalbachOptimisation ---> https://github.com/LUMC-LowFieldMRI/HalbachOptimisation
 TEAM Workshop (see its website)
 The ultimate goal is to show the effectivness of numerical techniques and associated computer codes in solving electromagnetic field problems, and to gain ...
 
+**Multipoles**  https://miepython.readthedocs.io/en/2.5.5/12_multipoles.html
+
+**MAGNETIC FIELD TOOLS, A C++/PYTHON LIBRARY FOR MAGNETIC FIELD PROCESSING (ESRF)**  https://inspirehep.net/files/c3f9205b96ae9504fbcb14588baf54a8
+
 **GMSH**
 https://github.com/live-clones/gmsh/tree/master
 
