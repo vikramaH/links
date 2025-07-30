@@ -1,3 +1,38 @@
+**Features of Gmsh**
+
+Advanced Solvers: Solve equations with advanced numerical solvers.
+
+Advanced Visualization: Visualize meshes in 3D with advanced rendering techniques.
+
+CAD Conversion: Convert CAD models to meshes quickly and accurately.
+
+CAD Integration: Import and export CAD models from a variety of sources.
+
+Geometry Modeling: Construct and edit complex 3D geometries with powerful tools.
+
+HPC Support: Support for high performance computing clusters.
+
+Mesh Generation: Automatically generate meshes of various shapes with ease.
+
+Mesh Morphing: Morph meshes between different geometries.
+
+Mesh Optimization: Optimize meshes for high performance computing.
+
+Mesh Refinement: Smoothly refine and improve mesh quality.
+
+Multi-platform: Compatible with Windows, Linux, Mac and more.
+
+Parametric Modeling: Create parametric models with a few clicks.
+
+Physical Groups: Group and organize entities into physical groups.
+
+Post-processing: Visualize, analyze and compare results with ease.
+
+Scripting: Create powerful scripts with the built-in scripting language.
+
+
+--------
+
 https://github.com/jeromerobert/gmsh/tree/master
 
 1. gmsh can be very useful for
