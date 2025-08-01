@@ -1,3 +1,28 @@
+**Onelab**
+
+General Goal of the ONELAB Project : Develop a platform for integrating free Finite Element Analysis (FEA) software
+
+Two difficulWes associated with free FEA sodware :
+• Heterogeneity of the tools
+• Missing “expert” layer and documentaIon
+
+
+ONELAB Guiding Principles
+
+* Don’t reimplement, interface
+• Make it easy to provide templates, with interacWve parameter modificaWon
+• Make it as small and as easy to maintain as possible (no solver dependent code in the interface)
+
+ONELAB Features
+
+(1) Abstract interface to FEA codes
+
+(2) Development and documentaIon of templates (“meta-­‐models”)
+
+  (2.1) Model: backbox, parameterizable via abstract interface
+  (2.2) Meta-­‐model: set of models + selecWon logic
+
+
 **Features of Gmsh**
 
 Advanced Solvers: Solve equations with advanced numerical solvers.
