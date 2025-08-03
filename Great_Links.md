@@ -119,3 +119,7 @@ https://github.com/live-clones/gmsh/tree/master
 CERNGetDP  https://gitlab.cern.ch/steam/cerngetdp
 
 **GMSH_TO_FEM** Convert Mesh Data from GMSH to FEM Format.  https://people.math.sc.edu/burkardt/cpp_src/gmsh_to_fem/gmsh_to_fem.html
+
+**UNDUMAG** : Magnetic field calculations for permanent magnet structures and coils  https://github.com/MicScheer/UNDUMAG
+
+**Wave**  https://github.com/MicScheer/WAVE
