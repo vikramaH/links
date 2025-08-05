@@ -1,6 +1,9 @@
 
 
-// Onelab parameters of the C-core model 
+
+// Design of Nonlinear kicker for Indus-3
+// 5-8-2025
+
 
 NL_tol_abs = 1e-8; 	// absolute tolerance on residual for noninear iterations
 NL_tol_relax = 1.0; 	// relaxation on residual for noninear iterations
@@ -19,17 +22,17 @@ Flag_Jfixed = 0 ;
   
 //  Current = 5e3 ;
 
-js0 = 100e6 ;
+js0 = 100e6 ;  // current density in the wires
 
 
 Group {
   // Physical regions (in capital letters):
-  AIR    = Region[ 12 ];   
+ AIR    = Region[ 12 ];   
  CORE   = Region[ {} ];  
-  COILP  = Region[ 11 ];   
+ COILP  = Region[ 11 ];   
  COILN  = Region[ {} ]; 
     
-  NOFLUX = Region[ 13];
+ NOFLUX = Region[13]; // exterior boundary
 
   // Abstract regions
   Vol_Mag     = Region[ {AIR, COILP} ];
@@ -43,6 +46,7 @@ Group {
   EndIf
   Vol_L_Mag  = Region[ {Vol_Mag,-Vol_NL_Mag} ];
 }
+
 
 Function {
   mu0 = 4.e-7 * Pi ;
@@ -252,14 +256,17 @@ PostProcessing {
           Term { [ CompZ[{a}] ]; In Dom_Hcurl_a_Mag_2D; Jacobian Vol; }
         }
       }
-      { Name b;
+      { Name B;
         Value {
           Term { [ {d a} ]; In Dom_Hcurl_a_Mag_2D; Jacobian Vol; }
         }
       }
-      { Name by;
+      { Name B_mag;
         Value {
-          Term { [ CompY[{d a}] ]; In Dom_Hcurl_a_Mag_2D; Jacobian Vol; }
+//          Term { [ Mag[{d a}] ]; In Dom_Hcurl_a_Mag_2D; Jacobian Vol; }
+          
+          
+          Term {[CompX[ {d a} ]^2 + CompY[ {d a} ]^2 ] ; In Dom_Hcurl_a_Mag_2D; Jacobian Vol; }
         }
       }
       { Name js;
@@ -278,15 +285,18 @@ PostOperation {
 
       CreateDir["res"];
       Print[js, OnElementsOf Vol_S_Mag, File "res/js.pos"];
-
-      Print[b, OnElementsOf Vol_Mag, File "res/b.pos"];
-
+            
       Print[az, OnElementsOf Vol_Mag, File "res/az.pos"];
+
+      Print[B, OnElementsOf Vol_Mag, File "res/b.pos"];
+      
+      Print[B_mag, OnElementsOf Vol_Mag, File "res/bmag.pos"];
+
+
 
     }
   }
 }
-
 
 
 
