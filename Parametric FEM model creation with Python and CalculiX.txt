@@ -1,0 +1,83 @@
+Parametric FEM model creation with Python and CalculiX GraphiX (cgx)
+
+Olivia Stodieck
+
+Follow
+6 min read
+·
+Dec 16, 2021
+
+
+
+Feb 2023 Update — Read the revised tutorial for the dapta app here: https://daptadocs.com/Tutorials/Chaining%20component%20analyses.html
+
+Zoom image will be displayed
+
+Fig 1 — Parametric constant section half-wing FEM
+In this post, we will see how easy it is to use Python and open-source software to automate the creation of parametric FEM models for design studies.
+
+A note on the tools used:
+For the purposes of the example in this post, I will be using Python and CalculiX GraphiX (cgx), which is a freely available open source pre- and post-processor developed by Klaus Wittig.
+
+Python seems to be the language of choice these days: it is easy to learn and there are many open source libraries available that can help with anything from data analysis, to symbolic maths and image processing. In addition, a growing number of open-source and commercial pre-/post-processors now have python APIs, which means that you may be able to interface with them directly without having to pass through a text file.
+
+Just be assured that what we show here with cgx can probably be replicated with at least a handful of other tools out there at the moment (although the syntax will be different of course).
+
+What is a parametric model and why is it useful?
+In the early stage of product design, we often use fully parametric models to speed-up design iterations and to zero-in on a target design. But even in the later stages of product development, parametric models can be very powerful. Indeed, have you ever worked on a project where the part geometry, materials or manufacturing process never changes? In fact, ask a designer and you will hear that a CAD model is likely to be out of date as soon as it is created. As a consequence, FEM models also need frequent revisions. By parameterizing models, we can to a certain extent automate the FEM model updates, so that we spend less time on repetitive low-value model editing tasks and more time on understanding and improving the product design.
+
+FEM pre-processors (and not only those integrated in CAD packages) already allow us to parametrize models in a number of ways. For example, you may be able to create parametric 3D geometry, driven by the dimensions in a sketch, or you may be able to ‘morph’ existing features. Updates in material properties can be propagated across the model tree, as long as the model was setup correctly. The FEM mesh can often be re-generated at a click (not always reliably unfortunately, but that is another problem!).
+
+These parametric model updates are usually done in a manual fashion. And that’s fine if they are easy to perform and you only expect them to happen infrequently. The more complex the updates or the more frequently you have to do them, the higher the risk of introducing errors.
+
+Why automate the creation of parametric models?
+Clearly, the process of creating models for parametric studies should probably be automated if you are dealing with more than a hand-full of analyses.
+
+But there is another reason why automating the creation of parametric models can be a powerful tool. In many cases, design parameters are implicit, in that they may not appear directly in the models that you create.
+
+For example, you may want to design the thickness and width of the flanges on an I-section stiffener, but in your stiffened panel FEM model the stiffeners may be modelled as bar elements, or they may not be modelled as discrete stiffeners at all but as ‘smeared’ mass and stiffness contributions to the panel elements. In this case, the properties of the FEM elements are implicitly related to your stiffener dimensions. And if you are unlucky, you may have to update 100s of different FEM element properties, even though you start with only 2 independent variables. This is clearly a case where you want to automate the FEM property updates.
+
+Another example is a simulation process chain, where the parameter values and the parameterization itself may be an output from another simulation. So to automate the whole process, you need to be able to create the parametric models on the fly. For example, you may have a simple 2D section analysis that allows you to design the wing cross-section. This information is then used to generate a 3D FEM model of the wing used for higher-fidelity analyses.
+
+Automating the creation of an aerofoil-shaped box model — an example.
+Let’s assume we want to automate the 3D FEM model creation process for the second example above. In order, we need to complete these 4 steps:
+
+1. Define the process inputs and outputs
+By clearly defining the process inputs and outputs, we can make sure that whatever automation we implement will satisfy our requirements - no more, no less. This step may seem trivial, but it is easy to miss requirements or add unnecessary steps to the process if we are not careful.
+
+Here we assume that our design parameters are the aerofoil section of the wing, the chord and span of the wing. We also assume that the 2D analysis generates as an output the aerofoil section of the wing as a CSV file of normalised xy-positions that define the outline of the airfoil (example inputs and outputs are provided on github).
+
+The output of the process should be one or more FEM model input files, ready for analysis. Note, that we don’t actually need to execute the FEM analysis in this process (but for testing purposes, that can be useful).
+
+Additional output requirements from the process could include a log file that contains information about the models generated, the user who generated them and the platform on which the code was run - but we will not cover these for the purpose of this example.
+
+2. Define the steps required to get from our inputs to the outputs
+Working backwards from the outputs towards our inputs :
+
+To generate the FEM model input files for any one model configuration, we need to execute cgx in batch mode to create the geometry, to mesh it, and to export the mesh to files.
+To execute cgx in batch mode, we first need to generate a cgx batch input file (.fdb file) that contains all the required commands.
+To write the cgx batch input file, we first need to translate our parametric design inputs into a series of geometry and meshing operations that cgx can understand.
+We now have the rough outline of the automation process we want to implement, as shown in Fig 2.
+
+Zoom image will be displayed
+
+Fig 2 — Parametric model creation process
+3. Implement the steps in a Python script
+The next step is to think about how we want to implement and automate this process in our Python script. I usually start by writing-out pieces of ‘pseudo-code’ in comments and then filling-in the blanks progressively.
+
+Here is a video that explains the contents of an example script:
+
+
+The full code for this example can be found on Github @ https://github.com/daptablade/parametric_cgx_model.
+
+4. Execute the Python script and verify the outputs
+We cover some of this at the end of the video above. However, for further development I would also recommend you write test functions in a test module in parallel to writing your actual automation code. Test any edge cases that you know could occur. Make sure that the code not only works within the parameter space that you want to consider, but that it also fails with a meaningful error message where appropriate.
+
+To recap…
+We have just seen how easy it is to create your own parametric model in an automated fashion using Python and an open source pre-processor.
+
+What next? Well, you probably also want to automate the execution of your analysis and the extraction of results. And once you have all that workflow automation in place, why not wrap an optimiser around it (see our post on Optimisation here)… Wishing you happy coding!
+
+From the author
+Thanks for reading our blog. Feedback is a great way to learn, so if you have any questions or comments about this post or previous one, please get in touch! Olivia
+(https://www.linkedin.com/in/olivia-stodieck/)
