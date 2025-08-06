@@ -56,6 +56,15 @@ Post-processing: Visualize, analyze and compare results with ease.
 Scripting: Create powerful scripts with the built-in scripting language.
 
 
+-------------------------------------------
+
+**In praise of GMSH DefineConstant and parameter menu**
+
+Opera3D etc do not have this feature. Making change in unparametric design is hardest. Making changes in text script responsible for parametric design is a bit easier. But a GUI menu, that too dynamically responsive menu, is easiest. And that is GMSH.
+
+It has feature to make it coloured, read-only, visible/unvisible, slider, automatic change, looping in single or coupled loops, help text, communication with onelab etc.
+
+
 --------
 
 https://github.com/jeromerobert/gmsh/tree/master
