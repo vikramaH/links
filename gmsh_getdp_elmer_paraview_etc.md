@@ -64,6 +64,9 @@ Opera3D etc do not have this feature. Making change in unparametric design is ha
 
 It has feature to make it coloured, read-only, visible/unvisible, slider, automatic change, looping in single or coupled loops, help text, communication with onelab etc.
 
+Syntax :
+DefineConstant name = {default, choices, label, highlight, help, autocheck, readonly, closed};
+
 
 --------
 
