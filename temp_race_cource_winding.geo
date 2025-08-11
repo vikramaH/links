@@ -1,35 +1,4 @@
-!! ElmerFEM : specifying current
-! Material definition (stranded coil)
-Material 1
-  Name = "Copper_Stranded"
-  Electric Conductivity = 0.0
-  Coil Type = "Stranded"
-End
 
-! Body force for current excitation
-Body Force 1
-  Name = "RaceTrackCoil"
-  Electric Current = Real 5.0   ! 5 A total
-End
-
-! Primary solver
-Solver 1
-  Equation = "MagnetoDynamics"
-  Procedure = "MagnetoDynamics" "MagnetoDynamicsSolver"
-  Variable = "A"
-  Frequency = Real 0.0  ! DC
-End
-
-! Post-processing
-Solver 2
-  Equation = "MgDynCalc"
-  Procedure = "MagnetoDynamicsCalcFields" "MagnetoDynamicsCalcFields"
-  Calculate Current Density = Logical True
-  Calculate Lorentz Force = Logical True
-End
-
-
-===============================================================================
 // Design of Nonlinear kicker for Indus-3
 // 5-8-2025
 
