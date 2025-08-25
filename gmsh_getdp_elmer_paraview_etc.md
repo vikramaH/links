@@ -162,16 +162,34 @@ mainly:
 
 **Why use GetDP**
 
-1) It is Open Source.
+1) It is Free and Open Source.
 
-2) It solves Coupled problems
+2) It is capable of solving Single or Multiphysics with various couplings
 
-3) It is light and fast.
+3) Flexibility to define application specific physics
 
-4) It provides for creating custom menus and parametric analysis (using GMSH)
+4) Modern scripting langue allowing repeatable analysis
 
-5) It can easily be used with optimization programs ( suc as CONVEKS )
+5) Graphical user interface provided via Gmsh, through ONELAB interface
 
-6) It is used in CERN for superconducting magnet design (FiQuS)
+6) available on Linux, Windows and Mac
 
-7) It can be used for parallel computing using GetDDM.
+7) It is light and fast.
+  
+8) It is able to solve 1D, 2D, 3D problems
+
+9) DC analysis (or steady state analysis), time harmonic and time domain analysis
+
+10) It provides for creating custom menus and parametric analysis (using GMSH)
+
+12) It is used in CERN for superconducting magnet design (FiQuS)
+
+13) It can be used for parallel computing using GetDDM.
+
+14) It can easily be used with optimization programs ( suc as CONVEKS )
+
+   
+    
+    
+   
+
