@@ -3,14 +3,18 @@
 General Goal of the ONELAB Project : Develop a platform for integrating free Finite Element Analysis (FEA) software
 
 Two difficulWes associated with free FEA sodware :
+
 • Heterogeneity of the tools
+
 • Missing “expert” layer and documentaIon
 
 
 ONELAB Guiding Principles
 
 * Don’t reimplement, interface
+
 • Make it easy to provide templates, with interacWve parameter modificaWon
+
 • Make it as small and as easy to maintain as possible (no solver dependent code in the interface)
 
 ONELAB Features
@@ -20,6 +24,7 @@ ONELAB Features
 (2) Development and documentaIon of templates (“meta-­‐models”)
 
   (2.1) Model: backbox, parameterizable via abstract interface
+ 
   (2.2) Meta-­‐model: set of models + selecWon logic
 
 
@@ -65,6 +70,7 @@ Opera3D etc do not have this feature. Making change in unparametric design is ha
 It has feature to make it coloured, read-only, visible/unvisible, slider, automatic change, looping in single or coupled loops, help text, communication with onelab etc.
 
 Syntax :
+
 DefineConstant name = {default, choices, label, highlight, help, autocheck, readonly, closed};
 
 
@@ -134,10 +140,10 @@ mainly:
 4) Optimizer
 5) 'App developer' -- applictin deployment
 
-**Other characteristics**
+**Other required characteristics**
 * easy to learn and use
 * available on multiple plateforms (Linux, windows, Mac etc..)
-* free / open sourve ,
+* free / open source ,
 * with good GUI, good API and good control through scripts
 * input and output file formats should be open and standard,
 * should have good materials library,
@@ -152,3 +158,20 @@ mainly:
 * sufficiently big user base
 * active discussion group
 * good documentation
+* 
+
+**Why use GetDP**
+
+1) It is Open Source.
+
+2) It solves Coupled problems
+
+3) It is light and fast.
+
+4) It provides for creating custom menus and parametric analysis (using GMSH)
+
+5) It can easily be used with optimization programs ( suc as CONVEKS )
+
+6) It is used in CERN for superconducting magnet design (FiQuS)
+
+7) It can be used for parallel computing using GetDDM.
