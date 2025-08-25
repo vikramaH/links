@@ -188,8 +188,13 @@ mainly:
 
 14) It can easily be used with optimization programs ( suc as CONVEKS )
 
+   **some shortcomings of GetDP**
+1) steep learning curve because it is more dependent on programming. (It can be assumed its strength too.)
+
+2) material libraries are not available like those in commercial softwares.
+
+3) GetDP requires users to define almost everything from scratch. (But once created, it becomes re-usable.)
    
-    
     
    
 
