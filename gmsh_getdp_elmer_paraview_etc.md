@@ -188,7 +188,7 @@ mainly:
 
 14) It can easily be used with optimization programs ( suc as CONVEKS )
 
-   **some shortcomings of GetDP**
+**some shortcomings of GetDP**
 1) steep learning curve because it is more dependent on programming. (It can be assumed its strength too.)
 
 2) material libraries are not available like those in commercial softwares.
@@ -196,5 +196,34 @@ mainly:
 3) GetDP requires users to define almost everything from scratch. (But once created, it becomes re-usable.)
    
     
-   
+ **How Boundary Conditions Simplify Models**
+ (1) boundary conditions simplify models by enabling the use of symmetry.
+ 
+ (2) Representing Open Domains:  In problems like electromagnetics or acoustics, the field can extend to infinity. Since you can't model an infinite space, you use absorbing boundary conditions (such as perfectly matched layers or PMLs) to truncate the computational domain. This allows the model to be a manageable size while preventing waves from reflecting back into the simulation, which would produce inaccurate results.
+ 
+ (3) Replacing Complex Sub-Systems: 
+ 
+ (4) Handling Thin Layers: For models with very thin layers of material (e.g., a thin-film coating or a highly conductive metal sheet), it's often computationally expensive to mesh the thickness of the layer. Boundary conditions can replace these layers by applying a mathematical constraint that mimics the physical behavior of the thin layer, significantly reducing the mesh size and complexity. For instance, a very conductive material can be modeled with a shielding boundary condition that assumes a constant potential across its thickness.
+
+**Tricky use of boundary conditions in Magnetic FEM simulation**
+
+There are several tricky and non-obvious ways to use boundary conditions in magnetics FEM simulations to simplify models or solve complex problems. These methods often go beyond standard Dirichlet or Neumann conditions:
+
+(1) Representing a Magnetic Core with a Single Boundary
+
+Instead of modeling a magnetic core with many small elements, which can be computationally expensive, you can use a Perfect Magnetic Conductor (PMC) boundary condition. This assumes that the core has infinite permeability, meaning the magnetic field lines enter it perpendicularly. While this is an idealization, it's a good approximation for very high permeability materials and can dramatically simplify the model by eliminating the need to mesh the core's volume.
+
+Similarly, a Perfect Electric Conductor (PEC) can be used to represent a shield or a container that completely confines the magnetic field. This is based on the idea that magnetic fields cannot penetrate a perfectly conducting surface.
+
+2. Sourcing Current with a Boundary Condition
+
+Instead of modeling a coil with thousands of individual wire turns, you can sometimes apply a current directly as a Neumann boundary condition on a surface. This is a common simplification for problems where the exact geometry of the winding isn't critical. By applying a surface current density, you can generate the same magnetic field as the coil, but with a much simpler model. This is particularly useful for linear problems or for when you're only interested in the far-field effects.
+
+3. Modeling Eddy Currents with an Impedance Boundary
+
+In problems involving high-frequency fields or moving parts, eddy currents are a major concern. Instead of meshing a thin conducting sheet with a very fine mesh to capture the skin effect, you can use an impedance boundary condition. This condition combines the field value and its derivative on the surface to approximate the effect of the eddy currents. It's a "Robin-type" boundary condition that links the electric and magnetic fields on the surface, allowing you to model the energy dissipation from eddy currents without explicitly modeling their volume. This can provide significant computational savings, especially for large models with many conducting parts.
+
+4. Simulating a Magnetic Gap or Air Gap with a Boundary Condition
+
+Modeling thin air gaps in a magnetic circuit can be challenging due to the need for a very fine mesh in a small region. A jump boundary condition can be used to handle this. Instead of a physical air gap, you can apply a boundary condition that enforces a discontinuity (a "jump") in the magnetic potential across the surface. This allows you to represent the effect of the air gap without actually meshing it, which is useful in both 2D and 3D magnetostatics problems.
 
