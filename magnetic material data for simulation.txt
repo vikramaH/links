@@ -5,4 +5,7 @@ They can easily be modified for GetDP etc.
 2. In FEMM, the material properties (B-H curve) is displayed in a 2 column table when you go to specify a material from the library.
 This table can be copied and used.
 
-3. 
+3. QuickField has a tool to calculate mu_r as a function of H if B-H table is given. (https://quickfield.com/bh_curve_permeability.htm)
+
+4. Also, if magnetization values BH are given for different temperatures, BH relation at any temperature can be comuted.
+(https://quickfield.com/bh_curve_approximation.htm)
