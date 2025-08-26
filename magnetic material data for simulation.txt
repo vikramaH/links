@@ -1,0 +1,8 @@
+
+1. In Agros2D, there is a directory named 'materials'. In it, the relative permeabilities are available in .mat files which are text files. 
+They can easily be modified for GetDP etc.
+
+2. In FEMM, the material properties (B-H curve) is displayed in a 2 column table when you go to specify a material from the library.
+This table can be copied and used.
+
+3. 
