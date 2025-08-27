@@ -323,7 +323,57 @@ Examples library
 Benchmark library
 
 
+===============================================================
+
+**Multi-physics simulations for electrical machine development**
+
+Design of electrical machines requires a good command of multi-physical phenomena including electromagnetism, mechanics, thermodynamics, structural dynamics, vibration, noise, fluid dynamics, and fatigue. The functioning of the machines rises from electromagnetic phenomena connected with mechanical rotation and connected electrical circuits.
+
+===> . The parallel performance of Elmer exceeds the results of GetDP, as GetDP utilises parallel computation only in linear solvers, whereas Elmer also in linear system assembly. Furthermore, in the test cases, Elmer shows a good parallel performance with rotating electrical machine models.
+
+===> As electrical machines design is inheritably multi-physical, its accurate three-dimensional (3D) modelling has been out-of-question until recently. The computational burden has been too heavy for traditional computation tools and hardware. 
+
+Numerical 2D electromagnetic computation is a standard tool in design and analysis of electromechanical apparatuses. 
+
+===> SMEKlib
+2D-FEA Library for Electrical Machines in Matlab
+https://github.com/AnttiLehikoinen/SMEKlib
 
 
+=============================================
 
 
+The main feature differentiating GetDP from other tools is that the formulation of a discrete
+problem is given by user in ASCII data files with syntax close to the symbolic mathematical
+expressions of this problem. GetDP thus gives user advanced developing tools and a large
+freedom in adding new functionalities only by writing a new ASCII file, without changing the
+source code.
+
+Gmsh has four modules: geometry, mesh, solver and post-processing, where the
+solver is by default GetDP. The input to these modules can be done either interactively using
+the graphical user interface or with ASCII script files using Gmsh's own syntax.
+
+Both GetDP and Gmsh are originated from University of Liège, Belgium. 
+
+===> Electrical machine models need a model for rotor rotation and for the
+connected electrical circuits. There are two main types of different models allowing the rotor
+mesh to rotate relative to the stator mesh: sliding surface models and moving band methods.
+
+GetDP uses moving band method, where a band of mesh exists in the air-gap between stator and rotor meshes which provides conformity. 
+
+---> Elmer can deal with a great number of different equations, which may be coupled in a generic
+manner making Elmer a versatile tool for multi-physical simulations. Elmer includes physical
+models of e.g. fluid dynamics, structural mechanics, electromagnetics, heat transfer and
+acoustics. In some research intensive fields, Elmer is the globally leading code, e.g. glaciology 3D ice flow simulation. 
+Moreover, Elmer’s strengths are in multi-physical problems and in massive parallelisation. ( For some solvers,
+the parallel performance may scale up to thousands of cores.)
+
+Within the present decade, there has been effort to
+develop Elmer towards electromagnetics problems; for example edge elements, indispensable
+for electrodynamic simulations, were implemented few years ago. The first solver to use edge
+elements, WhitneyAVSolver, was implemented by Juha Ruokolainen in 2010 with the help of
+Saku Suuriniemi from Tampere University of Technology.
+
+Elmer’s rotation air-gap model is of sliding air-gap type, based on the so-called mortar method. The method is more suitable for 3D compared to moving band method used in GetDP.
+
+===> FEMM's electrical machine modelling is very limited due to lack of a time-dependent solver and a rotation model.
