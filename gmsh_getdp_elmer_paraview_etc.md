@@ -296,6 +296,8 @@ h - magnetic field  ,  a - mag vector potential , φ - scaler magnetic potential
 
 The h-φ-formulation is a weak form of Faraday’s law.
 
+(ref : This thesis : Standard and Mixed Finite Element Formulations for Systems with Type-II Superconductors)
+
 ===> We highlight the fact that the best formulation is problem-dependent and we give general recommendations for obtaining
 efficient time-stepping and linearization techniques.
 
