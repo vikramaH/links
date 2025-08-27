@@ -377,3 +377,21 @@ Saku Suuriniemi from Tampere University of Technology.
 Elmer’s rotation air-gap model is of sliding air-gap type, based on the so-called mortar method. The method is more suitable for 3D compared to moving band method used in GetDP.
 
 ===> FEMM's electrical machine modelling is very limited due to lack of a time-dependent solver and a rotation model.
+
+
+=========================================================================
+
+**Getting started with Onelab & Python**
+https://github.com/jackbkennedy/onelab/tree/master
+
+**very good manual** of GetDP 3.5.0
+https://getdp.info/doc/texinfo/getdp.html#Magnetodynamics
+
+https://GetDP 4.0.0 (development version)  
+getdp.info/dev/doc/texinfo/getdp.html
+
+
+===> Python API Tutorial: Getting Started with APIs
+
+https://www.geeksforgeeks.org/python/python-api-tutorial-getting-started-with-apis/
+
