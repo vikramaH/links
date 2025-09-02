@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="created" content="2025-09-02T13:06:29.939058071"/>
+	<meta name="changed" content="2025-09-02T13:09:35.457980976"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+		h1 { margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
+		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt; font-weight: bold }
+		h1.ctl { font-family: "Lohit Devanagari"; font-size: 24pt; font-weight: bold }
+		h2 { margin-top: 0.35cm; margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h2.western { font-family: "Liberation Serif", serif; font-size: 18pt; font-weight: bold }
+		h2.cjk { font-family: "Noto Serif CJK SC"; font-size: 18pt; font-weight: bold }
+		h2.ctl { font-family: "Lohit Devanagari"; font-size: 18pt; font-weight: bold }
+		a:link { color: #000080; text-decoration: underline }
+		strong { font-weight: bold }
+	</style>
+</head>
+<body lang="en-IN" link="#000080" vlink="#800000" dir="ltr"><h1 class="western" style="font-weight: normal">
+2-09-2025</h1>
+<h1 class="western">What is AI-Driven System Design?</h1>
+<p>Last Updated : 23 Jul, 2025 
+</p>
+<ul>
+	<li><p></p>
+</ul>
+<p>AI-Driven <a href="https://www.geeksforgeeks.org/system-design/system-design-tutorial/" target="_blank">System
+Design</a> integrates artificial intelligence to enhance the
+architecture, development, and optimization of systems. By
+integrating AI algorithms and models, it enables smarter
+decision-making, dynamic adaptability, and improved efficiency in
+system design and operation.</p>
+<div id="table_of_content" dir="ltr"><p style="margin-left: 0.11cm; margin-right: 0.11cm; margin-top: 0.11cm; margin-bottom: 0.11cm">
+	<font size="4" style="font-size: 15pt"><b>Important Topics for
+	AI-Driven System Design</b></font></p>
+	<ul>
+		<li><p style="margin-bottom: 0cm"><a href="https://www.geeksforgeeks.org/system-design/what-is-ai-driven-system-design/#what-is-system-design">What
+		is System Design?</a></p>
+		<li><p style="margin-bottom: 0cm"><a href="https://www.geeksforgeeks.org/system-design/what-is-ai-driven-system-design/#what-is-aidriven-system-design">What
+		is AI-Driven System Design?</a></p>
+		<li><p style="margin-bottom: 0cm"><a href="https://www.geeksforgeeks.org/system-design/what-is-ai-driven-system-design/#components-of-aidriven-systems">Components
+		of AI-Driven Systems</a></p>
+		<li><p style="margin-bottom: 0cm"><a href="https://www.geeksforgeeks.org/system-design/what-is-ai-driven-system-design/#benefits-of-aidriven-system-design">Benefits
+		of AI-Driven System Design</a></p>
+		<li><p style="margin-bottom: 0cm"><a href="https://www.geeksforgeeks.org/system-design/what-is-ai-driven-system-design/#design-principles-for-aidriven-systems">Design
+		Principles for AI-Driven Systems</a></p>
+		<li><p style="margin-bottom: 0cm"><a href="https://www.geeksforgeeks.org/system-design/what-is-ai-driven-system-design/#aidriven-system-design-process">AI-Driven
+		System Design Process</a></p>
+		<li><p style="margin-bottom: 0cm"><a href="https://www.geeksforgeeks.org/system-design/what-is-ai-driven-system-design/#challenges-in-aidriven-system-design">Challenges
+		in AI-Driven System Design</a></p>
+		<li><p style="margin-bottom: 0cm"><a href="https://www.geeksforgeeks.org/system-design/what-is-ai-driven-system-design/#realworld-examples-of-aidriven-systems">Real-World
+		Examples of AI-Driven Systems</a></p>
+		<li><p style="margin-bottom: 0cm"><a href="https://www.geeksforgeeks.org/system-design/what-is-ai-driven-system-design/#popular-ai-frameworks-and-libraries">Popular
+		AI Frameworks and Libraries</a></p>
+		<li><p><a href="https://www.geeksforgeeks.org/system-design/what-is-ai-driven-system-design/#best-practices-for-aidriven-system-design">Best
+		Practices for AI-Driven System Design</a></p>
+	</ul>
+</div>
+<h2 class="western">What is System Design?</h2>
+<p>System Design involves coming up with an architecture for a
+particular information system that includes modules, components’
+interfaces, and data so that it meets specified requirements.
+<strong><a href="https://www.geeksforgeeks.org/system-design/what-is-high-level-design-learn-system-design/" target="_blank"><b>High-Level
+Design (HLD)</b></a></strong> refers to the overall architecture
+while <strong><a href="https://www.geeksforgeeks.org/system-design/what-is-low-level-design-or-lld-learn-system-design/" target="_blank"><b>Low-Level
+Design (LLD)</b></a></strong> comprises detailed component-level
+design. To be scalable, efficient, and maintainable whilst fulfilling
+required nonfunctional or functional criteria; good system design is
+necessary.</p>
+<p>System design is typically divided into two main categories:</p>
+<ul>
+	<li value="1"><p style="margin-bottom: 0cm"><strong><b>High-Level
+	Design: </b></strong>This phase is responsible for the entire system
+	building. It stipulates the structure of the system including main
+	components, their relationships, and data flow between modules
+	through communication protocols. The HLD view overall ensures that
+	it complies with functional as well as non-functional requirements
+	like scalability, reliability a,d performance.</p>
+	<li value="2"><p><strong><b>Low-Level Design (LLD): </b></strong>This
+	phase goes into each element and module stated in HLD in depth. It
+	encompasses component design, algorithms used within those
+	components, data structures used by different components, and
+	specifics of their implementation. LLD tests all parts of the system
+	to perform effectively with other units.</p>
+</ul>
+<h2 class="western">What is AI-Driven System Design?</h2>
+<p><strong><b>AI-driven system design</b></strong> takes traditional
+system design one step further by integrating AI and ML techniques.
+In this way, these systems can be able to handle bigger data volumes,
+learn from the same, and make their own decisions. 
+</p>
+<ul>
+	<li value="1"><p style="margin-bottom: 0cm">In situations where
+	complicated decision-making is necessary or where systems need to
+	respond to changing environmental conditions in real time,
+	artificial intelligence driven-systems are very handy.</p>
+	<li value="2"><p style="margin-bottom: 0cm"><strong><b>For example,
+	</b></strong>in healthcare, AI-driven systems analyze medical images
+	and patient information to help doctors diagnose diseases more
+	accurately and quickly. 
+	</p>
+	<li value="3"><p style="margin-bottom: 0cm">Similarly, in finance,
+	these systems can identify fraudulent activities by analyzing
+	real-time transaction patterns. 
+	</p>
+	<li value="4"><p>By automating these complex processes, AI-driven
+	systems not only improve user experiences but also provide smart
+	solutions that can greatly increase efficiency as well as a positive
+	result.</p>
+</ul>
+<h2 class="western">Components of AI-Driven Systems</h2>
+<p>AI Driven systems are made that consist of various vital parts for
+data processing, learning from it and creating intelligence. Some of
+these components are:</p>
+<div id="GFG_AD_Desktop_InContent_ATF_728x280" dir="ltr"><p align="center" style="margin-top: 0.26cm; margin-bottom: 0.26cm">
+	<br/>
+<br/>
+
+	</p>
+	<div id="GFG_AD_Desktop_InContent_ATF_300x250_1" dir="ltr"><p align="center" style="margin-top: 0.26cm; margin-bottom: 0.26cm">
+		<br/>
+<br/>
+
+		</p>
+	</div>
+</div>
+<ul>
+	<li value="1"><p style="margin-bottom: 0cm"><strong><b>Data Sources:
+	</b></strong>
+	</p>
+	<ul>
+		<li value="1"><p style="margin-bottom: 0cm">Artificial Intelligence
+		(AI) -driven systems require the collection of huge amounts of data
+		obtained from various sources such as sensors, databases, user
+		interactions and external data feeds. 
+		</p>
+		<li value="2"><p style="margin-bottom: 0cm">The quality and variety
+		of data affects how well the system can learn and make accurate
+		predictions.</p>
+	</ul>
+	<li value="2"><p style="margin-bottom: 0cm"><strong><b>Data
+	Processing and Storage: </b></strong>
+	</p>
+	<ul>
+		<li value="1"><p style="margin-bottom: 0cm">Before analyzing the
+		information, it has to be cleaned up, transformed and stored in a
+		manner that makes it easily accessible. 
+		</p>
+		<li value="2"><p style="margin-bottom: 0cm">Data processing
+		involves filtering out noise, handling missing values, normalizing
+		data, and transforming it into a format suitable for machine
+		learning. 
+		</p>
+		<li value="3"><p style="margin-bottom: 0cm">Such storage solutions
+		must be scalable so as to handle large datasets besides speeding up
+		the access to information.</p>
+	</ul>
+	<li value="3"><p style="margin-bottom: 0cm"><strong><b>Machine
+	Learning Models: </b></strong>
+	</p>
+	<ul>
+		<li value="1"><p style="margin-bottom: 0cm">At the core of
+		AI-driven systems are machine learning models. These models are
+		trained on historical data to recognize patterns and make
+		predictions or decisions. 
+		</p>
+		<li value="2"><p style="margin-bottom: 0cm">The choice of
+		model—whether it’s a decision tree, neural network or support
+		vector machine—depends on the specific task the system is
+		designed to perform.</p>
+	</ul>
+	<li value="4"><p style="margin-bottom: 0cm"><strong><b>AI Algorithms
+	and Models:</b></strong> 
+	</p>
+	<ul>
+		<li value="1"><p style="margin-bottom: 0cm">Other than the regular
+		machine learning models, AI powered systems can also employ
+		advanced algorithms such as deep learning models, natural language
+		processing (NLP) algorithms or reinforcement learning techniques. 
+		</p>
+		<li value="2"><p style="margin-bottom: 0cm">For instance, such
+		models handle difficult tasks like image recognition, language
+		translation or autonomous decision making.</p>
+	</ul>
+	<li value="5"><p style="margin-bottom: 0cm"><strong><b>Inference
+	Engine:</b></strong> 
+	</p>
+	<ul>
+		<li value="1"><p style="margin-bottom: 0cm">Once a machine learning
+		model is trained, inference engine runs it in real-time to provide
+		insights or decisions based on new data. 
+		</p>
+		<li value="2"><p style="margin-bottom: 0cm">It is crucial for
+		applications which demand immediate responses like fraud detection
+		and personalized recommendations.</p>
+	</ul>
+	<li value="6"><p style="margin-bottom: 0cm"><strong><b>User
+	Interface: </b></strong>
+	</p>
+	<ul>
+		<li value="1"><p style="margin-bottom: 0cm">User interface (UI) is
+		the point of interaction between the user and the AI-driven system.
+				</p>
+		<li value="2"><p style="margin-bottom: 0cm">The AI generated
+		insights should be presented in a way that users can understand, so
+		that they can make informed choices or engage with meaningful
+		interaction with it. 
+		</p>
+		<li value="3"><p style="margin-bottom: 0cm">It is important to have
+		well-designed UIs to ensure user satisfaction.</p>
+	</ul>
+	<li value="7"><p style="margin-bottom: 0cm"><strong><b>Integration
+	Layer:</b></strong> 
+	</p>
+	<ul>
+		<li value="1"><p style="margin-bottom: 0cm">Integration with
+		existing software applications or systems is often required by
+		AI-driven systems. 
+		</p>
+		<li value="2"><p style="margin-bottom: 0cm">The integration layer
+		is also responsible for making the communication between AI
+		components and other system modules flawless, thereby enabling the
+		AI system to function in a bigger environment.</p>
+	</ul>
+	<li value="8"><p style="margin-bottom: 0cm"><strong><b>Backend
+	Infrastructure:</b></strong> 
+	</p>
+	<ul>
+		<li value="1"><p style="margin-bottom: 0cm">This includes servers,
+		databases, cloud services and other technologies that support
+		system’s data processing, storage and model deployment. 
+		</p>
+		<li value="2"><p>It ensures that the artificial intelligence driven
+		system is strong, scalable and can handle real-time processing as
+		well as large scale data analytics.</p>
+	</ul>
+</ul>
+<h2 class="western">Benefits of AI-Driven System Design</h2>
+<p>AI-powered systems come with many advantages which make them
+useful in different fields:</p>
+<ul>
+	<li value="1"><p style="margin-bottom: 0cm"><strong><b>Improved
+	Decision Making:</b></strong> AI powered systems have the ability to
+	analyze large amounts of data which can identify hidden patterns and
+	trends that may be missed by humans. These insights help improve
+	decision-making processes yielding better results.</p>
+	<li value="2"><p style="margin-bottom: 0cm"><strong><b>Automation:</b></strong>
+	AI-powered systems are capable of automating repetitive and
+	complicated tasks thereby decreasing human involvement. This does
+	not only enhance productivity but also reduces the chances of
+	mistakes that people make, therefore enabling more reliable and
+	consistent outputs.</p>
+	<li value="3"><p style="margin-bottom: 0cm"><strong><b>Personalization:</b></strong>
+	AI-based systems can even customize products, services and user
+	experience based on personal choice. For instance, AI-powered
+	recommendation engines on platforms such as Netflix or Amazon will
+	use other data to tell the same users what else they will love, thus
+	enhancing their satisfaction.</p>
+	<li value="4"><p style="margin-bottom: 0cm"><strong><b><a href="https://www.geeksforgeeks.org/system-design/what-is-scalability/" target="_blank">Scalability</a>:</b></strong>
+	AI-based systems are designed in a way that they can handle large
+	quantities of data and can easily grow alongside demand for more. As
+	the system processes more data, it may become more accurate and
+	efficient making it perfect for applications requiring scalability.</p>
+	<li value="5"><p style="margin-bottom: 0cm"><strong><b>Improved
+	Decision Making:</b></strong> Provides actionable insights driven by
+	data. Optimizes system performance through continuous learning and
+	adaptation.</p>
+	<li value="6"><p style="margin-bottom: 0cm"><strong><b>Enhanced User
+	Experience: </b></strong>AI-based systems allow for personalized
+	smart interactions with the user thereby making user experience more
+	interesting and fulfilling. For instance, a chatbot driven by
+	artificial intelligence could offer instant assistance as well as
+	tailor its responses which improve customer service delivery.</p>
+	<li value="7"><p><strong><b>Cost Savings: </b></strong>By automating
+	processes and optimizing resource utilization, organizations can
+	achieve significant cost savings through the utilization of
+	AI-driven systems. This allows organizations to reduce operational
+	expenses and allocate resources better translating to higher return
+	on investment.</p>
+</ul>
+<h2 class="western">Design Principles for AI-Driven Systems</h2>
+<p>In order to ensure that AI-driven systems are effective, scalable,
+and ethical, there are several design principles that should be
+followed:</p>
+<ul>
+	<li value="1"><p style="margin-bottom: 0cm"><strong><b>Modularity:
+	</b></strong>Systems that can be broken down into separate modules
+	make it easier to change them around and update them. This enables
+	the development, testing, and maintenance of each component
+	individually which is critical for scalability and adaptability.</p>
+	<li value="2"><p style="margin-bottom: 0cm"><strong><b><a href="https://www.geeksforgeeks.org/system-design/what-is-scalability/" target="_blank">Scalability</a>:</b></strong>
+	AI-driven systems should have the ability to scale with increasing
+	data volumes and user needs. The use of scalable architectures,
+	cloud services and distributed computing helps in ensuring that the
+	system will continue to perform well even during periods of rapid
+	increase in its usage.</p>
+	<li value="3"><p style="margin-bottom: 0cm"><strong><b>Data Privacy
+	and Security:</b></strong> Safeguarding user information while
+	securing AI models is vital. Robust encryption mechanisms, access
+	controls, as well as data anonymization tools should be embedded
+	within AI-driven systems so as to protect confidential information.</p>
+	<li value="4"><p style="margin-bottom: 0cm"><strong><b>Transparency
+	and Explainability: </b></strong>AI-driven decisions made by the
+	system should be understandable to users. Explaining why AI does
+	what it does builds trust and empowers people in making their
+	choices wisely, which is very important in such industries as
+	healthcare and finance where a decision of an AI can have serious
+	consequences.</p>
+	<li value="5"><p style="margin-bottom: 0cm"><strong><b>User-Centric
+	Design: </b></strong>Artificial intelligence systems’ designs must
+	meet the needs and preferences of their end-users. It implies that
+	user-centric design makes the system less complex, thus easy for
+	anyone to use and meets the particular needs of target population.</p>
+	<li value="6"><p><strong><b>Ethical AI: </b></strong>The main thing
+	about designing AI-driven systems is to be concerned about ethical
+	principles. They include equity promotion, bias avoidance, privacy
+	assurance, responsible use of AI technologies. Ethical approach to
+	this kind of AI development prevents unforeseen damages caused by
+	its application hence helps to build confidence in it among
+	customers.</p>
+</ul>
+<h2 class="western">AI-Driven System Design Process</h2>
+<p>Designing AI systems is a process that has several steps. Below
+steps are essential for the system’s success:</p>
+<ul>
+	<li value="1"><p style="margin-bottom: 0cm"><strong><b>Step 1:
+	Requirement Analysis:</b></strong> The underlying issue that the
+	system will address should be known first, followed by specifying
+	what it should do within this range. This is about understanding
+	business objectives, user’s expectations and technical conditions
+	that will influence how to design the model.</p>
+	<li value="2"><p style="margin-bottom: 0cm"><strong><b>Step 2: Data
+	Collection: </b></strong>Any AI-driven system relies on data. For
+	training machine learning models and taking informed decisions, one
+	needs to get relevant information from different sources. The data
+	should be comprehensive, diverse and of high quality.</p>
+	<li value="3"><p style="margin-bottom: 0cm"><strong><b>Step 3: Data
+	Cleaning:</b></strong> Raw data typically contains noise,
+	inconsistencies or missing values which can affect performance of AI
+	models. Clean up data involves preprocessing it to correct mistakes,
+	normalize variables as well as transform them into another type that
+	is suitable for analysis.</p>
+	<li value="4"><p style="margin-bottom: 0cm"><strong><b>Step 4: Model
+	Building:</b></strong> For this purpose, machine learning models are
+	selected and trained from the cleaned data. The model that will be
+	used is determined by the nature of the specific task such as
+	classification, regression or clustering. A model is also taught to
+	gain experience and enable it make predictions by using historical
+	data.</p>
+	<li value="5"><p style="margin-bottom: 0cm"><strong><b>Step 5:
+	System Integration:</b></strong> Once machine learning models have
+	been built, they are merged into the architecture of the system.
+	This stage requires linking up these models with data sources, user
+	interfaces as well as backend infrastructure to ensure smooth
+	operation.</p>
+	<li value="6"><p style="margin-bottom: 0cm"><strong><b>Step 6:
+	Testing And Validation:</b></strong> Before its deployment, a
+	thorough testing has been done on AI-driven systems so that they
+	meet all specified requirements in terms of functionality and
+	performance expected out of them. Functional testing comprises
+	performance tests along with validation against real-life use cases.</p>
+	<li value="7"><p style="margin-bottom: 0cm"><strong><b>Step 7:
+	Deployment: </b></strong>After successful testing, the system is
+	deployed in the target environment. This involves establishing the
+	required infrastructure, configuring it and making it accessible to
+	end-users.</p>
+	<li value="8"><p style="margin-bottom: 0cm"><strong><b>Step 8:
+	Monitoring And Maintenance: </b></strong>The system is monitored
+	continually after deployment to ensure its proper operation while
+	adapting it to different circumstances. This includes regular
+	maintenance, updates and retraining of models to keep the system
+	effective and relevant.</p>
+	<li value="9"><p><strong><b>Step 9: Feedback Loop: </b></strong>User
+	feedback and system performance data are collected in order to
+	refine the system over time. It provides feedback on a constant
+	basis so that this AI-powered solution may always be useful for
+	users’ purposes as well as business goals.</p>
+</ul>
+<h2 class="western">Challenges in AI-Driven System Design</h2>
+<p>Below are the challenges in AI-Driven System Design:</p>
+<ul>
+	<li value="1"><p style="margin-bottom: 0cm"><strong><b>Data Quality:
+	</b></strong>Ensuring data is accurate, relevant and unbiased.</p>
+	<li value="2"><p style="margin-bottom: 0cm"><strong><b>Model
+	Complexity: </b></strong>Managing the complexity of machine learning
+	models.</p>
+	<li value="3"><p style="margin-bottom: 0cm"><strong><b><a href="https://www.geeksforgeeks.org/system-design/what-is-scalability/" target="_blank">Scalability</a>:
+	</b></strong>Designing systems that can scale efficiently.</p>
+	<li value="4"><p style="margin-bottom: 0cm"><strong><b>Ethical
+	Considerations: </b></strong>Addressing ethical issues related to AI
+	decisions.</p>
+	<li value="5"><p><strong><b>Integration: </b></strong>Seamlessly
+	integrating AI components with existing systems.</p>
+</ul>
+<h2 class="western">Real-World Examples of AI-Driven Systems</h2>
+<p>AI powered systems are being employed in various sectors to foster
+progress and productivity. Here are a few examples:</p>
+<ul>
+	<li value="1"><p style="margin-bottom: 0cm"><strong><b>Healthcare :</b></strong>
+	AI-driven systems for healthcare are transforming patient care. For
+	example, IBM Watson Health uses AI to examine patients’ records
+	and prescribe personalized therapies. The occurrence of killer
+	diseases such as cancer can be detected by the help of artificial
+	intelligence algorithms through medical images with high accuracy
+	making it possible to detect the disease early enough.</p>
+	<li value="2"><p style="margin-bottom: 0cm"><strong><b>Finance: </b></strong>In
+	finance, AI powered systems have been deployed for fraud detection,
+	risk assessment and algorithmic trading. PayPal among others
+	analyses real-time transaction data using AI hence identifying any
+	suspicious activity that may lead to financial losses.</p>
+	<li value="3"><p style="margin-bottom: 0cm"><strong><b>Retail: </b></strong>The
+	likes of Amazon and Netflix rely on AI-driven recommendation engines
+	that examine user behavior and preferences to recommend products or
+	content. Such systems personalize the viewing and shopping
+	experience thereby enhancing customer satisfaction, hence increasing
+	sales.</p>
+	<li value="4"><p style="margin-bottom: 0cm"><strong><b>Transportation:
+	</b></strong>AI-driven systems are what autonomous vehicles depend
+	on in order to navigate the roads, avoid obstacles, and make
+	immediate decisions. In this regard, companies including Tesla
+	employ AI to scrutinize sensor data as well as control vehicle
+	behavior, thus bringing self-driving cars into existence.</p>
+	<li value="5"><p><strong><b>Customer Support: </b></strong>Instant
+	replies given by machine-learning chatbots and digital assistants
+	have revolutionized customer service. These systems are equipped
+	with natural language processing (NLP) technology through which they
+	understand customer inquiries and provide responses; thus reducing
+	waiting time for customers, as well as improving the quality of
+	services provided.</p>
+</ul>
+<h2 class="western">Popular AI Frameworks and Libraries</h2>
+<p>Below are some popular AI frameworks and libraries:</p>
+<ul>
+	<li value="1"><p style="margin-bottom: 0cm"><strong><b>TensorFlow:
+	</b></strong>The open-source machine learning framework and deep
+	learning.</p>
+	<li value="2"><p style="margin-bottom: 0cm"><strong><b>PyTorch: </b></strong>A
+	flexible, and intuitive deep learning framework.</p>
+	<li value="3"><p style="margin-bottom: 0cm"><strong><b>scikit-learn:
+	</b></strong>A Python library for classical machine learning
+	algorithms.</p>
+	<li value="4"><p style="margin-bottom: 0cm"><strong><b>Keras:
+	</b></strong>TensorFlow-based high-level API for neural networks.</p>
+	<li value="5"><p style="margin-bottom: 0cm"><strong><b>OpenCV: </b></strong>A
+	computer vision library.</p>
+	<li value="6"><p><strong><b>Apache MXNet: </b></strong>Scalable deep
+	learning.</p>
+</ul>
+<h2 class="western">Best Practices for AI-Driven System Design</h2>
+<p>Below are the best practices for AI-Driven System Design:</p>
+<ul>
+	<li value="1"><p style="margin-bottom: 0cm"><strong><b>Start Small:</b></strong>
+	Begin by testing the capabilities of AI using a small project which
+	can be managed easily.</p>
+	<li value="2"><p style="margin-bottom: 0cm"><strong><b>Iterate:
+	</b></strong>Always do more than one trial on the system to improve
+	it through feedbacks as well as iterations.</p>
+	<li value="3"><p style="margin-bottom: 0cm"><strong><b>Collaborate:</b></strong>
+	Involve SMEs to ensure businesses’ needs are addressed when
+	creating systems like this one</p>
+	<li value="4"><p style="margin-bottom: 0cm"><strong><b>Documented:
+	</b></strong>Maintain both models and system components of
+	comprehensive documentation.</p>
+	<li value="5"><p style="margin-bottom: 0cm"><strong><b>Stay Updated:</b></strong>
+	Keep pace with developments in artificial intelligence and machine
+	learning technologies that occur globally;</p>
+	<li value="6"><p style="margin-bottom: 0cm"><strong><b>Continuous
+	Monitoring And Maintenance;</b></strong> Regularly updating of AI
+	systems will require continuous monitoring</p>
+	<li value="7"><p><strong><b>Ethical Considerations: </b></strong>These
+	must be continuously considered as concerns arise about the
+	ethicality of AI.</p>
+</ul>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+</body>
+</html>
