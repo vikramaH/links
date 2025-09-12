@@ -1,0 +1,163 @@
+Some characteristics of .sif file
+=================================
+
+
+Ref:  Elmer course CSC, May 2018  (  https://www.nic.funet.fi/index/elmer/courses/course_may2018/Slides_Day2.pdf  )
+
+(2) Elmer SIF file explained ( https://elmerice.elmerfem.org/wiki/lib/exe/fetch.php?media=courses:2020:2020_11_elmersif.pdf )
+
+=====================================
+
+
+1. Comment starts with '!' .  It can be a inline comment too.
+
+2. All sections start with some keyword or phrase and end eith 'End' .
+
+3. Sequence of sections is NOT very fixed (Except header). It can be anything as long as variables used in the section for numerical values are defined before.
+
+4. A section can consist of only comments. That will be treated as if that was not there in the .sif file.
+
+5. There are multiple ways a same thing can be done. 
+
+6. Sections are
+ o Header
+ o Constants
+ o Simulation
+ o Solver i
+ o Body i
+ o Equation i
+ o Body Force i
+ o Material i
+ o Initial Condition i
+ o Boundary Condition i
+ o Run Control
+ o Component i
+
+ ===>  Not all sections are needed
+
+
+7. Many keywords defined in SOLVER.KEYWORDS database. Foor others keyword type must be given.
+
+8. Keyword(n,m) indicates a n×m array. It is applicable for Integer and Real.
+
+9. For sections with indexing use continuous numbering starting from 1.
+
+10. include statement may be used to read other files within the SIF file ( eg.,  include material.sif )
+
+11. Scripting by MATC or by LUA.
+
+12. Real valued keyword functions can be used (eg, temp dependent density). It can be done in MATC, LUA, FORTRAN etc.
+
+13. Boundary may be given a body id so that it can have an Equation, Material, Body Force etc. associated to it. (example :  Body Id = 4 ) 
+
+14. Sif file: Run Control ===> New section since 2020 . Provides parametric looping and internal optimization also in transient cases. If used, this section should be the 1st one.
+
+15. "Component" ====> Rarely used new section.  • May define a collection of bodies or boundaries to be used for model lumping etc.  • Main usage currently in electromagnetics.
+
+16. Coordinate System = "Cartesian 2D" ====>  choices : Cartesian{1D,2D,3D}, Polar{2D,3D}, Cylindric, Cylindric Symmetric, Axi Symmetric
+
+17. Simulation Type = "Transient" ====> Steady State, Transient or Scanning .
+
+18. Each Body has to have an Equation and Material assigned. Body Force, Initial Condition optional.
+
+19. The users should not be afraid to add new atomistic solvers to perform specific tasks.
+
+20. By default each a Solver is executed in order of their numbering. ===> "Exec Solver” keyword can be used to alter this.
+
+21. Conditional statements (in MATC or LUA ) are typically used to define complex material properties, boundary conditions, or initial conditions that change based on space or time.
+
+22. For more complex logic that goes beyond what's practical with MATC, you can define your own functions in an external file 
+      (e.g., a Fortran or C++ source file) and then call that function from your .sif file using the Procedure keyword. 
+      
+23.  You can define parameters at the top of an ElmerSolver .sif file and then use them throughout the file. This is a best practice for making your simulation setup more readable and easier to modify.
+
+     The standard way to define global parameters is within the Constants section.
+     
+24. The "Run Control" section of an Elmer SIF file is a specialized section that provides an outer-level control loop for the entire simulation. 
+    It's used for running multiple cases from a single SIF file, which is particularly useful for optimization, parametric studies, and design of experiments.
+    Unlike other sections that define the physics or material properties, Run Control is a powerful tool for automating a series of simulations. 
+    It was introduced in recent Elmer releases to handle tasks that were previously done by external shell scripts.
+    
+25. Data can be saved in various formats --> Gid , Gmsh, Vtk , Vtu , Dx (in one or many of these)
+
+26. Model 67 ===>  can read fields from Gmsh results file.
+
+27. Model 68 ===> Reload Existing Simulation Results.
+
+28. Model 69 ===> Runtime Control of the Input Data
+
+29. Model 59 ===> Internal Cost Function Optimization ===> This solver is an auxiliary solver for optimization problems. As input it requires a cost function computed
+      with the previous parameter values, and as output it gives the new parameters for which the cost function will be computed for.
+
+29.  ElmerSolver has a built-in feature to restart a simulation from a previous state, which is essential for long transient calculations. 
+           (1) using restart file feature (2) using the last solution as initial condition
+
+
+=======================================================================================================
+
+
+Elmer characteristics
+=====================
+
+1. Multiphysics
+
+2. Implementing your own physics ===> write in FORTRAN etc and comple.
+
+3. Optimization ===> (a) using in-buit solver (2) using DAKOTA, GenOpt etc (3) Python using its Elmer APIs and optimization programs of Python (pyelmer).
+
+4. Defining complex material properties, body forces and boundary conditions? (using MATC, FORTRAN etc?)
+
+5. Elmer has several solvers that are not directly tied to a specific physical equation but perform other crucial functions in the simulation workflow. 
+   ====> ResultOutputSolver, SaveLine, SaveScalars, MeshAdaptationSolver etc.
+
+6. In ResultOutputSolver section of sif file, we can write a MATC program to compute the multipoles and report it in the results.
+
+7. Elmergrid can read following mesh formats ===> .ansys, .inp (abacus),  .fil (abacus),  and many more.
+
+8. generate sif and mesh programatically ===>  ElmerGUI , Pyelmer , FreeCad Elmer interface , KQcircuits, Gdsfactory
+
+
+9. abstraction of Solvers in Elmersolve
+
+  • High level of abstraction ensures flexibility in implementation and simulation
+
+  • Solver is an asbtract dynamically loaded object with standard API
+
+     o Solver may be developed and compiled without touching the main library
+
+     o No upper limit to the number of Solvers
+   
+   
+ELECTROMAGNETICS using Elmer
+============================
+
+
+there are two different solvers
+1. circuitanddynamics
+2. whitneyavsolver
+
+
+
+
+
+===============================
+
+
+Analytical expressions for fringe fields in multipole magnets (2015 ) ===> A very extensive paper
+  
+   https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.18.064001
+   
+   
+ANALYTIC METHODS OF SIMULATING MAGNETIC FIELDS FOR THE TAIWAN PHOTON SOURCE (2014)  ===> Analytic methods of four kinds 
+served for analysis of the magnetic field of TPS magnets that were simulated with OPERA 2D and 3D software. 
+These analytic methods include fast Fourier transform, one-dimensional fitting, two-dimensional circular or elliptic fitting and a differential field.
+
+https://inspirehep.net/files/ff6a42ab6fc1a8d981f21c092302e1b5
+
+
+
+Simulating electromagnetics with ElmerFEM - F-Si wiki
+
+
+/sif/6479.sif
+
