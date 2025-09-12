@@ -1,5 +1,5 @@
-Some characteristics of .sif file
-=================================
+Some characteristics of .sif file (10-9-2025)
+=============================================
 
 
 Ref:  Elmer course CSC, May 2018  (  https://www.nic.funet.fi/index/elmer/courses/course_may2018/Slides_Day2.pdf  )
@@ -7,6 +7,9 @@ Ref:  Elmer course CSC, May 2018  (  https://www.nic.funet.fi/index/elmer/course
 (2) Elmer SIF file explained ( https://elmerice.elmerfem.org/wiki/lib/exe/fetch.php?media=courses:2020:2020_11_elmersif.pdf )
 
 =====================================
+
+
+0. One of the most important operations ElmerGUI does is to prepare a solver input file (sif) for us. As we will see later in the series, not all Elmer models are supported by the GUI, so we will need to write at least parts of the sif by ourselves at some point in the future.
 
 
 1. Comment starts with '!' .  It can be a inline comment too.
@@ -33,7 +36,7 @@ Ref:  Elmer course CSC, May 2018  (  https://www.nic.funet.fi/index/elmer/course
  o Run Control
  o Component i
 
- ===>  Not all sections are needed
+ ===>  Not all sections are needed.
 
 
 7. Many keywords defined in SOLVER.KEYWORDS database. Foor others keyword type must be given.
@@ -91,6 +94,8 @@ Ref:  Elmer course CSC, May 2018  (  https://www.nic.funet.fi/index/elmer/course
 
 29.  ElmerSolver has a built-in feature to restart a simulation from a previous state, which is essential for long transient calculations. 
            (1) using restart file feature (2) using the last solution as initial condition
+           
+30. Note : With Elmer most issues you might face are about not setting up the solver properly. These, in my experience, are the most common issues after mesh related issues.
 
 
 =======================================================================================================
@@ -99,7 +104,9 @@ Ref:  Elmer course CSC, May 2018  (  https://www.nic.funet.fi/index/elmer/course
 Elmer characteristics
 =====================
 
-1. Multiphysics
+0. Multiphysics
+
+1. ElmerSolver is built for large scale parallelization.
 
 2. Implementing your own physics ===> write in FORTRAN etc and comple.
 
@@ -116,8 +123,9 @@ Elmer characteristics
 
 8. generate sif and mesh programatically ===>  ElmerGUI , Pyelmer , FreeCad Elmer interface , KQcircuits, Gdsfactory
 
+9. Whole work can be in ElmerGUI or from command line (running elmergrid or elmersolver) . Command line is sometimes better. It can be also done using PyElmer.
 
-9. abstraction of Solvers in Elmersolve
+10. abstraction of Solvers in Elmersolve
 
   • High level of abstraction ensures flexibility in implementation and simulation
 
@@ -131,13 +139,132 @@ Elmer characteristics
 ELECTROMAGNETICS using Elmer
 ============================
 
+Various requirements of Electromagnetics : 1D, 2D, 3D, steady, harmonic, transient, linear/nonlinear/anisotropic material, rotating/moving systems, .....
 
-there are two different solvers
+
+===> T-Ω Finite Element formulation for solving eddy currents problems is computationally very attractive given that it reduces the number of unknowns by exploiting the fact that the magnetic
+field is irrotational in the insulating region.
+
+===> You need the additional EDF, magnetodynamics.xml, for the WhitneyAVHarmonic Solver. The definitions for the relevant equation are not loaded into ElmerGUI by default. Hence, one needs to load
+these before starting the simulations.
+
+  File ===> Definitions ===> Append ===> magnetodynamics.xml
+
+===> Adding additional menus can be avoided by permanently moving the .xml files from $ELMER_HOME/install/share/ElmerGUI/edf   to $ELMER_HOME/install/share/ElmerGUI/edf
+
+
+
+ Elmer Circuits
+ 
+ ====> Electromagnetic model : A-V solver and coil solver
+
+There are two different solvers
 1. circuitanddynamics
 2. whitneyavsolver
 
 
+* CoilSolver for current density
+* WhitneyAVSolver for magnetostatics
 
+??? Is circuitanddynamics and coilSolver the same?
+
+
+
+How does it work in practice ===> component–body association
+
+
+Solver input file (SIF):
+…
+Body 12
+Name=Coil
+Target Bodies(1) = $ Coil
+Equation = 2
+Material = 5
+Initial Condition = 1
+Body Force = 1
+End
+
+Component 1
+Name=Stranded Coil
+Master Bodies(1) = 12
+Coil Type = String Stranded
+Number of Turns = Integer 14
+Electrode Area = Real $ 2376e-6
+End
+
+
+THREE coil models in Elmer ==> (1) massive (2) Stranded (3)  Foil Winding
+
+ 3 EXAMPLES 
+ 
+Component 1
+Name=Massive Coil
+Master Bodies(1) = 1
+Coil Type = String Massive
+End
+
+
+
+Component 1
+Name=Stranded Coil
+Master Bodies(1) = 1
+Coil Type = String Stranded
+Electrode Area = Real $area
+End
+
+
+Component 1
+Name=Stranded Coil
+Master Bodies(1) = 1
+Coil Type = String Foil Winding
+Winding thickness
+Foil Winding Voltage
+Polynomial Order = Integer 2
+End
+
+------------------------------
+
+
+Defining coils currents 
+
+There are multiple ways in Elmer to define coil currents in hierarchical simulations for the Whitney AV solver to compute magnetic fields. Basically one can give "Current Density i", i=1,2,3 or "Electric Potential" which is used to internally compute the current sources in the AV solver.
+
+Now the caveat of the given source is that they must be divergence free. Elmer has built-in automated logic to do this but it only works for the given current density, not for the potential. To control the fixing there is the keyword   "Fix Input Current density = True"
+
+Since quite recently there is a possibility to also compute elemental fields of current density. These basically utilize the discontinuous galerkin features of Elmer where each nodal value is independent between elements. This avoids the intermediate and unnecessary projection to nodes and seems to be very beneficial for the convergence of the linear system of the vector potential.
+
+
+
+1) see   five coils example
+
+2) see   coil + iron core
+
+
+
+What are Closed and Open Coils?
+===============================
+
+In 3D we need to make a distinction between open and closed coils depending on the termination of the conductor. To the left you see that the closed coil has only one single (high) terminal, whereas the open coil has two: high and low terminals.
+
+This distinction is relevant when setting up the circuit network and the finite element model, as modifications will be required to assign these surfaces with the appropiate boundary conditions in the .sif file.
+
+When using the CoilSolver, some simplifications are made. In the case of a closed coil automatic cuts are made and no boundary conditions are needed (see image below). If the coil is open, the boundary conditions need to be defined on each terminal of the conductor.
+
+
+
+----------------------------
+
+
+elmer-circuitbuilder 1.0.5  =========> It is working in Google Colab.
+
+Python module for creating the circuit simulation definitions for Elmer FEM. The circuit definitions enable easy setup of  coils (e.g. massive, stranded, and foil) in 2D and 3D for magnetodynamics applications.
+
+
+The circuit file (with the extension .definition) contains the circuit definition, Body Force 1 and Component required by Elmer's .sif file. In these models the file is included in the .sif file as
+
+===>>> Include "harmonic_2241-circuits.definition"
+
+ FEM Coil types ===>  oMassive , Stranded , Foil
 
 
 ===============================
@@ -159,5 +286,15 @@ https://inspirehep.net/files/ff6a42ab6fc1a8d981f21c092302e1b5
 Simulating electromagnetics with ElmerFEM - F-Si wiki
 
 
-/sif/6479.sif
+/sif/6479.sif  +++> is this useful?
 
+
+
+https://github.com/ElmerCSC/elmerfem/tree/release/fem/tests ===> hundreds of test cases.
+
+https://github.com/ElmerCSC/elmerfem/tree/release/ElmerGUI/samples  ====> The sample files are located in format-specific directories (BREP, IGES etc).
+
+https://github.com/ElmerCSC/elmerfem/tree/release/ElmerGUI/Application/edf-extra ===> edf files for making your own menu.
+
+Multiphysics modeling using Open-source FEM software : Elmerfem and Onelab  (PSI, Switzerland)
+  https://indico.psi.ch/event/12880/attachments/22137/38333/multiphysics-PSI06262002_FTrillaudP.pdf
