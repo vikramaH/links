@@ -395,3 +395,42 @@ getdp.info/dev/doc/texinfo/getdp.html
 
 https://www.geeksforgeeks.org/python/python-api-tutorial-getting-started-with-apis/
 
+
+=====================================================================================
+
+19-9-2025
+
+1) I was able to save data in gmsh format (*.msh) and visualize it with GMSH. For this, a new solver section should be added like the following (using 'results output' in Elmer model --> Equation --> Add) :
+
+Solver 3
+  Equation = Result Output
+  Procedure = "ResultOutputSolve" "ResultOutputSolver"
+  Exec Solver = after saving  !!! Note this !!!
+  Output File Name = gmsh_output
+  Output Format = Gmsh
+  Binary Output = False
+
+  Save Geometry Ids = True
+  Save Nodal Fields = True
+  Save Elemental Fields = True
+
+  Vector Field 1 = Magnetic Flux Density
+
+  Vector Field 2 = Current Density
+
+  Scalar Field 1 = Jfix
+
+End
+
+2) In Elmer, vtu files can be made in many parts also, like case_air.vtu , case_winding.vtu . This helps to have smaller files.
+
+**Convergence Problem in Elmer**
+Absurd results or convergence problem can arise in Elmer due to inappropriate sequence of equations. I have the following experience- 
+1) Active Solvers (3) 2 3 1  ===> does NOT indicate that the sequence is 2, 3, 1.
+
+2) It olnly indicates which solvers are active (to be used). Others not included in this list may NOT execute. ===> But I have seen that "Execute solver" should also be equal to 'never' to do this.
+
+
+
+
+
