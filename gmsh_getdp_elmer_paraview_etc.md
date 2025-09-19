@@ -431,6 +431,34 @@ Absurd results or convergence problem can arise in Elmer due to inappropriate se
 2) It olnly indicates which solvers are active (to be used). Others not included in this list may NOT execute. ===> But I have seen that "Execute solver" should also be equal to 'never' to do this.
 
 
+===============================================================
+
+the following is   from  https://www.nic.funet.fi/index/elmer/courses/cource_may2010/DerivedDataInElmer_May2010.pdf
+
+**Great solvers not available in ElmerGUI**
+
+===> Only the most important solvers are supported by the GUI.
+
+===> There are more than 100 minimalistic test cases in Elmer. Among these, it is possible to find most of the implemented solvers.
+
+
+**Derived data in Elmer** 
+
+===> There exists a number of auxiliary solvers for computing derived
+fields ( Grad, Div, Curl, Streamlines, … Solvers for dimensional reduction: 3D -> 2D ; Averaging over time or space dimension ; Solvers for outputting 0D data such as Energy, flux, time, CPU time, number of iterations, etc…)
+===> Typically these solvers in advanced context are added by copy-paste.
+
+===> Usually auxiliary data need to be computed only after the iterative solution is ready or needed for saving
+• Exec Solver = after timestep
+• Exec Solver = before saving
+
+
+**DefUtils in Elmer**
+The default utilities have many additional features that are automatically accessible via commands in the .sif file.
+
+
+
+
 
 
 
