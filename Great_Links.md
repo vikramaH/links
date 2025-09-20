@@ -123,3 +123,8 @@ CERNGetDP  https://gitlab.cern.ch/steam/cerngetdp
 **UNDUMAG** : Magnetic field calculations for permanent magnet structures and coils  https://github.com/MicScheer/UNDUMAG
 
 **Wave**  https://github.com/MicScheer/WAVE
+
+
+=======================
+
+https://www.isotel.eu/dc-ct/index.html  ISOTEL Industrial and Residential Digital Series 
