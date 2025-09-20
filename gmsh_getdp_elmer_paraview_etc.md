@@ -457,8 +457,57 @@ fields ( Grad, Div, Curl, Streamlines, … Solvers for dimensional reduction: 3D
 The default utilities have many additional features that are automatically accessible via commands in the .sif file.
 
 
+===================================
 
+**Some more things about Elmer**
+1) Scan
+2) Slave solvers
+3) transient restart
+4) adaptive time steps
+5) Rotational normals for rotating machine problems
+6) WPotential Solve --->
+7) using keywords introduced by the user
+8) Defining parameters depending on field variables ===> Use MATC instead of FORTRAN as MATC has the benefit of being an interpreted language, making an additional compilation step with a compiler unnecessary.
+Simple interpolating functions can be created by means of tabular data. The following example defines the parameter Density the value of which depends on the variable Temperature:
+Density = Variable Temperature
+ Real
+  0 900
+  273 1000
+  300 1020
+  400 1000
+ End
 
+9) In the solver input file an expression following the symbol $ is generally interpreted to be in MATC language. If
+the solver input file contains the lines
+$solvertype = "Iterative"
+$tol = 1.0e-6
+then one may define, e.g.,
+Solver 1
+...
+Linear System Solver = $solvertype
+Linear System Convergence Tolerance = $tol
+...
+End
+
+10) Soft limiters ===> The user may set soft lower and upper limits to the values of the field variable.  The limiters may be applied to both boundary conditions and bodies.
+
+11) Boundary conditions ===> Dirichlet, Neumann, Conforming conditions, periodic,
+
+12) Solver activation ===> There is a large number of different ways how solvers need to be activated and deactivated. Mostly these needs are related to different kinds of multiphysical coupling schemes. If nothing else is specified, the solver is called every time in its order of appearance.
+
+13) Solver execution by a master solver  ===> With special keywords a solver may activate the execution of another solver in a particular stage of the solution procedure. Here the solver which performs the activation is called a master solver.
+
+14) Variable names ===> The variable name is presented in the Solver section by keyword Variable, for example
+     Variable = Varname
+    This name is used when setting Dirichlet conditions and initial conditions.
+
+15) Active and passive elements ===> In Elmer it is possible to define certain areas of the modeled geometry to be passive during the solution. This feature also allows for deactivating and reactivating of the elements.
+
+16) Meshing Utilities ===> ElmerSolver includes some internal possibilities to affect the mesh.
+
+17) Coordinate transformation ===> scaling, rotaion, Coordinate transformations from Cartesian to cylindrical etc.
+
+18) Mesh multiplication  ===> Mesh multiplication is the process where each mesh edge is split into two resulting to an increased number of elements. 
 
 
 
