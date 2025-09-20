@@ -128,3 +128,7 @@ CERNGetDP  https://gitlab.cern.ch/steam/cerngetdp
 =======================
 
 https://www.isotel.eu/dc-ct/index.html  ISOTEL Industrial and Residential Digital Series 
+
+https://chaos-polymtl.github.io/lethe/documentation/tools/gmsh/gmsh.html Introduction on How to Use GMSH
+
+https://www.manpagez.com/info/gmsh/gmsh-2.8.4/gmsh_53.php  Post-processing plugins of GMSH
