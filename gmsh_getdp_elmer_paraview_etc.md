@@ -507,7 +507,14 @@ End
 
 17) Coordinate transformation ===> scaling, rotaion, Coordinate transformations from Cartesian to cylindrical etc.
 
-18) Mesh multiplication  ===> Mesh multiplication is the process where each mesh edge is split into two resulting to an increased number of elements. 
+18) Mesh multiplication  ===> Mesh multiplication is the process where each mesh edge is split into two resulting to an increased number of elements.
+
+19) 5 ways to run Elmer
+      1. Compile from source code
+      2. Install ready pre-compiled package (Linux, Windows)
+      3. Run virtual appliance in virtual machine
+      4. Run inside a pre-defined container (Docker)
+      5. Run remotely on system with Elmer installation
 
 
 
