@@ -68,3 +68,11 @@ The `Makefile` is a script that automates the compilation process. Here's what t
 
 
 ===> I also Installed radia_ID  in  /home/anunad/radiaid   today (22-9-2025)
+
+===> Also Install  MagFieldTools-swig  provided at https://gitlab.esrf.fr/IDM/magfieldtools-swig
+
+See the paper  MAGNETIC FIELD TOOLS, A C++/PYTHON LIBRARY FORMAGNETIC FIELD PROCESSING  
+https://epaper.kek.jp/ipac2023/pdf/WEPL126.pdf
+
+=== > RadiaMM  
+https://gitlab.esrf.fr/IDM/radia/radiamm
