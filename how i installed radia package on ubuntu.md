@@ -62,3 +62,9 @@ The `Makefile` is a script that automates the compilation process. Here's what t
   * **`make core`**: Compiles the core **C++ library** of Radia. This is the main computational engine.
   * **`make pylib`**: Compiles the **Python wrapper** that allows you to use the C++ core library from within Python.
   * **`make clean`**: Removes all the compiled temporary files and libraries, essentially "resetting" the build environment.
+
+  * 
+================================
+
+
+===> I also Installed radia_ID  in  /home/anunad/radiaid   today (22-9-2025)
