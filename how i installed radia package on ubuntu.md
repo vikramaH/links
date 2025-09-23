@@ -66,13 +66,32 @@ The `Makefile` is a script that automates the compilation process. Here's what t
   * 
 ================================
 
+===> **Radia** : 3D Magnetostatics Computer Code
 
-===> I also Installed radia_ID  in  /home/anunad/radiaid   today (22-9-2025)
 
-===> Also Install  MagFieldTools-swig  provided at https://gitlab.esrf.fr/IDM/magfieldtools-swig
+===> I also Installed **radia_ID**  in  /home/anunad/radiaid   today (22-9-2025)
 
-See the paper  MAGNETIC FIELD TOOLS, A C++/PYTHON LIBRARY FORMAGNETIC FIELD PROCESSING  
-https://epaper.kek.jp/ipac2023/pdf/WEPL126.pdf
+===> **PyRadiaUndulators** : Python library for building undulator RADIA models. It can be used for building various undulator in Python.
 
-=== > RadiaMM  
+===> Also Install  **MagFieldTools-swig**  provided at https://gitlab.esrf.fr/IDM/magfieldtools-swig
+
+       See the paper  MAGNETIC FIELD TOOLS, A C++/PYTHON LIBRARY FORMAGNETIC FIELD PROCESSING  
+         https://epaper.kek.jp/ipac2023/pdf/WEPL126.pdf
+
+===> **RadiaMM**  
 https://gitlab.esrf.fr/IDM/radia/radiamm
+
+
+===> **rsradia** : The rsradia package contains utility functions and extensions for the Python version of the code Radia.
+
+===> **jupyter_rs_radia** : Widget for visualizing 3D Radia models in a jupyter notebook
+
+RadiaViewer allows users to render a magnet geometry and solve for its fields in a self-contained widget. The rendering is done by the VTK.js library.
+
+===> The **Sirepo** gateway supports physics codes like elegant, Warp, SRW, JSPEC, Zgoubi, and more. With it, you can configure, run, visualize, and share end-to-end HPC physical simulations on your browser.
+
+Sirepo  consists  of  a  graphical  web  interface  based  on  JavaScript  with  a backend  server  (either  on  local  machine  or  a  remote  server)  able  to  serve  many  different  software  packages,  including  already  implemented  interfaces  with  Synchrotron  Radiation  Workshop  (SRW)  for  accurate  X-ray  source  and  optics simulations1,2,3, Shadow3  –  a ray optics code  with  many sophisticated features for X-ray  beamlines4,5, and a  number of codes  for particle  accelerators  simulations.
+
+Sirepo  is  distributed  in  several  formats.
+
+
