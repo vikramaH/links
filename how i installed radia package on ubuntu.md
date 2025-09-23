@@ -100,4 +100,11 @@ Sirepo  is  distributed  in  several  formats.
 **Recent developments to the Radia magnetostatics code for improved performance and interface** (Dec 2022)
 Radia is a 3D magnetostatics code that is widely used to model a range of magnets for particle accelerators, with particularly broad usage within the synchrotron light source community. Recently, Radia has been released as open source and made available for collaborative development on GitHub. A US DOE SBIR grant has been obtained for its upgrade and extension. The ongoing improvements are focused on the core physics engine, performance enhancements, and the development of a graphical user interface. Additionally, a new Python API (PyRadia) has been developed to allow for wider use of Radia outside of the existing Mathematica API. We have implemented the majority of the Radia examples in Python scripts and in Jupyter notebooks, including advanced visualization features for interactively viewing 3D geometries based on the VTK toolkit. The interaction matrix and field calculations have been parallelized using MPI and show good scaling performance on a variety of cluster architectures. The parallel Radia may be accessed via Python scripts or using the Jupyter interface. A Sirepo application is under development to provide a browser based interface to the Radia code allowing modeling of synchrotron light source magnets, with a focus on undulators. Kick maps and field maps may be exported for use in electron storage ring modeling codes such as elegant or AT, and tabulated undulator files may be exported for x-ray optics computation in a physical optics code such as Synchrotron Radiation Workshop.
 
+-----------
+
+**WAVE** has been developed at BESSY over the years to calculate synchrotron radiation for almost arbitrary magnetic fields with high precision.
+WAVE has been used for the design of all insertion devices and the investigation of the insertion_device – electron_beam interaction, in particular of the superconducting wave-length shifters and wigglers at the storage ring BESSY I
+
+Simulation of insertion device performance : WAVE
+https://www.helmholtz-berlin.de/forschung/oe/wi/undulators/software-for-undulators/wavepage_en.html 
 
