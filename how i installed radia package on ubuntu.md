@@ -66,7 +66,8 @@ The `Makefile` is a script that automates the compilation process. Here's what t
   * 
 ================================
 
-===> **Radia** : 3D Magnetostatics Computer Code
+===> **Radia** : 3D Magnetostatics Open Source Computer Code. 
+
 
 
 ===> I also Installed **radia_ID**  in  /home/anunad/radiaid   today (22-9-2025)
@@ -88,10 +89,15 @@ https://gitlab.esrf.fr/IDM/radia/radiamm
 
 RadiaViewer allows users to render a magnet geometry and solve for its fields in a self-contained widget. The rendering is done by the VTK.js library.
 
-===> The **Sirepo** gateway supports physics codes like elegant, Warp, SRW, JSPEC, Zgoubi, and more. With it, you can configure, run, visualize, and share end-to-end HPC physical simulations on your browser.
+===> The **Sirepo** is a generic framework for handling multiple open source codes through a browser interface. It supports physics codes like elegant, Warp, SRW, JSPEC, Zgoubi, and more. With it, you can configure, run, visualize, and share end-to-end HPC physical simulations on your browser.
 
 Sirepo  consists  of  a  graphical  web  interface  based  on  JavaScript  with  a backend  server  (either  on  local  machine  or  a  remote  server)  able  to  serve  many  different  software  packages,  including  already  implemented  interfaces  with  Synchrotron  Radiation  Workshop  (SRW)  for  accurate  X-ray  source  and  optics simulations1,2,3, Shadow3  –  a ray optics code  with  many sophisticated features for X-ray  beamlines4,5, and a  number of codes  for particle  accelerators  simulations.
 
+For the impact on the electron beam, there are two objects of interest that Radia can export. The ﬁrst, a magnetic ﬁeld map, may be imported directly into a beam dynamics code such as elegant. A second object of export that is commonly used for undulators is a kick map. This represents the total kick an electron will receive due to a ﬁxed longitudinal domain of the undulator. Also, the on-axis magnetic ﬁeld of an undulator can be by exported and importing into a synchrotron radiation code such as SRW, and the radiation may be conveniently computed. 
+
 Sirepo  is  distributed  in  several  formats.
+
+**Recent developments to the Radia magnetostatics code for improved performance and interface** (Dec 2022)
+Radia is a 3D magnetostatics code that is widely used to model a range of magnets for particle accelerators, with particularly broad usage within the synchrotron light source community. Recently, Radia has been released as open source and made available for collaborative development on GitHub. A US DOE SBIR grant has been obtained for its upgrade and extension. The ongoing improvements are focused on the core physics engine, performance enhancements, and the development of a graphical user interface. Additionally, a new Python API (PyRadia) has been developed to allow for wider use of Radia outside of the existing Mathematica API. We have implemented the majority of the Radia examples in Python scripts and in Jupyter notebooks, including advanced visualization features for interactively viewing 3D geometries based on the VTK toolkit. The interaction matrix and field calculations have been parallelized using MPI and show good scaling performance on a variety of cluster architectures. The parallel Radia may be accessed via Python scripts or using the Jupyter interface. A Sirepo application is under development to provide a browser based interface to the Radia code allowing modeling of synchrotron light source magnets, with a focus on undulators. Kick maps and field maps may be exported for use in electron storage ring modeling codes such as elegant or AT, and tabulated undulator files may be exported for x-ray optics computation in a physical optics code such as Synchrotron Radiation Workshop.
 
 
