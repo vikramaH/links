@@ -102,9 +102,22 @@ Radia is a 3D magnetostatics code that is widely used to model a range of magnet
 
 -----------
 
+(in year 2023) The codes **UNDUMAG** and **WAVE** have been developed at HZB/BESSY. They are used intensively to design undulators, and to understand their magnetic and synchrotron radiation properties, as well as their impact on the storage ring.
+
+**UNDUMAG** is a stand-alone FORTRAN program to calculate magnetic fields of magnets, iron poles, and electric coils. In addition, an electron trajectory through the field and the corresponding synchtron radiation at a given point can be calculated.
+
 **WAVE** has been developed at BESSY over the years to calculate synchrotron radiation for almost arbitrary magnetic fields with high precision.
 WAVE has been used for the design of all insertion devices and the investigation of the insertion_device – electron_beam interaction, in particular of the superconducting wave-length shifters and wigglers at the storage ring BESSY I
 
 Simulation of insertion device performance : WAVE
 https://www.helmholtz-berlin.de/forschung/oe/wi/undulators/software-for-undulators/wavepage_en.html 
+
+***pybrill** : Sometimes there is no need for a sophisticated detailed calculation of undulator radiation, one only wants a quick
+brilliance of spectrum calculation. This is accomplished by the Python script pyBrill.py .
+
+
+Undumag, Wave and Brill can be downloaded from
+http://gitlab.helmholtz-berlin.de/gep/undumag.git
+http://gitlab.helmholtz-berlin.de/gep/wave.git
+http://gitlab.helmholtz-berlin.de/gep/brill.gi
 
