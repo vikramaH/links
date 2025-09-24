@@ -102,6 +102,8 @@ Radia is a 3D magnetostatics code that is widely used to model a range of magnet
 
 -----------
 
+===> BESSY II houses 13 permanent magnet undulators: 7 APPLE II devices, 5 out of vacuum planar devices, and 1 cryogenic permanent magnet undulator (CPMU). The MLS is home to one planar undulator. All devices have been modelled, designed, built and measured in house and continue to act as brilliant photon sources to many of HZBs beamlines. 
+
 (in year 2023) The codes **UNDUMAG** and **WAVE** have been developed at HZB/BESSY. They are used intensively to design undulators, and to understand their magnetic and synchrotron radiation properties, as well as their impact on the storage ring.
 
 **UNDUMAG** is a stand-alone FORTRAN program to calculate magnetic fields of magnets, iron poles, and electric coils. In addition, an electron trajectory through the field and the corresponding synchtron radiation at a given point can be calculated.
@@ -111,6 +113,7 @@ WAVE has been used for the design of all insertion devices and the investigation
 
 Simulation of insertion device performance : WAVE
 https://www.helmholtz-berlin.de/forschung/oe/wi/undulators/software-for-undulators/wavepage_en.html 
+
 
 ***pybrill** : Sometimes there is no need for a sophisticated detailed calculation of undulator radiation, one only wants a quick
 brilliance of spectrum calculation. This is accomplished by the Python script pyBrill.py .
