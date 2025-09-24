@@ -115,7 +115,7 @@ Simulation of insertion device performance : WAVE
 https://www.helmholtz-berlin.de/forschung/oe/wi/undulators/software-for-undulators/wavepage_en.html 
 
 
-***pybrill** : Sometimes there is no need for a sophisticated detailed calculation of undulator radiation, one only wants a quick
+**pybrill** : Sometimes there is no need for a sophisticated detailed calculation of undulator radiation, one only wants a quick
 brilliance of spectrum calculation. This is accomplished by the Python script pyBrill.py .
 
 
@@ -123,4 +123,15 @@ Undumag, Wave and Brill can be downloaded from
 http://gitlab.helmholtz-berlin.de/gep/undumag.git
 http://gitlab.helmholtz-berlin.de/gep/wave.git
 http://gitlab.helmholtz-berlin.de/gep/brill.gi
+
+
+## Magnet Simulation Software in Various labs
+ESRF ===> Radia
+BESSY ===> Undumag & Wave
+CERN ===> ROXY, CERNGetDP
+MAX IV ===>  2D simulations were performed using FEMM for all magnet elements. 3D simulations were performed using Radia for dipoles and quads as standalone magnets, ie no 3D simulations of the full magnet blocks.
+
+
+====> The field simulations in Radia for IVW on Mathematica can be reproduced in Python on macOS on both Intel and Arm architectures, and the model can be visualized in open-source ParaView and PyVista based on a visualization toolkit (VTK)
+
 
