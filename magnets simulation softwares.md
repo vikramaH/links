@@ -126,6 +126,8 @@ http://gitlab.helmholtz-berlin.de/gep/brill.gi
 
 
 ## Magnet Simulation Software in Various labs
+Several electromagnetic software packages have been widely used for the 3D ﬁeld simulation, such as OPERA, ROXIE, RADIA, ANSYS. For an iron-free coil, the magnetic ﬁeld can be computed in terms of Biot-Savart type integrals which do not require the meshing of the coil.
+
 ESRF ===> Radia
 BESSY ===> Undumag & Wave
 CERN ===> ROXY, CERNGetDP
