@@ -196,12 +196,20 @@ coils  that  are  extremely  difficult  to  model  and  mesh in a FEM code. In a
 keystoning of the cables and the grading of the current density are also very difficult to 
 implement in multipurpose FEM codes. 
 
-* export of geometry for ansys, opera. Export of field . Export the geometry for CAD/CAM.
+* creation of magnet geometry with GUI based input.
+
+* export of geometry for Ansys, opera. Export of field . Export the geometry for CAD/CAM.
 
 * ROXIE  automatically  calculates  the  harmonics  of  the  solution  in  the  post-processing and thus, 
-it is not necessary to use an external program.
+   it is not necessary to use an external program.
 
 * ROXIE  uses  the  same  geometrical dimensions on both 2D and 3D models.
+
+* ROXIE has dedicated coil end design modules, though complexity may be more limited.
+
+* Some coupling may be possible, but not its primary strength.
+
+* Only requires meshing of the boundaries (conductor surfaces, iron surfaces). The air region is handled analytically.
 
 
 Disadvantages of ROXIE:
@@ -213,10 +221,16 @@ using octant symmetry for the quadrupolar boundary  conditions.
 but the calculation of the fields in the aperture  (data  grid  for  the  harmonic  analyses,  
 3D line data for plots, etc.) need a much longer processing time in the BEM-FEM code. 
 
-3) ROXIE is not a multithreaded application and it cannot use the multiple  cores  of  the  machine.
+3) ROXIE is not a multithreaded application (parallel) and it cannot use the multiple  cores  of  the  machine.
 
 4) If  a  high  number  of  data  points  are  to  be  calculated  in  the  post-processing,  ROXIE  is  
 much slower than COMSOL.
+
+5) 3D simulation : Quasi 3D only.
+
+6) ROXIE has very specialized coil block modelling (Rutherford cables, rectangular conductors,
+   cos‑n theta geometries etc.), with detailed coil end modelling and also coil grading.
+
 
 
 
