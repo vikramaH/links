@@ -31,3 +31,11 @@ Okay, I've got a rough idea of the layout. Time to turn these ugly wireframes in
 For this, I use AI-powered UI generation tools (you can find a few out there, like https://stitch.withgoogle.com, or even use v0.dev to get ideas).
 
 I just uploaded the wireframes from ChatGPT and told it what I wanted.
+
+
+----------------------------------
+
+**Vibe coding** is an artificial intelligence-assisted software development technique popularized by Andrej Karpathy in February 2025. 
+It a chatbot-based approach to creating software where the developer describes a project or task to a large language model (LLM), 
+which generates code based on the prompt. The developer does not review or edit the code, but solely uses tools and execution results to 
+evaluate it and asks the LLM for improvements. 
