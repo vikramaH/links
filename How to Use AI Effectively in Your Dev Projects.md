@@ -12,6 +12,12 @@ I said earlier that AI can write better code than you, and I stand by it. AI has
 The game has changed. AI is a tool, probably the most powerful one we've ever been given. It automates the boring stuff so we can focus on 
 the hard problems – architecture, performance, and user experience.
 
+AI isn’t a silver bullet, but used the right way, it can be a full-stack teammate that actually speeds you up instead of adding noise. 
+The trick isn’t just asking it to "write code." It’s giving it structure, context, and a sequence so it knows what to build, 
+how to test it, and where it fits in your system.
+
+AI is better in ==> UI design, debugging, refactoring, translating code from one language to other, test generator.
+
 ===> You can even paste the buggy code back into the AI and say, "Hey, fix this." It's surprisingly good at cleaning up its own mess.
 
 
@@ -31,6 +37,7 @@ Okay, I've got a rough idea of the layout. Time to turn these ugly wireframes in
 For this, I use AI-powered UI generation tools (you can find a few out there, like https://stitch.withgoogle.com, or even use v0.dev to get ideas).
 
 I just uploaded the wireframes from ChatGPT and told it what I wanted.
+
 
 
 ----------------------------------
