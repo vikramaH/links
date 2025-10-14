@@ -1,5 +1,10 @@
 14-10-2025
 
+At its core, Google Colab is a cloud-based Jupyter Notebook service. 
+Colab eliminates one of the biggest challenges in data science: environment setup. With no installation required, learners and professionals can start coding immediately. 
+
+===> The first time I met Google’s Colab was when we searched for a serverless solution to train our models. Until that point, our models were of a smaller size which enabled us to train them on our local machines.
+
 **Getting Started with Google Colab**
 1. Go to the Google Colab website colab.research.google(dot)com and sign in with your Google account. 
 2. Click on the "New Notebook" button to create a new notebook.
