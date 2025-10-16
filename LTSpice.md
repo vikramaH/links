@@ -1,3 +1,5 @@
+15-10-2025
+
 LTSPicePowerSim
 https://github.com/kosokno/LTspicePowerSim
 
