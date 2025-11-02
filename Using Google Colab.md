@@ -5,6 +5,24 @@ Colab eliminates one of the biggest challenges in data science: environment setu
 
 ===> The first time I met Google’s Colab was when we searched for a serverless solution to train our models. Until that point, our models were of a smaller size which enabled us to train them on our local machines.
 
+**Why and how colabs excells**
+1) It provides GPU and TPU
+2) It provides full linux system, (a) which has many in-built python packages, (b) any package can be installed using !pip , (c) any application can be installed using !apt install d) LLMs like deepseek-ocr etc can be installed and tested
+2A) it provides RAM (about 12 GB) and disk space also.
+4) It provides gemini assistant
+5) it provides the proper invironment
+6) a lot of high end notebooks are available
+7) integrated with google drive and the github
+8) notebooks are available online from anywhere from any plateform.
+9) perhaps also reduces data spending because big files are not downloaded to our systems
+10) colab can download and install anything you can download and install on your system. so it helps **getting started**.
+11) some examples of installing on it- python packages like pyelmer, softwares like ngspice, compilers and comiling, LLMs,
+12) it helps combine and make a very versatile application, for example gmsh + elmer + plotly can be much better than opera3D. we can make a great application for doing complex OCR process for big books and download only the final text output.
+
+**disadvantages**
+1) data files and installed softares NOT persistent
+2) it does not allow the graphics of applications such as paraview to be displayed. ==> try to use colab more as a data cruncher than visualizer. Compute  numeric functions to evaluate the output of a design than the graphics.
+
 **Getting Started with Google Colab**
 1. Go to the Google Colab website colab.research.google(dot)com and sign in with your Google account. 
 2. Click on the "New Notebook" button to create a new notebook.
