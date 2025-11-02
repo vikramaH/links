@@ -18,6 +18,7 @@ Colab eliminates one of the biggest challenges in data science: environment setu
 10) colab can download and install anything you can download and install on your system. so it helps **getting started**.
 11) some examples of installing on it- python packages like pyelmer, softwares like ngspice, compilers and comiling, LLMs,
 12) it helps combine and make a very versatile application, for example gmsh + elmer + plotly can be much better than opera3D. we can make a great application for doing complex OCR process for big books and download only the final text output.
+13) there can be (1) python packages containg binary of the main package (eg pygmsh) (2) python interfaces of binary packages (eg pyElmer) (3) binary packages which can be installed and run in colab using python code (eg ngspice)
 
 **disadvantages**
 1) data files and installed softares NOT persistent
