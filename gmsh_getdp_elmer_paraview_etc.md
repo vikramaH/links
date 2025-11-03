@@ -517,12 +517,15 @@ End
       5. Run remotely on system with Elmer installation
       6. run on google colab
    
-##Paraview
+## Paraview
+
 A highly useful feature in the ParaView GUI for generating pvpython code is the Python Trace tool. You can perform actions interactively in the GUI (e.g., load a file, apply a clip filter, change a color map), and the trace tool will automatically generate the equivalent **pvpython** script, which can then be saved and executed using pvpython or pvbatch.
 
 pvpython is the Python interface to ParaView. You can think of pvpython as ParaView with a Python interface.
 
 from paraview.simple import *
+
+**===> in colab environment, use pyvista for visualization instead of paraview. Paraview is better for interactive visualization while pyvista is better for automated visualization.**
    
 
 
