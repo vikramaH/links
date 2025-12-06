@@ -6,6 +6,7 @@ Colab eliminates one of the biggest challenges in data science: environment setu
 ===> The first time I met Google’s Colab was when we searched for a serverless solution to train our models. Until that point, our models were of a smaller size which enabled us to train them on our local machines.
 
 **Why and how colabs excells**
+0) Colab is basically an on-demand virtual machine on the Google Cloud.
 1) It provides GPU and TPU
 2) It provides full linux system, (a) which has many in-built python packages, (b) any package can be installed using !pip , (c) any application can be installed using !apt install d) LLMs like deepseek-ocr etc can be installed and tested
 2A) it provides RAM (about 12 GB) and disk space also.
@@ -15,11 +16,11 @@ Colab eliminates one of the biggest challenges in data science: environment setu
 7) integrated with google drive and the github
 8) notebooks are available online from anywhere from any plateform.
 9) perhaps also reduces data spending because big files are not downloaded to our systems
-10) colab can download and install anything you can download and install on your system. so it helps **getting started**.
-11) some examples of installing on it- python packages like pyelmer, softwares like ngspice, compilers and comiling, LLMs,
-12) it helps combine and make a very versatile application, for example gmsh + elmer + plotly can be much better than opera3D. we can make a great application for doing complex OCR process for big books and download only the final text output.
-13) there can be (1) python packages containg binary of the main package (eg pygmsh) (2) python interfaces of binary packages (eg pyElmer) (3) binary packages which can be installed and run in colab using python code (eg ngspice)
-14) colab text cells can be used to easily make markdown files, without pain of remembering markdown syntax.
+10) colab has a bash shell and you could download and run other software there. It can download and install anything you can download and install on your system. so it helps **getting started**.
+12) some examples of installing on it- python packages like pyelmer, softwares like ngspice, compilers and comiling, LLMs,
+13) it helps combine and make a very versatile application, for example gmsh + elmer + plotly can be much better than opera3D. we can make a great application for doing complex OCR process for big books and download only the final text output.
+14) there can be (1) python packages containg binary of the main package (eg pygmsh) (2) python interfaces of binary packages (eg pyElmer) (3) binary packages which can be installed and run in colab using python code (eg ngspice)
+15) colab text cells can be used to easily make markdown files, without pain of remembering markdown syntax.
 
 **disadvantages**
 1) data files and installed softares NOT persistent
