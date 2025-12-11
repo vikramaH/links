@@ -125,6 +125,25 @@ CERNGetDP  https://gitlab.cern.ch/steam/cerngetdp
 **Wave**  https://github.com/MicScheer/WAVE
 
 
+## Sanskrit and AI
+
+https://github.com/priyanshu2103/Sanskrit-Hindi-Machine-Translation
+
+Anuvachan - Bridging Ancient Wisdom to Modern Understanding  
+https://github.com/architjain808/Anuvachan?tab=readme-ov-file#-anuvachan---bridging-ancient-wisdom-to-modern-understanding-
+
+A large scale Sanskrit-English translation dataset  
+https://github.com/rahular/itihasa
+
+How I Built Rig Veda Explorer: Combining Ancient Texts with Modern AI  
+https://medium.com/@anudeepadi/how-i-built-rig-veda-explorer-combining-ancient-texts-with-modern-ai-d3486ba0c173
+
+Samayik: A Benchmark and Dataset for English-Sanskrit Translation  
+https://aikosh.indiaai.gov.in/home/datasets/details/saamayik_master.html
+
+Saamayik, a dataset of around 53,000 parallel English-Sanskrit sentences, written in contemporary prose. 
+
+
 =======================
 
 https://www.isotel.eu/dc-ct/index.html  ISOTEL Industrial and Residential Digital Series 
