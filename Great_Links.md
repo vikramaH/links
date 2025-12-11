@@ -143,6 +143,10 @@ https://aikosh.indiaai.gov.in/home/datasets/details/saamayik_master.html
 
 Saamayik, a dataset of around 53,000 parallel English-Sanskrit sentences, written in contemporary prose. 
 
+## Ayurveda
+Siddhanta Kosha: A Curated JSON Dataset of 162 Core Ayurvedic Principles  
+https://zenodo.org/records/17481343
+
 
 =======================
 
