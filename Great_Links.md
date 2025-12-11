@@ -151,6 +151,29 @@ Siddhanta Kosha: A Curated JSON Dataset of 162 Core Ayurvedic Principles
 https://zenodo.org/records/17481343
 
 
+## 📚 Related Projects
+
+- 🌿 **Amidha Ayurveda Herb Database** – A JSON dataset of 700+ Ayurvedic herbs  
+  🔗 [https://www.amidhaayurveda.com/p/herb-database.html](https://www.amidhaayurveda.com/p/herb-database.html)  
+  DOI: [https://doi.org/10.5281/zenodo.17475352](https://doi.org/10.5281/zenodo.17475352)
+
+- 🪷 **Amidha Ayurveda Roga Nidana Kosha** – A JSON dataset of 200+ Ayurvedic diseases  
+  🔗 [https://www.amidhaayurveda.com/p/roga-nidana-kosha.html](https://www.amidhaayurveda.com/p/roga-nidana-kosha.html)
+
+---
+
+## 👨‍💻 About the Author
+
+**Sparsh Varshney**  
+Founder — [Amidha Ayurveda](https://www.amidhaayurveda.com)
+
+BAMS student passionate about digitizing Ayurvedic knowledge and making it accessible through structured, open-source datasets.
+
+- LinkedIn: [linkedin.com/in/sparshvarshney](https://linkedin.com/in/sparshvarshney)  
+- About Page: [https://www.amidhaayurveda.com/p/about.html](https://www.amidhaayurveda.com/p/about.html)
+
+
+
 =======================
 
 https://www.isotel.eu/dc-ct/index.html  ISOTEL Industrial and Residential Digital Series 
