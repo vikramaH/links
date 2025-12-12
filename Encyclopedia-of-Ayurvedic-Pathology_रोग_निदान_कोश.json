@@ -1,0 +1,484 @@
+[
+    {
+        "sanskritName": "आमवात",
+        "transliteratedName": "Amavata",
+        "correlation": "Rheumatoid Arthritis",
+        "system": "Musculoskeletal",
+        "sadhyaAsadhyata": "Krichra Sadhya", 
+        "nidana": ["Viruddha Ahara (Incompatible diet)", "Mandagni (Weak digestion)", "Nishchala (Sedentary lifestyle)", "Snigdha bhojana vyayama (Exercise after fatty food)"],
+        "purvarupa": ["Angamarda (Body ache)", "Aruchi (Anorexia)", "Trishna (Thirst)", "Alasya (Lethargy)", "Gauravam (Heaviness)", "Jwara (Feverishness)"],
+        "rupa": ["Sandhi Shula (Severe joint pain, vrishchika damshavat - like a scorpion sting)", "Sandhi Shotha (Joint swelling)", "Stambha (Stiffness)", "Sparsha Asahishnutva (Tenderness)", "Jwara (Fever)", "Agnimandya (Poor digestion)"],
+        "upashaya": ["Svedana (Fomentation)", "Ushna Jala (Warm water)", "Laghu Bhojana (Light diet)"],
+        "anupashaya": ["Sheeta Vayu (Cold wind)", "Dadhi (Curd)", "Guru Bhojana (Heavy food)"],
+        "samprapti": {
+            "dosha": "Vata (Pradhana), Kapha (Samsarga), Pitta (Anubandha)",
+            "dushya": "Rasa, Asthi, Sandhi",
+            "srotas": "Annavaha, Rasavaha",
+            "srotodushti": "Sanga (Obstruction), Vimarga Gamanam (Movement in wrong path)",
+            "agni": "Jatharagni Mandya",
+            "udbhavaSthana": "Amashaya (Stomach)",
+            "sancharaSthana": "Hridaya (Heart), Trika (Sacrum), Sandhi (Joints)"
+        },
+        "bheda": ["Not classically defined into types, but severity varies."],
+        "chikitsa": {
+            "shamana": "<strong>Ahara:</strong> Langhana (fasting), Laghu-Ushna-Tikta-Katu dravyas. Avoid Dadhi, Matsya, Masha, Guru Ahara. Use Purana Shali, Yava, Shunthi, Lasuna.<br><strong>Vihara:</strong> Avoid Diva Swapna (day sleep), Sheeta Vayu Sevana (exposure to cold wind). Gentle exercise is advised.",
+            "shodhana": "Snehana (with specific oils), Valuka Sveda (sand fomentation), Virechana (Purgation) is the primary Shodhana. Basti (Enema), especially Kshara Basti, is indicated."
+        },
+        "keyFormulations": ["Simhanada Guggulu", "Yogaraja Guggulu", "Ajamodadi Churna", "Rasnairandadi Kwath", "Amavatari Rasa"],
+        "reference": "Madhava Nidana, Ch. 25"
+    },
+    {
+        "sanskritName": "ज्वर",
+        "transliteratedName": "Jwara",
+        "correlation": "Fever / Pyrexia",
+        "system": "Systemic/General",
+        "sadhyaAsadhyata": "Sadhya", 
+        "nidana": ["Mithyahara-vihara (Improper diet & lifestyle)", "Ritu Sandhi (Seasonal changes)", "Abhighata (Trauma)", "Krodha, Bhaya (Psychological factors)", "Agantuja (External factors like infection)"],
+        "purvarupa": ["Jrimbha (Yawning)", "Alasya (Lethargy)", "Angamarda (Body ache)", "Aruchi (Anorexia)", "Gauravam (Heaviness)"],
+        "rupa": ["Deha Santapa (Rise in body temperature)", "Sweda Avarodha (Absence of sweating)", "Aruchi (Anorexia)", "Trishna (Thirst)", "Shiro Ruja (Headache)"],
+        "upashaya": ["Langhana (Fasting)", "Ushnodaka (Warm water)"],
+        "anupashaya": ["Guru Ahara (Heavy food)", "Abhyanga (Oil massage)", "Vyayama (Exercise)"],
+        "samprapti": {
+            "dosha": "Tridoshaja (Vata, Pitta, Kapha involved)",
+            "dushya": "Rasa, Rakta",
+            "srotas": "Rasavaha, Swedavaha",
+            "srotodushti": "Sanga (Obstruction)",
+            "agni": "Jatharagni Mandya",
+            "udbhavaSthana": "Amashaya (Stomach)",
+            "sancharaSthana": "Sarva Sharira (Whole body)"
+        },
+        "bheda": ["Vataja, Pittaja, Kaphaja", "Sannipataja (Tridoshaja)", "Agantuja (External cause)", "Vishama Jwara (Intermittent fevers)", "Jeerna Jwara (Chronic fever)"],
+        "chikitsa": {
+            "shamana": "<strong>Ahara (in Ama Avastha):</strong> Langhana (fasting), Deepana-Pachana herbs (Shunthi, Pippali).<br><strong>Ahara (in Niram Avastha):</strong> Peya (gruels), Laghu Ahara. Use Mudga Yusha.<br><strong>Vihara:</strong> Complete rest is essential.",
+            "shodhana": "Vamana (Emesis) if Kapha is dominant. Virechana (Purgation) if Pitta is dominant. Basti (Enema) if Vata is dominant. Nasya for headache."
+        },
+        "keyFormulations": ["Amritarishta", "Sudarshan Churna", "Tribhuvan Kirti Rasa", "Godanti Bhasma", "Mahasudarshan Kwath"],
+        "reference": "Charaka Samhita, Nidanasthana 1"
+    },
+    {
+        "sanskritName": "पाण्डु रोग",
+        "transliteratedName": "Pandu Roga",
+        "correlation": "Anemia",
+        "system": "Circulatory",
+        "sadhyaAsadhyata": "Sadhya",
+        "nidana": ["Kshara-Amla-Lavana Atisevana (Excessive intake of alkaline, sour, salty food)", "Mrittika Bhakshana (Pica/eating clay)", "Viruddha Ahara (Incompatible diet)", "Ati Maithuna (Excessive indulgence)"],
+        "purvarupa": ["Hridaya Spandana (Palpitations)", "Twak Rukshata (Dryness of skin)", "Akshi Koota Shotha (Periorbital edema)", "Shrama (Fatigue without exertion)"],
+        "rupa": ["Panduta (Pallor of skin, nails, eyes)", "Daurbalya (Weakness)", "Bhrama (Dizziness)", "Shwasa (Shortness of breath)", "Aruchi (Anorexia)"],
+        "upashaya": ["Lauha Bhasma Sevana (Intake of iron preparations)", "Rakta Vardhaka Ahara (Blood nourishing diet like Draksha, Dadima)"],
+        "anupashaya": ["Pitta Vardhaka Ahara (Pitta aggravating diet)"],
+        "samprapti": {
+            "dosha": "Pitta (Pradhana), Vata & Kapha (Anubandha)",
+            "dushya": "Rakta, Rasa, Mamsa (Oja Kshaya)",
+            "srotas": "Rasavaha, Raktavaha",
+            "srotodushti": "Sanga (Obstruction)",
+            "agni": "Jatharagni Mandya, Dhatwagni Mandya",
+            "udbhavaSthana": "Hridaya, Yakrit, Pliha (Heart, Liver, Spleen)",
+            "sancharaSthana": "Sarva Sharira (Whole body)"
+        },
+        "bheda": ["Vataja, Pittaja, Kaphaja", "Sannipataja", "Mrittika Bhakshanajanya (Due to Pica)"],
+        "chikitsa": {
+            "shamana": "<strong>Ahara:</strong> Laghu, Deepana-Pachana diet. Use Purana Shali, Mudga, Dadima (Pomegranate), Amalaki, Draksha (Grapes), Ghrita.<br><strong>Vihara:</strong> Rest, avoid excessive exertion and sun exposure.",
+            "shodhana": "Snehana (Oleation) with Tikta Ghrita (e.g., Mahatiktaka Ghrita) followed by Virechana (Purgation) is the main line of treatment. Basti is also useful."
+        },
+        "keyFormulations": ["Navayasa Loha", "Dhatri Loha", "Punarnavadi Mandura", "Lohasava", "Saptamrita Loha"],
+        "reference": "Charaka Samhita, Chikitsasthana 16"
+    },
+  
+
+
+{
+    "sanskritName": "कुष्ठ",
+    "transliteratedName": "Kushtha",
+    "correlation": "Skin Diseases (incl. Psoriasis, Eczema, Leprosy)",
+    "system": "Integumentary (Skin)",
+    "sadhyaAsadhyata": "Krichra Sadhya / Yapya",
+    "nidana": ["Viruddha Ahara (Incompatible diet)", "Vega Dharana (Suppression of urges)", "Ati-sevana of Dadhi, Masha, Amla, Lavana", "Diva Swapna (Day sleep)", "Papa Karma (Classical concept of sinful acts)"],
+    "purvarupa": ["Atisweda / Asweda (Excessive or no sweating)", "Kandu (Itching)", "Vaivarnya (Discoloration)", "Sparsha Jnananasha (Loss of tactile sensation)", "Kotha (Urticarial patches)"],
+    "rupa": ["Mandala (Circular patches)", "Vaivarnya (Discoloration)", "Suptata (Numbness)", "Daha (Burning sensation)", "Vrana (Ulceration)"],
+    "upashaya": ["Shodhana Karma (Purification)", "Raktamokshana (Bloodletting)", "Tikta Dravya Sevana (Intake of bitter herbs)"],
+    "anupashaya": ["Guru, Amla, Dadhi Sevana (Intake of heavy, sour foods, curd)", "Diva Swapna (Day sleep)"],
+    "samprapti": {
+        "dosha": "Tridoshaja",
+        "dushya": "Twak (Skin), Rakta (Blood), Mamsa (Muscle), Lasika (Lymph)",
+        "srotas": "Rasavaha, Raktavaha, Mamsavaha, Lasikavaha",
+        "srotodushti": "Sanga (Obstruction)",
+        "agni": "Jatharagni Mandya",
+        "udbhavaSthana": "Amashaya (Stomach)",
+        "sancharaSthana": "Sarva Sharira (Whole body, manifests on skin)"
+    },
+    "bheda": ["Maha Kushtha (7 types - Kapala, Udumbara, Mandala, etc.)", "Kshudra Kushtha (11 types - Eka Kushtha, Charmadala, etc.)"],
+    "chikitsa": {
+        "shamana": "<strong>Ahara:</strong> Laghu, Tikta-Kashaya pradhana. Use Purana Yava, Godhuma, Mudga. Avoid Amla, Lavana, Dadhi, Anupa Mamsa.<br><strong>Vihara:</strong> Avoid exposure to excessive sun and wind.",
+        "shodhana": "This is the primary treatment. Vamana and Virechana are repeatedly performed. Raktamokshana (especially Siravyadha and Jalauka) is highly indicated. Nasya is also used."
+    },
+    "keyFormulations": ["Mahamanjisthadi Kwath", "Khadirarishta", "Arogyavardhini Vati", "Kaishore Guggulu", "Gandhak Rasayan", "Tuvaraka Taila"],
+    "reference": "Charaka Samhita, Chikitsasthana 7"
+},
+{
+    "sanskritName": "प्रमेह",
+    "transliteratedName": "Prameha",
+    "correlation": "Diabetes Mellitus / Urinary Disorders",
+    "system": "Urinary",
+    "sadhyaAsadhyata": "Yapya (Manageable)",
+    "nidana": ["Asya Sukham (Sedentary lifestyle)", "Swapna Sukham (Excessive sleep)", "Dadhini (Excessive curd)", "Gramya-udaka-anupa Rasah (Meat of domestic, aquatic, marshy animals)", "Nava Anna-Pana (Freshly harvested grains/drinks)", "Guda Vaikritam (Jaggery products)"],
+    "purvarupa": ["Kara-Pada Daha (Burning sensation in hands & feet)", "Madhurya in Asya (Sweet taste in mouth)", "Danta-Maladhyata (Accumulation of waste on teeth)", "Trishna (Thirst)", "Pipilika Abhisarana (Ants attracted to urine)"],
+    "rupa": ["Prabhuta Mutrata (Excessive urination)", "Avila Mutrata (Turbid urination)", "Kshudha (Excessive hunger)", "Daurbalya (Weakness)", "Mukha Shosha (Dryness of mouth)"],
+    "upashaya": ["Vyayama (Exercise)", "Ruksha Ahara (Dry, ununctuous food)", "Yava, Godhuma (Barley, Wheat)"],
+    "anupashaya": ["Madhura, Snigdha Ahara (Sweet, oily food)", "Nidra (Sleep)", "Avyayama (Lack of exercise)"],
+    "samprapti": {
+        "dosha": "Kapha (Pradhana), Pitta, Vata",
+        "dushya": "Meda, Mamsa, Kleda, Vasa, Majja, Lasika, Rasa, Rakta, Oja",
+        "srotas": "Mutravaha, Medovaha",
+        "srotodushti": "Atipravritti (Excessive flow)",
+        "agni": "Dhatwagni Mandya",
+        "udbhavaSthana": "Basti (Urinary bladder)",
+        "sancharaSthana": "Mutravaha Srotas"
+    },
+    "bheda": ["Kaphaja (10 types - Ikshumeha, Sanairmeha etc.)", "Pittaja (6 types - Haridrameha, Neelameha etc.)", "Vataja (4 types - Vasameha, Majjameha etc.)", "Vataja are Asadhya (Incurable)."],
+    "chikitsa": {
+        "shamana": "<strong>Ahara:</strong> Yava (Barley) is the best. Mudga, Chanaka, Tikta-Shaka (bitter vegetables). Avoid Madhura, Amla, Lavana rasa, Guda, Ikshu.<br><strong>Vihara:</strong> Regular and strenuous Vyayama (exercise).",
+        "shodhana": "Snehana with Tikta Ghrita followed by Vamana and Virechana. Basti, especially Lekhana Basti, is useful for obese patients."
+    },
+    "keyFormulations": ["Chandraprabha Vati", "Vasant Kusumakar Rasa", "Nishamalaki Churna", "Katakakhadiradi Kwath", "Madhumehari Churna"],
+    "reference": "Charaka Samhita, Nidanasthana 4"
+},
+{
+    "sanskritName": "ग्रहणी",
+    "transliteratedName": "Grahani",
+    "correlation": "Malabsorption Syndrome, IBS, IBD",
+    "system": "Gastrointestinal",
+    "sadhyaAsadhyata": "Krichra Sadhya",
+    "nidana": ["Atisara Chikitsa Vibhrama (Mishandling of diarrhea treatment)", "Mandagni (Chronic weak digestion)", "Vega Dharana (Suppression of urges)", "Ati Bhojana (Overeating)"],
+    "purvarupa": ["Trishna (Thirst)", "Alasya (Lethargy)", "Bala Kshaya (Loss of strength)", "Anna Paka Chirat (Delayed digestion)"],
+    "rupa": ["Muhur Baddham, Muhur Dravam Malapravritti (Alternating constipation and diarrhea)", "Udara Shula (Abdominal pain)", "Aruchi (Anorexia)", "Chardi (Vomiting)", "Sarvanga Shotha (Generalized edema) in chronic cases"],
+    "upashaya": ["Takra (Buttermilk)", "Laghu Deepaniya Ahara (Light, digestive food)", "Upavasa (Fasting)"],
+    "anupashaya": ["Guru, Sheeta Ahara (Heavy, cold food)", "Viruddha Ahara (Incompatible food)"],
+    "samprapti": {
+        "dosha": "Vata, Pitta, Kapha, or Sannipataja",
+        "dushya": "Anna Rasa (Food essence), Purisha (Feces)",
+        "srotas": "Annavaha, Purishavaha",
+        "srotodushti": "Sanga and Atipravritti",
+        "agni": "Jatharagni Mandya (Primary cause and effect)",
+        "udbhavaSthana": "Grahani (Duodenum/Small Intestine)",
+        "sancharaSthana": "Gastrointestinal tract"
+    },
+    "bheda": ["Vataja, Pittaja, Kaphaja", "Sannipataja (Tridoshaja)"],
+    "chikitsa": {
+        "shamana": "<strong>Ahara:</strong> Takra (buttermilk) is considered nectar. Laghu, Grahi (absorbent) diet like Mudga Yusha, Masura. Use Dadima, Shunthi, Jeeraka.<br><strong>Vihara:</strong> Rest, regular meal times.",
+        "shodhana": "Generally avoided in weak patients. If patient has strength, Snehapana followed by Virechana. Basti (especially Pichcha Basti) is highly effective."
+    },
+    "keyFormulations": ["Chitrakadi Vati", "Kutajarishta", "Bilwadi Gutika", "Dadimashtaka Churna", "Panchamrita Parpati"],
+    "reference": "Charaka Samhita, Chikitsasthana 15"
+},
+{
+    "sanskritName": "अर्श",
+    "transliteratedName": "Arsha",
+    "correlation": "Hemorrhoids / Piles",
+    "system": "Gastrointestinal",
+    "sadhyaAsadhyata": "Sadhya / Krichra Sadhya",
+    "nidana": ["Viruddha Ahara", "Guru-Sheeta-Vidahi Bhojana (Heavy, cold, burning food)", "Utkatasana (Squatting for long)", "Vega Dharana (especially of Apana Vayu)", "Ati Maithuna"],
+    "purvarupa": ["Agnimandya (Poor digestion)", "Vibandha (Constipation)", "Katishula (Low back pain)", "Sakthi Sadana (Weakness in thighs)"],
+    "rupa": ["Guda Mamsa Ankura (Fleshy growths in the anus)", "Rakta Pravritti (Bleeding per rectum)", "Guda Kandu (Anal itching)", "Shula (Pain)", "Vayu Nirodha (Obstruction of flatus)"],
+    "upashaya": ["Ushna Upachara (Warm applications for Vataja)", "Sheeta Upachara (Cold applications for Pittaja)", "Takra Sevana (Buttermilk intake)"],
+    "anupashaya": ["Vegavarodha (Suppressing urges)", "Kathina Asana (Sitting on hard surfaces)"],
+    "samprapti": {
+        "dosha": "Vata, Pitta, Kapha, or Sannipataja",
+        "dushya": "Twak, Mamsa, Meda",
+        "srotas": "Purishavaha",
+        "srotodushti": "Sanga",
+        "agni": "Jatharagni Mandya",
+        "udbhavaSthana": "Guda (Anorectal region)",
+        "sancharaSthana": "Localized at Guda"
+    },
+    "bheda": ["Shushka (Dry/Non-bleeding, Vata-Kapha dominant)", "Ardra (Bleeding, Pitta-Rakta dominant)", "Sahaja (Congenital) vs. Uttar-kalaja (Acquired)"],
+    "chikitsa": {
+        "shamana": "<strong>Ahara:</strong> High fiber, easily digestible food. Takra is excellent. Use Surana, Haritaki. Avoid spicy, heavy food.<br><strong>Vihara:</strong> Avoid straining, prolonged sitting. Sitz bath (Avagaha Sweda).",
+        "shodhana": "Bheshaja (Medicine), Kshara Karma (Alkaline cauterization), Agni Karma (Thermal cauterization), and Shastra Karma (Surgery) are the four lines of treatment. Virechana is useful."
+    },
+    "keyFormulations": ["Abhayarishta", "Kankayana Vati", "Arshoghni Vati", "Triphala Guggulu", "Bahushala Guda"],
+    "reference": "Charaka Samhita, Chikitsasthana 14"
+},
+{
+    "sanskritName": "वातरक्त",
+    "transliteratedName": "Vatarakta",
+    "correlation": "Gouty Arthritis / Peripheral Vasculitis",
+    "system": "Musculoskeletal",
+    "sadhyaAsadhyata": "Yapya",
+    "nidana": ["Lavana-Amla-Katu-Kshara Bhojana", "Dadhi, Aranala, Shukta Sevana", "Diva Swapna", "Riding animals for long duration", "Sukumarasya (Delicate constitution)"],
+    "purvarupa": ["Sweda Adhikya / Abhav (Excessive or no sweating)", "Krishna Varna Twak (Blackish discoloration)", "Kandu (Itching)", "Sandhi Shaitilya (Laxity of joints)"],
+    "rupa": ["Severe Shula (Pain), Daha (Burning), Shotha (Swelling), Raga (Redness) starting from Padamulam (foot) or Hastamulam (hand) and spreading upwards.", "Sparsha Asahishnutva (Extreme tenderness)"],
+    "upashaya": ["Raktamokshana (Bloodletting)", "Sheeta Lepa (Cold poultice for Pitta dominant)", "Snehana (Oleation for Vata dominant)"],
+    "anupashaya": ["Lavana-Amla Bhojana (Salty-sour food)", "Vyayama (Exercise during acute phase)"],
+    "samprapti": {
+        "dosha": "Vata (Primary), Rakta (Primary Dushya)",
+        "dushya": "Rakta, Twak, Mamsa",
+        "srotas": "Raktavaha",
+        "srotodushti": "Sanga, Vimarga Gamanam",
+        "agni": "Variable",
+        "udbhavaSthana": "Sarva Deha (Whole body), but Rakta is vitiated first",
+        "sancharaSthana": "Small joints (Hands and Feet)"
+    },
+    "bheda": ["Uttana (Superficial, affecting Twak & Mamsa)", "Gambhira (Deep, affecting deeper Dhatus)", "Vata-pradhana, Pitta-pradhana, Kapha-pradhana, Rakta-pradhana"],
+    "chikitsa": {
+        "shamana": "<strong>Ahara:</strong> Purana Yava, Godhuma. Use Ghrita, Milk, Mudga. Avoid Dadhi, Masha, Lavana, Amla.<br><strong>Vihara:</strong> Rest during acute attacks.",
+        "shodhana": "Raktamokshana (Jalauka - leech is best) is the most important treatment. Virechana and Basti (especially Ksheera Basti) are highly effective."
+    },
+    "keyFormulations": ["Kaishore Guggulu", "Guduchi Satva", "Mahamanjisthadi Kwath", "Pinda Taila (for external use)", "Amritadi Guggulu"],
+    "reference": "Sushruta Samhita, Nidanasthana 1"
+},
+{
+    "sanskritName": "अम्लपित्त",
+    "transliteratedName": "Amlapitta",
+    "correlation": "Hyperacidity, GERD, Gastritis",
+    "system": "Gastrointestinal",
+    "sadhyaAsadhyata": "Sadhya",
+    "nidana": ["Viruddha Ahara", "Dushta Ahara (Contaminated food)", "Ati Amla-Katu-Vidahi Bhojana (Excess sour, pungent, burning food)", "Ati Chinta, Krodha (Excessive worry, anger)"],
+    "purvarupa": ["Avipaka (Indigestion)", "Klama (Fatigue)", "Tikta-Amla Udgara (Sour-bitter belching)", "Hrit-Kantha Daha (Heartburn)"],
+    "rupa": ["Hrit-Kantha Daha (Burning in chest and throat)", "Aruchi (Anorexia)", "Chardi (Vomiting of sour/bitter fluid)", "Shiroruja (Headache)", "Udara Adhmana (Bloating)"],
+    "upashaya": ["Sheeta Ahara (Cold diet)", "Vamana (Vomiting)", "Langhana (Fasting)"],
+    "anupashaya": ["Amla-Katu Bhojana", "Vidahi Anna (Foods causing burning sensation)"],
+    "samprapti": {
+        "dosha": "Pitta (Dravatva guna वृद्धि - increased liquidity), Kapha (Samsarga)",
+        "dushya": "Rasa",
+        "srotas": "Annavaha",
+        "srotodushti": "Atipravritti",
+        "agni": "Pitta-vitiated Agni (Tikshnagni becoming Vishamagni)",
+        "udbhavaSthana": "Amashaya (Stomach)",
+        "sancharaSthana": "Annavaha Srotas"
+    },
+    "bheda": ["Urdhwaga (Upward moving, with vomiting)", "Adhoga (Downward moving, with purgation)"],
+    "chikitsa": {
+        "shamana": "<strong>Ahara:</strong> Yava, Godhuma, Mudga, Laja (puffed rice). Use Purana Ghrita, Kushmanda, Patola. Avoid spicy, oily, sour foods.<br><strong>Vihara:</strong> Avoid stress, anger. Regular meals.",
+        "shodhana": "Vamana (Emesis) is the best treatment to expel vitiated Pitta and Kapha. Virechana (Purgation) is done after Vamana."
+    },
+    "keyFormulations": ["Avipattikar Churna", "Kamadugha Rasa (with Mukta)", "Sutshekhar Rasa", "Shankha Bhasma", "Pravala Pishti"],
+    "reference": "Kashyapa Samhita / Madhava Nidana, Ch. 51"
+},
+{
+    "sanskritName": "श्वास",
+    "transliteratedName": "Shwasa",
+    "correlation": "Dyspnea / Asthma",
+    "system": "Respiratory",
+    "sadhyaAsadhyata": "Yapya",
+    "nidana": ["Raja (Dust)", "Dhuma (Smoke)", "Sheeta Sthana (Cold place)", "Guru Bhojana", "Ati Vyayama (Excessive exercise)", "Kasa Vriddhi (Complication of untreated cough)"],
+    "purvarupa": ["Anaha (Bloating)", "Parshva Shula (Pain in flanks)", "Hridayapeeda (Chest discomfort)", "Pran Viloamta (Disturbance of Prana Vayu)"],
+    "rupa": ["Shwas Krichhrata (Difficulty in breathing)", "Ghurghurakam (Wheezing sound)", "Asino Labhate Saukhyam (Comfortable in sitting posture)", "Kasa (Cough)"],
+    "upashaya": ["Svedana (Fomentation)", "Ushna Ahara-Pana (Warm food and drinks)"],
+    "anupashaya": ["Sheeta Vayu", "Guru Ahara", "Dust/Smoke exposure"],
+    "samprapti": {
+        "dosha": "Vata (Pradhana), Kapha (Samsarga)",
+        "dushya": "Rasa",
+        "srotas": "Pranavaha, Udakavaha",
+        "srotodushti": "Sanga, Vimarga Gamanam",
+        "agni": "Mandagni",
+        "udbhavaSthana": "Amashaya-Samudbhava (Originates from stomach)",
+        "sancharaSthana": "Uras (Chest), Pranavaha Srotas"
+    },
+    "bheda": ["Maha Shwasa", "Urdhwa Shwasa", "Chinna Shwasa (all are Asadhya)", "Tamaka Shwasa (Yapya, correlates with Asthma)", "Kshudra Shwasa (Sadhya)"],
+    "chikitsa": {
+        "shamana": "<strong>Ahara:</strong> Laghu, Ushna diet. Yava, Purana Godhuma. Use Shunthi, Pippali, Vasa.<br><strong>Vihara:</strong> Avoid exposure to allergens, dust, smoke, cold. Keep warm.",
+        "shodhana": "Snehana (Oleation) and Svedana (Fomentation) are crucial first steps. This is followed by Vamana (Emesis) and Virechana (Purgation)."
+    },
+    "keyFormulations": ["Shwas Kuthar Rasa", "Kanakasava", "Sitopaladi Churna", "Vasavaleha", "Talisadi Churna"],
+    "reference": "Charaka Samhita, Chikitsasthana 17"
+},
+{
+    "sanskritName": "कास",
+    "transliteratedName": "Kasa",
+    "correlation": "Cough",
+    "system": "Respiratory",
+    "sadhyaAsadhyata": "Sadhya",
+    "nidana": ["Dhuma-Raja Upaghata (Irritation from smoke/dust)", "Ati Vyayama", "Vega Dharana", "Ati Ruksha Anna Sevana (Excess dry food)"],
+    "purvarupa": ["Shuka Purna Galaasyata (Sensation of throat being filled with bristles)", "Kandu in Kantha (Itching in throat)", "Bhojyanam Avarodha (Difficulty in swallowing)"],
+    "rupa": ["Khav-Khav Shabda (Coughing sound)", "Shiro-Urah-Parshva Shula (Pain in head, chest, flanks while coughing)", "Kapha Nishtheevana (Sputum expectoration)"],
+    "upashaya": ["Ushna Upachara", "Madhu-Ghrita Sevana (Intake of honey and ghee)"],
+    "anupashaya": ["Sheeta Vayu", "Ruksha Anna"],
+    "samprapti": {
+        "dosha": "Vata, Pitta, Kapha",
+        "dushya": "Rasa",
+        "srotas": "Pranavaha",
+        "srotodushti": "Vimarga Gamanam (of Apana Vayu upwards)",
+        "agni": "Mandagni",
+        "udbhavaSthana": "Uras (Chest)",
+        "sancharaSthana": "Pranavaha Srotas"
+    },
+    "bheda": ["Vataja, Pittaja, Kaphaja", "Kshataja (Traumatic)", "Kshayaja (Tubercular)"],
+    "chikitsa": {
+        "shamana": "<strong>Ahara:</strong> Ushna, Snigdha, Laghu. Use Godhuma, Mudga Yusha. Honey is excellent.<br><strong>Vihara:</strong> Rest, avoid irritants.",
+        "shodhana": "Snehana and Svedana followed by Vamana or Virechana based on Dosha dominance. Nasya is also beneficial."
+    },
+    "keyFormulations": ["Sitopaladi Churna", "Talisadi Churna", "Vyoshadi Vati", "Kantakari Avaleha", "Lavangadi Vati"],
+    "reference": "Charaka Samhita, Chikitsasthana 18"
+},
+{
+    "sanskritName": "उदर रोग",
+    "transliteratedName": "Udara Roga",
+    "correlation": "Ascites / Abdominal Enlargement",
+    "system": "Gastrointestinal",
+    "sadhyaAsadhyata": "Krichra Sadhya / Asadhya",
+    "nidana": ["Mandagni", "Sanchaya of Mala (Accumulation of wastes)", "Pliha-Yakrit Vriddhi (Spleen/Liver enlargement)", "Viruddha Ahara", "Consumption of sand, hair etc."],
+    "purvarupa": ["Kshudha Nasha (Loss of appetite)", "Mandagni", "Pada Shotha (Pedal edema)", "Udara Raji Janma (Appearance of lines on abdomen)"],
+    "rupa": ["Udara Vriddhi (Enlargement of abdomen)", "Daurbalya (Weakness)", "Aruchi", "Vibandha (Constipation)", "Daha (Burning sensation)"],
+    "upashaya": ["Nitya Virechana (Daily purgation)", "Go-mutra Prayoga (Use of cow's urine)", "Laghu Ahara"],
+    "anupashaya": ["Lavana Jala Sevana (Intake of salt and water)", "Guru-Abhishyandi Ahara (Heavy, channel-blocking food)"],
+    "samprapti": {
+        "dosha": "Tridoshaja (Vata is primary cause of distension)",
+        "dushya": "Udaka/Ambu (Fluid), Rasa",
+        "srotas": "Udakavaha, Annavaha, Purishavaha",
+        "srotodushti": "Sanga",
+        "agni": "Jatharagni Nasha (Severe loss of digestive fire)",
+        "udbhavaSthana": "Amashaya / Pakvashaya",
+        "sancharaSthana": "Udara (Abdomen)"
+    },
+    "bheda": ["Vataja, Pittaja, Kaphaja, Sannipataja", "Plihodara (Spleenic)", "Yakritodara (Hepatic)", "Baddhagudodara (Intestinal obstruction)", "Chidrodara (Intestinal perforation)", "Dakodara (Ascites proper)"],
+    "chikitsa": {
+        "shamana": "<strong>Ahara:</strong> Diet restricted to milk, or light gruels. Use Gomutra, Shunthi, Punarnava. Salt is strictly avoided.<br><strong>Vihara:</strong> Complete rest.",
+        "shodhana": "Nitya Virechana (daily mild purgation) is the main line of treatment. Basti is also used. Jalodara may require tapping (Siravyadha)."
+    },
+    "keyFormulations": ["Punarnavadi Mandura", "Arogyavardhini Vati", "Punarnavasava", "Narayan Churna", "Ichhabhedi Rasa (with caution)"],
+    "reference": "Charaka Samhita, Chikitsasthana 13"
+},
+{
+    "sanskritName": "उन्माद",
+    "transliteratedName": "Unmada",
+    "correlation": "Psychosis / Insanity",
+    "system": "Psychological",
+    "sadhyaAsadhyata": "Krichra Sadhya / Yapya",
+    "nidana": ["Viruddha-Dushta-Ashuchi Bhojana", "Deva-Guru-Brahmana Tiraskara (Disrespect to gods, teachers)", "Bhaya, Harsha (Extreme fear, excitement)", "Mano Abhighata (Mental trauma)"],
+    "purvarupa": ["Shirashunyata (Emptiness in head)", "Akshi Vyakulata (Restless eyes)", "Karna Nada (Tinnitus)", "Ananna Abhilasha (No desire for food)"],
+    "rupa": ["Dhee Vibhrama (Perverted intellect)", "Manah Pariplavam (Unstable mind)", "Adhira Drishti (Unsteady gaze)", "Abaddha Vak (Incoherent speech)", "Hrit Shunya (Feeling of emptiness in heart)"],
+    "upashaya": ["Ashwasana (Reassurance)", "Ghrita Pana (Intake of medicated ghee)", "Manaprasadakara Vihara (Pleasing activities)"],
+    "anupashaya": ["Bhaya, Krodha (Fear, Anger)", "Udvigna Chitta (Agitated mind)"],
+    "samprapti": {
+        "dosha": "Tridoshaja",
+        "dushya": "Manas (Mind), Hridaya (Heart)",
+        "srotas": "Manovaha, Sanjnavaha",
+        "srotodushti": "Sanga, Vimarga Gamanam",
+        "agni": "Variable",
+        "udbhavaSthana": "Hridaya (Heart, considered seat of mind)",
+        "sancharaSthana": "Manovaha srotas"
+    },
+    "bheda": ["Vataja, Pittaja, Kaphaja, Sannipataja", "Agantuja (Exogenous/due to external entities)"],
+    "chikitsa": {
+        "shamana": "<strong>Daiva Vyapashraya:</strong> Mantra, Japa, Homa (Spiritual therapies).<br><strong>Yukti Vyapashraya:</strong> Medhya Rasayanas (Brahmi, Shankhpushpi), Ghrita Pana.<br><strong>Sattvavajaya:</strong> Ashwasana (Counseling, psychotherapy).",
+        "shodhana": "Mrudu Shodhana (Mild purification) is key. Snehana with Mahakalyanaka or Panchagavya Ghrita, followed by Mridu Virechana. Nasya and Shirodhara are very effective."
+    },
+    "keyFormulations": ["Brahmi Vati", "Saraswatarishta", "Mahakalyanaka Ghrita", "Panchagavya Ghrita", "Smritisagar Rasa"],
+    "reference": "Charaka Samhita, Chikitsasthana 9"
+},
+  
+
+
+{
+    "sanskritName": "हृद्रोग",
+    "transliteratedName": "Hridroga",
+    "correlation": "Cardiac Diseases (e.g., Angina, Ischemia)",
+    "system": "Circulatory",
+    "sadhyaAsadhyata": "Krichra Sadhya",
+    "nidana": ["Ati Ushna-Guru-Kashaya-Tikta Bhojana (Excess hot, heavy, astringent, bitter food)", "Ati Vyayama (Overexertion)", "Abhighata (Trauma)", "Chinta, Bhaya, Shoka (Anxiety, fear, grief)"],
+    "purvarupa": ["Hrit Shoolam (Precordial discomfort)", "Gauravam (Heaviness in chest)", "Daurbalya (Weakness)"],
+    "rupa": ["Vividha Vedana (Various types of pain in the chest)", "Hrit Kampa (Palpitations)", "Shwasa Krichrata (Dyspnea)", "Aruchi (Anorexia)", "Bhrama (Vertigo)"],
+    "upashaya": ["Vishrama (Rest)", "Vatanulomana Ahara (Diet that moves Vata downwards)"],
+    "anupashaya": ["Vyayama (Exertion)", "Chinta (Stress)"],
+    "samprapti": {
+        "dosha": "Vataja, Pittaja, Kaphaja, Sannipataja, Krimija",
+        "dushya": "Rasa, Rakta, Meda, Oja",
+        "srotas": "Rasavaha, Raktavaha, Manovaha",
+        "srotodushti": "Sanga (Obstruction)",
+        "agni": "Vishamagni / Mandagni",
+        "udbhavaSthana": "Hridaya (Heart)",
+        "sancharaSthana": "Rasavaha and Raktavaha Srotas"
+    },
+    "bheda": ["Vataja (Sharp, shifting pain)", "Pittaja (Burning pain, sweating)", "Kaphaja (Heaviness, stiffness)", "Sannipataja (Mixed features)", "Krimija (Parasitic, with severe pain)"],
+    "chikitsa": {
+        "shamana": "<strong>Ahara:</strong> Laghu, Deepana diet. Use Purana Shali, Mudga, Lasuna, Ardraka. Arjuna is the foremost herb for heart health.<br><strong>Vihara:</strong> Avoid stress, anger, and overexertion. Practice Pranayama.",
+        "shodhana": "Vamana for Kaphaja Hridroga. Virechana for Pittaja Hridroga. Hrid Basti (local oil pooling) is highly beneficial. Mridu Shodhana is advised."
+    },
+    "keyFormulations": ["Arjunarishta", "Prabhakar Vati", "Hridayarnava Rasa", "Jawahar Mohra Pishti", "Arjuna Ksheera Paka"],
+    "reference": "Charaka Samhita, Chikitsasthana 26"
+},
+{
+    "sanskritName": "रक्तपित्त",
+    "transliteratedName": "Raktapitta",
+    "correlation": "Bleeding Disorders (Epistaxis, Hemoptysis, etc.)",
+    "system": "Circulatory",
+    "sadhyaAsadhyata": "Sadhya (if from one route), Asadhya (if from all routes)",
+    "nidana": ["Ati-sevana of Ushna, Tikshna, Kshara, Lavana, Amla food", "Ati Atapa Sevana (Excess sun exposure)", "Krodha (Anger)", "Vidahi Anna (Foods causing burning)"],
+    "purvarupa": ["Ushma (Feeling of heat in the body)", "Dhumaka Amla Udgara (Smoky, sour belching)", "Loha Gandha Nihshwasa (Metallic smell in breath)"],
+    "rupa": ["Rakta Srava (Bleeding) from Urdhwa Marga (Nose, Mouth, Ears) or Adho Marga (Anus, Urethra, Vagina)", "Daha (Burning sensation)", "Trishna (Thirst)"],
+    "upashaya": ["Sheeta Upachara (Cold therapies)", "Stambhana Dravyas (Astringent herbs)"],
+    "anupashaya": ["Ushna, Katu Ahara (Hot, pungent food)"],
+    "samprapti": {
+        "dosha": "Pitta (Primary), Rakta (Primary Dushya)",
+        "dushya": "Rakta",
+        "srotas": "Raktavaha, Rasavaha",
+        "srotodushti": "Atipravritti",
+        "agni": "Tikshnagni",
+        "udbhavaSthana": "Yakrit, Pliha (Liver, Spleen)",
+        "sancharaSthana": "All openings of the body"
+    },
+    "bheda": ["Urdhwaga (Upward, Kapha dominant, Sadhya)", "Adhoga (Downward, Vata dominant, Yapya)", "Ubhayaga (Both routes, Asadhya)"],
+    "chikitsa": {
+        "shamana": "<strong>Ahara:</strong> Sheeta, Tikta, Kashaya rasa. Use Laja, Mudga, Masura, Amlaki, Draksha. Goat's milk is beneficial.<br><strong>Vihara:</strong> Complete rest in a cool place.",
+        "shodhana": "Line of treatment is Stambhana (hemostasis). But for expulsion of doshas, Virechana is given for Urdhwaga Raktapitta and Vamana for Adhoga Raktapitta."
+    },
+    "keyFormulations": ["Vasavaleha", "Pravala Pishti", "Kamadugha Rasa", "Bolabaddha Rasa", "Ushirasava"],
+    "reference": "Charaka Samhita, Nidanasthana 2"
+},
+{
+    "sanskritName": "गुल्म",
+    "transliteratedName": "Gulma",
+    "correlation": "Abdominal Tumors / Phantom Tumors",
+    "system": "Gastrointestinal",
+    "sadhyaAsadhyata": "Krichra Sadhya",
+    "nidana": ["Vata Prakopaka Nidanas", "Vega Dharana (especially of Apana Vayu)", "Ati Shoka", "Vishama Cheshta (Improper activities)"],
+    "purvarupa": ["Udgara Bahulya (Excessive belching)", "Aruchi", "Agnimandya", "Anaha (Bloating)"],
+    "rupa": ["Pinda-vat Granthi (A palpable, firm, rounded mass) in the Koshtha", "Shula (Pain)", "Adhmana (Distension)", "Vibandha (Constipation)"],
+    "upashaya": ["Swedana (Fomentation)", "Vatanulomana (Carminatives)"],
+    "anupashaya": ["Ruksha, Sheeta Ahara (Dry, cold food)"],
+    "samprapti": {
+        "dosha": "Vata, Pitta, Kapha, Sannipataja, Raktaja",
+        "dushya": "Rakta, Mamsa",
+        "srotas": "Annavaha, Purishavaha",
+        "srotodushti": "Sanga",
+        "agni": "Vishamagni",
+        "udbhavaSthana": "Hridaya, Nabhi, Basti, Parshva (5 locations)",
+        "sancharaSthana": "Mahasrotas (GIT)"
+    },
+    "bheda": ["Vataja, Pittaja, Kaphaja", "Sannipataja", "Raktaja (in females only)"],
+    "chikitsa": {
+        "shamana": "<strong>Ahara:</strong> Laghu, Deepana diet. Use Lasuna, Hingu, Trikatu, Yavakshara.<br><strong>Vihara:</strong> Avoid suppressing natural urges.",
+        "shodhana": "Snehana (Oleation) and Swedana (Fomentation) are primary. Virechana and Asthapana Basti are the main treatments to achieve Vatanulomana."
+    },
+    "keyFormulations": ["Hingvashtak Churna", "Lashunadi Vati", "Shankha Vati", "Narayan Churna", "Gulmakalanala Rasa"],
+    "reference": "Charaka Samhita, Nidanasthana 3"
+},
+{
+    "sanskritName": "अतिसार",
+    "transliteratedName": "Atisara",
+    "correlation": "Diarrhea",
+    "system": "Gastrointestinal",
+    "sadhyaAsadhyata": "Sadhya",
+    "nidana": ["Ati Guru-Snigdha-Ruksha-Ushna Anna", "Viruddha Ahara", "Krimi Dushti (Infections)", "Bhaya, Shoka (Fear, Grief)"],
+    "purvarupa": ["Hridaya-Nabhi-Guda-Kukshi Toda (Pricking pain in chest, umbilicus, rectum, abdomen)", "Anga Sada (Body ache)", "Adhmana (Bloating)"],
+    "rupa": ["Drava Mala Pravritti (Frequent passage of liquid stools)", "Udara Shula (Abdominal pain)", "Guda Parikartika (Anal cutting pain)"],
+    "upashaya": ["Langhana (Fasting)", "Pachana Aushadhi (Digestive herbs)"],
+    "anupashaya": ["Guru Bhojana (Heavy food)"],
+    "samprapti": {
+        "dosha": "Vata, Pitta, Kapha, Sannipataja",
+        "dushya": "Ap Dhatu (Liquid portion of body), Purisha",
+        "srotas": "Purishavaha, Annavaha",
+        "srotodushti": "Atipravritti",
+        "agni": "Jatharagni Mandya",
+        "udbhavaSthana": "Pakvashaya (Large Intestine)",
+        "sancharaSthana": "Purishavaha Srotas"
+    },
+    "bheda": ["Vataja, Pittaja, Kaphaja", "Sannipataja", "Bhayaja, Shokaja", "Amaja"],
+    "chikitsa": {
+        "shamana": "<strong>First Stage (Amaja):</strong> Langhana and Pachana (Fasting & digestives). No Stambhana (anti-diarrheals) should be used.<br><strong>Second Stage (Nirama):</strong> Grahi (absorbent) and Deepana herbs. Takra (Buttermilk) and Dadima (Pomegranate) are excellent.",
+        "shodhana": "Generally contraindicated. Basti (Pichcha Basti) can be given in chronic conditions once Ama is resolved."
+    },
+    "keyFormulations": ["Kutajarishta", "Dadimashtaka Churna", "Sanjivani Vati", "Gangadhara Churna", "Jatiphaladi Vati"],
+    "reference": "Charaka Samhita, Chikitsasthana 19"
+}
+]
