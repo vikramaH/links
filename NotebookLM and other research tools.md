@@ -49,4 +49,11 @@ Chatize 	GPT 3.5
 GPT-4 	Yes 	PDF, Word, Excel, PowerPoint, webpage, HTML, MOBI 	No 	No
 
 
+# NotebookLM
 
+**Everyone Is Wrong About NotebookLM**
+https://medium.com/@stunspot/everyone-is-wrong-about-notebooklm-802770aa12f7 
+
+Google’s quiet little lab tool is the most important AI product nobody understands.
+
+**NotebookLM isn’t a chatbot. It’s the first mainstream tool that rewires how humans interact with knowledge. It is not an assistant; it is a cognitive substrate — a system designed to think only inside the walls you build for it.**
