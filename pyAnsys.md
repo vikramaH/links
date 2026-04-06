@@ -4,7 +4,7 @@ PyAnsys is a collection of open-source Python libraries developed by Ansys that 
 
 Is it that by using this, we can do whatever the commercial package Ansys is able to do?
 
-*Not exactly. Here's a breakdown:*
+**Not exactly. Here's a breakdown:**
 
 PyAnsys itself does not perform simulations. It's an interface or client library that allows you to control and automate the Ansys commercial software. This means you still need a valid Ansys commercial license for the specific Ansys product you want to use (e.g., Ansys Mechanical, Ansys Fluent, Ansys Electronics Desktop (AEDT), Ansys MAPDL) for PyAnsys to function.
 
@@ -43,4 +43,4 @@ The shift from GUI to script isn’t just about convenience but about power. Wit
 **The Latest and Most Useful Trend: Python Frontends**
 The clear trend, and the most useful one, is the adoption of Python as the primary scripting and automation interface (frontend) for complex engineering and scientific software.
 
-** Intent-Based Interaction vs. Command-Based Interaction** : With generative AI, particularly Large Language Models (LLMs), the interaction shifts towards expressing intent in natural language (text or voice). Instead of knowing which menu item to click to generate a report, you might simply say "Generate a monthly sales report for Q2 with product breakdown and export as PDF." The AI then interprets your intent and executes the necessary steps, potentially even generating the GUI elements on the fly if needed.
+**Intent-Based Interaction vs. Command-Based Interaction** : With generative AI, particularly Large Language Models (LLMs), the interaction shifts towards expressing intent in natural language (text or voice). Instead of knowing which menu item to click to generate a report, you might simply say "Generate a monthly sales report for Q2 with product breakdown and export as PDF." The AI then interprets your intent and executes the necessary steps, potentially even generating the GUI elements on the fly if needed.
