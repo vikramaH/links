@@ -2,18 +2,18 @@
 
 General Goal of the ONELAB Project : Develop a platform for integrating free Finite Element Analysis (FEA) software
 
-Two difficulWes associated with free FEA sodware :
+Two difficulties associated with free FEA sodware :
 
 • Heterogeneity of the tools
 
-• Missing “expert” layer and documentaIon
+• Missing “expert” layer and documentation
 
 
 ONELAB Guiding Principles
 
 * Don’t reimplement, interface
 
-• Make it easy to provide templates, with interacWve parameter modificaWon
+• Make it easy to provide templates, with interactive parameter modification
 
 • Make it as small and as easy to maintain as possible (no solver dependent code in the interface)
 
@@ -21,11 +21,11 @@ ONELAB Features
 
 (1) Abstract interface to FEA codes
 
-(2) Development and documentaIon of templates (“meta-­‐models”)
+(2) Development and documentaIon of templates (“meta-­models”)
 
   (2.1) Model: backbox, parameterizable via abstract interface
  
-  (2.2) Meta-­‐model: set of models + selecWon logic
+  (2.2) Meta-­model: set of models + selection logic
 
 
 **Features of Gmsh**
@@ -81,7 +81,7 @@ https://github.com/jeromerobert/gmsh/tree/master
 1. gmsh can be very useful for
 
    (a) creating magnet design workflow starting from chosing type of magnet followed by main specs to
-   analytical design of the magnet, to 2D model, to 2D simulation and 2D results to 3D model and 3D results and optimization.
+   analytical design of the magnet, to 2D model, to 2D simulation and 2D results to 3D model and 3D results  and optimization.
 
    (b) creating (or modifying) the .pro file for getdp
 
@@ -94,20 +94,14 @@ https://github.com/jeromerobert/gmsh/tree/master
 3A. getdp is so useful that CERN has brought its own version called cerngetdp. cerngetdp utilizes vast magnetic properties database of cern.
    so it simplifies the .pro (problem file) creation.
 
-4. The "Run Control" section in ElmerSolver's .sif file is a relatively newer and very powerful addition that significantly enhances E
- 
-   lmer's capabilities for parametric studies, optimization, and complex transient simulations within a single input file.
+4. The "Run Control" section in ElmerSolver's .sif file is a relatively newer and very powerful addition that significantly enhances Elmer's capabilities for parametric studies, optimization, and complex transient simulations within a single input file.
 
-   Before "Run Control," if you wanted to run, say, 10 different simulations where only one parameter varied (e.g., material conductivity),
-
-   you would typically need 10 separate .sif files or manage the variations with an external script (e.g., Python, Bash). "Run Control" streamlines this.
+   Before "Run Control," if you wanted to run, say, 10 different simulations where only one parameter varied (e.g., material conductivity), you would typically need 10 separate .sif files or manage the variations with an external script (e.g., Python, Bash). "Run Control" streamlines this.
 
 ==============
 
 Generally, coupling of application codes requires taking output data from one application code simulation and
-transforming it to input (e.g., boundary conditions or electromagnetic field maps) for a different application code
-simulation. Coupling different application codes involves finding solutions for a number of inherent complexities
-that limit the ability of accelerator scientists and engineers to work efficiently:
+transforming it to input (e.g., boundary conditions or electromagnetic field maps) for a different application code simulation. Coupling different application codes involves finding solutions for a number of inherent complexities that limit the ability of accelerator scientists and engineers to work efficiently:
 
 * Application codes perform simulations on different, often incompatible computational meshes.
 
