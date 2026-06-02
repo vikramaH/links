@@ -52,13 +52,24 @@ Mesh Refinement: Smoothly refine and improve mesh quality.
 
 Multi-platform: Compatible with Windows, Linux, Mac and more.
 
+Run on low end machines and/or machines with no graphical interface.
+
 Parametric Modeling: Create parametric models with a few clicks.
 
 Physical Groups: Group and organize entities into physical groups.
 
-Post-processing: Visualize, analyze and compare results with ease.
+Post-processing: Visualize, analyze and compare results with ease. ==> visualize and export computational results in a great variety of ways. Gmsh can display scalar, vector and tensor datasets, perform various operations on the resulting post-processing views (see Post-processing module), can export plots in many
+different formats (see General options list), and can generate complex animations (see General tools, and t8.geo).
+
+built-in plug-ins ===> such as applying cuts, clips, and thresholding
 
 Scripting: Create powerful scripts with the built-in scripting language.
+
+Parallel computing of mesh ???  ===> From 2019, Multi-Threaded 3D meshing (fine-grained), STL remeshing. 
+
+Gmsh is not a multi-bloc mesh generator: all meshes produced by Gmsh are conforming in the sense of finite element meshes;
+
+Create repeatative geometries.
 
 
 -------------------------------------------
