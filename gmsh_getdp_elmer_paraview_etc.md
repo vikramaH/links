@@ -182,6 +182,8 @@ mainly:
 
 14) It can easily be used with optimization programs ( suc as CONVEKS )
 
+15) **stranded & massive conductor** simulation --> good performance even where ROXIE does not perform well, for example in HTS conductors.
+
 **some shortcomings of GetDP**
 1) steep learning curve because it is more dependent on programming. (It can be assumed its strength too.)
 
