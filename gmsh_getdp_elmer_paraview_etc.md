@@ -1,5 +1,7 @@
 **Onelab**
 
+====> Onelab is an exploring tool and a test platform with a flexible and highly customisable implementation allowing new features to be implemented. (written in a A CERN paper on HTS magnets)
+
 General Goal of the ONELAB Project : Develop a platform for integrating free Finite Element Analysis (FEA) software
 
 Two difficulties associated with free FEA sodware :
