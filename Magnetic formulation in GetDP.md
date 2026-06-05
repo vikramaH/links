@@ -1,10 +1,14 @@
 ====> Other formulations :: 
+Also see : POTENTIAL FORMULATIONS IN MAGNETICS APPLYING THE FINITE ELEMENT METHOD (2009) ---> more than 20 formulations discussed
+https://www.mikrocontroller.net/attachment/642256/magnetic.pdf
+
 1) T-Ω,
 2) h-phi (h-φ) Finite-Element Formulation for Modelling Thin Superconducting Layers
 3) In 3D, the h-ϕ and especially the t-ω formulation substantially reduce the number of degrees of freedom by using the magnetic scalar potential in non-conducting regions. (Homogenization of HTS coils with the h, h-phi, and t-omega foil conductor model https://arxiv.org/pdf/2604.00154)
 4) T-A formulation ( for superconducting coated conductors) ===>  To date, the H-formulation and T-A formulation are two principal formulations applied to the finite element method to analyze the electromagnetic characteristics of HTS materials and devices. (Calculation and comparison of HTS electromagnetic characteristics with different models ; 2021)
 5) The H-formulation, used abundantly for the simulation of high-temperature superconductors, has shown to be a very versatile and easily implementable way of modeling electromagnetic phenomena involving superconducting materials. (Implementation of the H-phi Formulation in COMSOL Multiphysics for Simulating the Magnetization of Bulk Superconductors and Comparison with the H-Formulation ; 2020)
 6) Thin shell (TS) model for modeling thin HTS tapes in 2-D (Thin-Shell Approach for Modeling Superconducting Tapes in the H-φ Finite-Element Formulation ; 2021)
+7) T-A-Φ and J-A-Φ formulations for efficient electromagnetic simulations of High-Temperature Superconductors in 2D (https://hal.science/hal-04988674/file/J_A_phi_and_T_A_phi_formulation_SUST_vf.pdf)
 
 
 <p>Here’s
