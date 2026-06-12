@@ -169,6 +169,17 @@ mainly:
 
 **Why use GetDP**
 
+(0)  GetDP is an environment open to various couplings
+Any coupling between
+• Physical problems (electromagnetic, thermal, mechanical, ...)
+• Numerical methods (finite element methods, integral methods, ...)
+• Geometries (1D, 2D, 3D)
+• Time states (static, harmonic, transient, eigen values)
+
+  How?
+    • Clear mathematical definitions/structure
+    • Directly transcribed into 10 interdependent objects
+
 1) It is Free and Open Source.
 
 2) It is capable of solving Single or Multiphysics with various couplings
