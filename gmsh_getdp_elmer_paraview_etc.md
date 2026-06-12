@@ -204,9 +204,13 @@ Any coupling between
 
 13) It can be used for parallel computing using GetDDM.
 
-14) It can easily be used with optimization programs ( suc as CONVEKS )
+14) It can easily be used with optimization programs ( such as CONVEKS )
 
 15) **stranded & massive conductor** simulation --> good performance even where ROXIE does not perform well, for example in HTS conductors.
+
+16) It is **designed for EM in mind, great for eddy-current problems**
+
+18) It can be used to solve problems NOT SOLVABLE by other software. (BUT adding a new functionality in Elmer requires knowledge in FEM and Fortran)
 
 **some shortcomings of GetDP**
 1) steep learning curve because it is more dependent on programming. (It can be assumed its strength too.)
@@ -349,7 +353,7 @@ Benchmark library
 
 Design of electrical machines requires a good command of multi-physical phenomena including electromagnetism, mechanics, thermodynamics, structural dynamics, vibration, noise, fluid dynamics, and fatigue. The functioning of the machines rises from electromagnetic phenomena connected with mechanical rotation and connected electrical circuits.
 
-===> . The parallel performance of Elmer exceeds the results of GetDP, as GetDP utilises parallel computation only in linear solvers, whereas Elmer also in linear system assembly. Furthermore, in the test cases, Elmer shows a good parallel performance with rotating electrical machine models.
+===> The parallel performance of Elmer exceeds the results of GetDP, as GetDP utilises parallel computation only in linear solvers, whereas Elmer also in linear system assembly. Furthermore, in the test cases, Elmer shows a good parallel performance with rotating electrical machine models.
 
 ===> As electrical machines design is inheritably multi-physical, its accurate three-dimensional (3D) modelling has been out-of-question until recently. The computational burden has been too heavy for traditional computation tools and hardware. 
 
@@ -388,11 +392,8 @@ acoustics. In some research intensive fields, Elmer is the globally leading code
 Moreover, Elmer’s strengths are in multi-physical problems and in massive parallelisation. ( For some solvers,
 the parallel performance may scale up to thousands of cores.)
 
-Within the present decade, there has been effort to
-develop Elmer towards electromagnetics problems; for example edge elements, indispensable
-for electrodynamic simulations, were implemented few years ago. The first solver to use edge
-elements, WhitneyAVSolver, was implemented by Juha Ruokolainen in 2010 with the help of
-Saku Suuriniemi from Tampere University of Technology.
+Within the present decade, there has been effort to develop Elmer towards electromagnetics problems; for example edge elements, indispensable for electrodynamic simulations, were implemented few years ago. The first solver to use edge
+elements, WhitneyAVSolver, was implemented by Juha Ruokolainen in 2010 with the help of Saku Suuriniemi from Tampere University of Technology.
 
 Elmer’s rotation air-gap model is of sliding air-gap type, based on the so-called mortar method. The method is more suitable for 3D compared to moving band method used in GetDP.
 
@@ -480,6 +481,7 @@ The default utilities have many additional features that are automatically acces
 ===================================
 
 **Some more things about Elmer**
+0) 
 1) Scan
 2) Slave solvers
 3) transient restart
