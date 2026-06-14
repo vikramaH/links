@@ -257,4 +257,90 @@ The choice controls:</p>
 	→ A-V or T-Ω.</p>
 	</li><li><p><strong>High-freq EM waves?</strong> → Curl-curl E (or H).</p>
 
-<h1> Creating .pro file automatically </h1>
+--------
+14-6-2026
+
+
+0. **inductor.pro** is the best example for AMTD. It can be understood to be a H dipole magnet. It is simulated in 2D ( axis-symmetric and planar), 3D (1/4, 1/2 or full), linear/non-linear B-H curce, static/harmonic/time-domain, Constraint (none /week) , type_of_gauage (Coulomb / tree-cotree) ,
+
+1. There are many examples of machine design using getdp.
+
+2. **Magnetodynamics with cohomology conditions** : 
+The example contains a 3D model of an induction heating device, using T-Omega
+and A-v formulations and the Gmsh cohomology solver. It also includes simple thermal coupling. The electromagnetic modeling aspects of the problem turn out to be subtle. The so-called A-V formulation of the problem is straightforward to implement, but it results in a large linear system that might be difficult to solve. 
+
+In the T−Omega formulation of the problem, the same accuracy is achieved with a smaller linear system, but its implementation involves so-called thick-cuts, or source fields, that aren't discussed much in the finite element curriculum and may be difficult to produce. Here, we call them cohomology basis functions, and generate them using the cohomology solver implemented in Gmsh.
+
+3. Inductor : 2D and 3D model of an inductor/core system
+The example contains both 2D and 3D models, static and dynamic, linear and nonlinear. The 2D model is very similar to the FEMM inductor example
+(http://www.femm.info/wiki/InductanceExample).
+
+4. defining norm of a vector quantity
+
+{ Name nb  ; Value { Term { [ Norm[{d a}] ] ; In Domain ; Jacobian Vol ; } } }
+
+4a. defining z-component of the vector potential
+
+{ Name az; 
+        Value {
+          Term { [ CompZ[{a}] ]; In Vol_Mag; Jacobian Vol; }
+        }
+
+
+
+5. Conclusion of "Calculation of the eddy current field in components of Tokamak type fusion reactors using the open source GetDP software_2025"
+
+GetDP is an **efficient and reliable** open source tool for future calculations. All kinds of weak formulations of computational problems from different physical domains can be added to the solution sequence using finite element discretization. The freedom of being able to work with an arbitrary amount of function spaces and complicated constraints allows the efficient solution of a wide variety of complex computational multi-physics problems.
+
+6. Life-HTS/magnet/magnet.pro has options for simulating in 8 types of formulations. It is wrth seeing.
+
+7. What Formulation Should One Choose for Modeling a 3D HTS Magnet Motor Pole with a Ferromagnetic Material? (2022)
+
+8. Two approches to field due to current:
+
+a) for simple geometries, specify the curent density (as in inductor.pro) ::: parametrise the current for each mesh element within the 3D coil. However this is hardly scalable for more complex / various coil geometries.
+
+b) add a plane coil_cut within the 3D coil and add some current density vectors normal to this plane. Considering that the coil is simulated as a 'conducting element', the current should be flowing throught the whole coil.
+
+9. The gauge condition :  tree-cotree and coulomb gauge. ====> used to reduce degree of freedom so that problem has UNIQUE solution.
+
+10. How to define current density in 3D volume?
+
+11. There are many formulations for magnetic field computation because no single formulation is optimal for all electromagnetic problems. Different formulations trade off accuracy, computational cost, ease of applying boundary conditions, treatment of conductors, and compatibility with circuit coupling.
+
+**Common formulations and their uses ==>**
+
+Formulation		Unknowns					Typical use
+
+V			Electric scaler potential			Electrostatics, steady electric current flow, low-f current flow
+
+ϕm or Ω		Magnetic scalar potential			Current-free regions (permanent magnets only)
+
+A			Magnetic vector potential			General magnetostatics, eddy currents
+
+A−V (A−ϕ) 		A + V						Transient EM, Eddy-current problems, Coupling to external circuits
+
+T−Ω			Current vector potential + Ω			Electrical machines, stranded coils
+
+H-formulation		Magnetic field intensity			Superconductors
+
+E-formulation		Electric field					Full Wave problems (RF cavities, Filters. Dielectric resonators)
+
+**Notes-**
+
+1) Even using the same unknowns, formulations can be different. For example, electrostatics and current flow problems use the same variable V. But their formulations are different. Similarily, H is used as unknown for RF devices and also for superconducting devices. But the actual formulations are different.
+
+2) Whitney forms -- Whitney forms were introduced by the mathematician Hassler Whitney. They use A and V as variables but use edge, face or volume is the associated mesh entity. 
+
+3) Choosing the formulation is often as important as choosing the mesh or solver.
+
+4) **Why is the weak form often better?**
+
+The weak form:
+
+Reduces derivative requirements. Naturally incorporates boundary conditions. Produces symmetric matrices for many problems. Makes FEM possible.
+Often guarantees existence and uniqueness under broader conditions.
+
+In fact, many PDEs do not possess classical (strong) solutions at all, but they do possess weak solutions.
+
+So "weak" refers to weaker mathematical requirements on the solution, not to weaker accuracy or weaker physics. In finite-element analysis, the weak form is usually the preferred formulation.
