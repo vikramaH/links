@@ -1,5 +1,7 @@
 **Main formulations** : V , ϕm or Ω , A , A-V (or A-ϕ) , T−Ω , H , E , h-φ , 𝐓−𝐀 , 𝐉−𝐀 , 𝐓−𝐀-ϕ , 𝐉−𝐀-ϕ etc
 
+H-formulation is perhaps most popular formulation for superconductors (especially HTS).
+
 
 ====> Other formulations :: 
 Also see : POTENTIAL FORMULATIONS IN MAGNETICS APPLYING THE FINITE ELEMENT METHOD (2009) ---> more than 20 formulations discussed
