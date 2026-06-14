@@ -1,18 +1,25 @@
+**Main formulations** : V , ϕm or Ω , A , A-V (or A-ϕ) , T−Ω , H , E , h-φ , 𝐓−𝐀 , 𝐉−𝐀 , 𝐓−𝐀-ϕ , 𝐉−𝐀-ϕ etc
+
+
 ====> Other formulations :: 
 Also see : POTENTIAL FORMULATIONS IN MAGNETICS APPLYING THE FINITE ELEMENT METHOD (2009) ---> more than 20 formulations discussed
 https://www.mikrocontroller.net/attachment/642256/magnetic.pdf
 
 1) T-Ω,
+
 2) h-phi (h-φ) Finite-Element Formulation for Modelling Thin Superconducting Layers
+
 3) In 3D, the h-ϕ and especially the t-ω formulation substantially reduce the number of degrees of freedom by using the magnetic scalar potential in non-conducting regions. (Homogenization of HTS coils with the h, h-phi, and t-omega foil conductor model https://arxiv.org/pdf/2604.00154)
+
 4) T-A formulation ( for superconducting coated conductors) ===>  To date, the H-formulation and T-A formulation are two principal formulations applied to the finite element method to analyze the electromagnetic characteristics of HTS materials and devices. (Calculation and comparison of HTS electromagnetic characteristics with different models ; 2021)
+
 5) The H-formulation, used abundantly for the simulation of high-temperature superconductors, has shown to be a very versatile and easily implementable way of modeling electromagnetic phenomena involving superconducting materials. (Implementation of the H-phi Formulation in COMSOL Multiphysics for Simulating the Magnetization of Bulk Superconductors and Comparison with the H-Formulation ; 2020)
+
 6) Thin shell (TS) model for modeling thin HTS tapes in 2-D (Thin-Shell Approach for Modeling Superconducting Tapes in the H-φ Finite-Element Formulation ; 2021)
 7) T-A-Φ and J-A-Φ formulations for efficient electromagnetic simulations of High-Temperature Superconductors in 2D (https://hal.science/hal-04988674/file/J_A_phi_and_T_A_phi_formulation_SUST_vf.pdf)
 
 
-<p>Here’s
-a “big-picture” map of what those names mean and how
+<p>Here’s a “big-picture” map of what those names mean and how
 practitioners usually choose between them when building a GetDP
 model. I’ll keep the jargon but try to show the logic step by step.</p>
 <hr>
@@ -310,7 +317,7 @@ b) add a plane coil_cut within the 3D coil and add some current density vectors 
 
 **Common formulations and their uses ==>**
 
-Formulation		Unknowns					Typical use
+Formulation		Unknowns						Typical use
 
 V			Electric scaler potential			Electrostatics, steady electric current flow, low-f current flow
 
@@ -318,23 +325,25 @@ V			Electric scaler potential			Electrostatics, steady electric current flow, lo
 
 A			Magnetic vector potential			General magnetostatics, eddy currents
 
-A−V (A−ϕ) 		A + V						Transient EM, Eddy-current problems, Coupling to external circuits
+A−V (A−ϕ) 		A + V					Transient EM, Eddy-current problems, Coupling to external circuits
 
 T−Ω			Current vector potential + Ω			Electrical machines, stranded coils
 
 H-formulation		Magnetic field intensity			Superconductors
 
-E-formulation		Electric field					Full Wave problems (RF cavities, Filters. Dielectric resonators)
+E-formulation		Electric field			Full Wave problems (RF cavities, Filters. Dielectric resonators)
 
 **Notes-**
 
 1) Even using the same unknowns, formulations can be different. For example, electrostatics and current flow problems use the same variable V. But their formulations are different. Similarily, H is used as unknown for RF devices and also for superconducting devices. But the actual formulations are different.
 
-2) Whitney forms -- Whitney forms were introduced by the mathematician Hassler Whitney. They use A and V as variables but use edge, face or volume is the associated mesh entity. 
+2) More unknows does not mean more time required to solve. It can be less.
 
-3) Choosing the formulation is often as important as choosing the mesh or solver.
+3) **Whitney forms** -- Whitney forms were introduced by the mathematician Hassler Whitney. They use A and V as variables but use edge, face or volume is the associated mesh entity. 
 
-4) **Why is the weak form often better?**
+4) Choosing the formulation is often as important as choosing the mesh or solver.
+
+5) **Why is the weak form often better?**
 
 The weak form:
 
