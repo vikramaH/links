@@ -6,7 +6,7 @@ Moving from a validated physics model to production-ready 2D and 3D engineering 
 
 ---
 
-## The Workflow: From Field Map to Shop Floor
+## The Workflow: From Field-simulation model to Shop Floor
 
 ### 1. Exporting the Optimized Geometry from the Simulation
 
