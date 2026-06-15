@@ -1,4 +1,4 @@
-Yes, it is entirely possible, and it is a standard engineering transition. However, it is not a "one-click" automated process.
+Yes, it is entirely possible to get engineering drawing from the final magnetic simulation model. In fact it is is a standard engineering transition. However, it is not a "one-click" automated process.
 
 Field simulation tools (like Gmsh/GetDP, OPERA, or Ansys) optimize for **physics performance** (magnetic field quality, harmonic coefficients, and saturation limits). Engineering drawings, on the other hand, must specify **manufacturing realities** (tolerances, machining paths, material grades, cooling connections, and assembly constraints).
 
