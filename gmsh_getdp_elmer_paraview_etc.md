@@ -470,7 +470,14 @@ from paraview.simple import *
 
 **===> in colab environment, use pyvista for visualization instead of paraview. Paraview is better for interactive visualization while pyvista is better for automated visualization.**
    
-
-
-
-
+## Opera3D and Problems with it
+1) no 2D simulation
+2) no coupling
+3) no formulation for superconductors (it can not be used for general problems)
+4) Automatic design features not available (for example inverse design implemented in ROXIE)
+5) No library of parametric cores geometries (only some statndard coil geometries)
+6) It does not provide facility to import/export meshes, import/export results for postprocessing. Very liimited import/export of model geometries
+7) does not support parallel execution
+8) difficult or impossible to connect with python to make automatic design flow
+9) costly, licence problem, many features exist but not availble to us
+10) 
