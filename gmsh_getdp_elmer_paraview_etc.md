@@ -468,6 +468,17 @@ pvpython is the Python interface to ParaView. You can think of pvpython as ParaV
 
 from paraview.simple import *
 
+### postoperation command for generating .vtu output by getdp
+PostOperation {
+  { Name ExportToParaview;
+    Operation {
+      Print[ b, OnElementsOf Domain,
+             File "Bfield.vtu",
+             Format VTU ];
+    }
+  }
+}
+
 **===> in colab environment, use pyvista for visualization instead of paraview. Paraview is better for interactive visualization while pyvista is better for automated visualization.**
    
 ## Opera3D and Problems with it
