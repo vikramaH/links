@@ -96,7 +96,7 @@ https://github.com/jeromerobert/gmsh/tree/master
    (a) creating magnet design workflow starting from chosing type of magnet followed by main specs to
    analytical design of the magnet, to 2D model, to 2D simulation and 2D results to 3D model and 3D results  and optimization.
 
-   (b) creating (or modifying) the .pro file for getdp
+   (b) creating (or modifying) the .pro file for getdp ===> Also, we can have a jinja template of general .pro file and create specific .pro files from it using jinja.
 
    (c) creating .sif file for Elmersolve
 
@@ -105,11 +105,10 @@ https://github.com/jeromerobert/gmsh/tree/master
 3. GetDP is a comprehensive software application for solving boundary value problems using the finite element method. Its versatility, flexibility, meshing capabilities, numerical solvers, parallel computing support, visualization tools, and extensive documentation make it a valuable tool for engineers, researchers, and students working on a wide range of simulation tasks.
 
 3A. getdp is so useful that CERN has brought its own version called cerngetdp. cerngetdp utilizes vast magnetic properties database of cern.
-   so it simplifies the .pro (problem file) creation.
 
 4. The "Run Control" section in ElmerSolver's .sif file is a relatively newer and very powerful addition that significantly enhances Elmer's capabilities for parametric studies, optimization, and complex transient simulations within a single input file.
 
-   Before "Run Control," if you wanted to run, say, 10 different simulations where only one parameter varied (e.g., material conductivity), you would typically need 10 separate .sif files or manage the variations with an external script (e.g., Python, Bash). "Run Control" streamlines this.
+Before "Run Control," if you wanted to run, say, 10 different simulations where only one parameter varied (e.g., material conductivity), you would typically need 10 separate .sif files or manage the variations with an external script (e.g., Python, Bash). "Run Control" streamlines this.
 
 ==============
 
@@ -170,6 +169,7 @@ mainly:
 **Why use GetDP**
 
 (0)  GetDP is an environment open to various couplings
+
 Any coupling between
 • Physical problems (electromagnetic, thermal, mechanical, ...)
 • Numerical methods (finite element methods, integral methods, ...)
@@ -402,6 +402,7 @@ The default utilities have many additional features that are automatically acces
 ===================================
 
 **Some more things about Elmer**
+
 0) 
 1) Scan
 2) Slave solvers
@@ -453,12 +454,18 @@ End
 18) Mesh multiplication  ===> Mesh multiplication is the process where each mesh edge is split into two resulting to an increased number of elements.
 
 19) 5 ways to run Elmer
+    
       1. Compile from source code
-      2. Install ready pre-compiled package (Linux, Windows)
-      3. Run virtual appliance in virtual machine
-      4. Run inside a pre-defined container (Docker)
-      5. Run remotely on system with Elmer installation
-      6. run on google colab
+         
+      3. Install ready pre-compiled package (Linux, Windows)
+         
+      5. Run virtual appliance in virtual machine
+         
+      7. Run inside a pre-defined container (Docker)
+         
+      9. Run remotely on system with Elmer installation
+          
+      11. run on google colab
    
 ## Paraview
 
