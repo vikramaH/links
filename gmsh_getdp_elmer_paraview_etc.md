@@ -1,4 +1,4 @@
-**Onelab**
+## Onelab = GMSH + GetDP
 
 ====> Onelab is an exploring tool and a test platform with a flexible and highly customisable implementation allowing new features to be implemented. (written in a A CERN paper on HTS magnets)
 
@@ -11,7 +11,7 @@ Two difficulties associated with free FEA sodware :
 • Missing “expert” layer and documentation
 
 
-ONELAB Guiding Principles
+**ONELAB Guiding Principles**
 
 * Don’t reimplement, interface
 
@@ -19,7 +19,7 @@ ONELAB Guiding Principles
 
 • Make it as small and as easy to maintain as possible (no solver dependent code in the interface)
 
-ONELAB Features
+**ONELAB Features**
 
 (1) Abstract interface to FEA codes
 
@@ -30,7 +30,10 @@ ONELAB Features
   (2.2) Meta-­model: set of models + selection logic
 
 
-**Features of Gmsh**
+  
+## GMSH
+
+### Features of Gmsh
 
 Advanced Solvers: Solve equations with advanced numerical solvers.
 
@@ -60,18 +63,25 @@ Parametric Modeling: Create parametric models with a few clicks.
 
 Physical Groups: Group and organize entities into physical groups.
 
-Post-processing: Visualize, analyze and compare results with ease. ==> visualize and export computational results in a great variety of ways. Gmsh can display scalar, vector and tensor datasets, perform various operations on the resulting post-processing views (see Post-processing module), can export plots in many
-different formats (see General options list), and can generate complex animations (see General tools, and t8.geo).
+Post-processing: Visualize, analyze and compare results with ease. ==> visualize and export computational results in a great variety of ways. Gmsh can display scalar, vector and tensor datasets, perform various operations on the resulting post-processing views (see Post-processing module), can export plots in many different formats (see General options list), and can generate complex animations (see General tools, and t8.geo).
 
 built-in plug-ins ===> such as applying cuts, clips, and thresholding
 
-Scripting: Create powerful scripts with the built-in scripting language.
+Scripting: Create powerful scripts with the built-in scripting language. (both for geometry and for postprocessing)
 
 Parallel computing of mesh ???  ===> From 2019, Multi-Threaded 3D meshing (fine-grained), STL remeshing. 
 
 Gmsh is not a multi-bloc mesh generator: all meshes produced by Gmsh are conforming in the sense of finite element meshes;
 
 Create repeatative geometries.
+
+Create a .pos script having postprocessing commands-
+
+		Plugin(Probe).X=0;
+		Plugin(Probe).Y=0;
+		Plugin(Probe).Z=0;
+		Plugin(Probe).View=0;
+		Plugin(Probe).Run;
 
 
 -------------------------------------------
@@ -138,7 +148,7 @@ mainly:
 
 (3) enabling parametric analysis and multi-objective optimization with Dakota software developed by Sandia National Laboratories.
 
-# Components of a good tool-chain for design of Accelerator Magnets
+## Components of a good tool-chain for design of Accelerator Magnets
 
 1) Preprocessor -- powerful script for parametric modelling, able to import/export in other file formats, good and flexible meshing capability
 2) Solver -- parallel, nonlinear, adaptive time, fast, rugged, 
@@ -164,9 +174,10 @@ mainly:
 * sufficiently big user base
 * active discussion group
 * good documentation
-* 
 
-**Why use GetDP**
+## GetDP
+
+### Why use GetDP
 
 (0)  GetDP is an environment open to various couplings
 
@@ -339,6 +350,9 @@ https://www.geeksforgeeks.org/python/python-api-tutorial-getting-started-with-ap
 
 
 =====================================================================================
+
+
+## Elmer
 
 19-9-2025
 
