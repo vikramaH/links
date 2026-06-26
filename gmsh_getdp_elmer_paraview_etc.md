@@ -1,5 +1,8 @@
 ## Onelab = GMSH + GetDP
 
+Getdp ===> CERNGetDP ===> Fiqus (quench analysis software)
+GetDP ===> Life-HTS (Liège university Finite Element models for High-Temperature Superconductors)
+
 ====> Onelab is an exploring tool and a test platform with a flexible and highly customisable implementation allowing new features to be implemented. (written in a A CERN paper on HTS magnets)
 
 General Goal of the ONELAB Project : Develop a platform for integrating free Finite Element Analysis (FEA) software
@@ -13,7 +16,7 @@ Two difficulties associated with free FEA sodware :
 
 **ONELAB Guiding Principles**
 
-* Don’t reimplement, interface
+• Don’t reimplement, interface
 
 • Make it easy to provide templates, with interactive parameter modification
 
@@ -133,7 +136,15 @@ transforming it to input (e.g., boundary conditions or electromagnetic field map
 
 * Particle accelerator application codes are often executed on clusters, and efficiently managing parallel computing resources is difficult.
 
-**steam-FiQuS**  
+## Life-HTS
+Liège university Finite Element models for High-Temperature Superconductors
+https://www.life-hts.uliege.be/   ===> a brief description of this project
+https://gitlab.onelab.info/life-hts/life-hts ===> example files, such as cylinder.pro etc
+
+
+This project contains template and model files for modeling systems containing type-II superconductors (incl. HTS) with GetDP as a finite element solver and Gmsh as mesh generator.
+
+## steam-FiQuS
 
 https://gitlab.cern.ch/steam/fiqus
 
