@@ -32,6 +32,11 @@ Two difficulties associated with free FEA sodware :
  
   (2.2) Meta-­model: set of models + selection logic
 
+### An example of running everthing from command line
+		gmsh cylinder.geo -2
+		getdp cylinder -solve MagDyn -verbose 3
+		getdp cylinder -pos MagDyn -verbose 3
+		gmsh res/b.pos
 
   
 ## GMSH
