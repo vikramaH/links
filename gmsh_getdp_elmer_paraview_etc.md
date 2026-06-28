@@ -104,6 +104,8 @@ Syntax :
 
 DefineConstant name = {default, choices, label, highlight, help, autocheck, readonly, closed};
 
+**Sharing variables between gmsh and getDP**
+Use a file such as my_common_file.txt and include it in both .geo and .pro files. Here, define all the variables in straight way (x1 = 23.5 ) or using DefineConstant.
 
 --------
 
