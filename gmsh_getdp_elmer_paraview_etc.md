@@ -43,7 +43,19 @@ Two difficulties associated with free FEA sodware :
 
 ### Features of Gmsh
 
-Advanced Solvers: Solve equations with advanced numerical solvers.
+Gmsh = geometry + mesh + onelab server + postprocessor
+
+Multi-platform: Compatible with Windows, Linux, Mac and more.
+
+Run on low end machines and/or machines with no graphical interface.
+
+Use it with GUI, with command line or with python API
+
+Geometry Modeling: Construct and edit complex 3D geometries with powerful tools.
+
+Parametric Modeling: Create parametric models with a few clicks.
+
+Physical Groups: Group and organize entities into physical groups.===>very important for useful for FEM
 
 Advanced Visualization: Visualize meshes in 3D with advanced rendering techniques.
 
@@ -51,7 +63,7 @@ CAD Conversion: Convert CAD models to meshes quickly and accurately.
 
 CAD Integration: Import and export CAD models from a variety of sources.
 
-Geometry Modeling: Construct and edit complex 3D geometries with powerful tools.
+Advanced Solvers: Solve equations with advanced numerical solvers.
 
 HPC Support: Support for high performance computing clusters.
 
@@ -63,15 +75,7 @@ Mesh Optimization: Optimize meshes for high performance computing.
 
 Mesh Refinement: Smoothly refine and improve mesh quality.
 
-Multi-platform: Compatible with Windows, Linux, Mac and more.
-
-Run on low end machines and/or machines with no graphical interface.
-
-Parametric Modeling: Create parametric models with a few clicks.
-
-Physical Groups: Group and organize entities into physical groups.
-
-Post-processing: Visualize, analyze and compare results with ease. ==> visualize and export computational results in a great variety of ways. Gmsh can display scalar, vector and tensor datasets, perform various operations on the resulting post-processing views (see Post-processing module), can export plots in many different formats (see General options list), and can generate complex animations (see General tools, and t8.geo).
+Post-processing: Visualize, analyze and compare results with ease ==> visualize and export computational results in a great variety of ways. Gmsh can display scalar, vector and tensor datasets, perform various operations on the resulting post-processing views (see Post-processing module), can export plots in many different formats (see General options list), and can generate complex animations (see General tools, and t8.geo).
 
 built-in plug-ins ===> such as applying cuts, clips, and thresholding
 
@@ -91,8 +95,13 @@ Create a .pos script having postprocessing commands-
 		Plugin(Probe).View=0;
 		Plugin(Probe).Run;
 
+Geometry ===> opens main types of geometries (step, iges etc);  two kernels, 4 types of extrudes (linear, rotation, pipe) , 4 types of transforms (translation, rotation, scaling, symmetric), booleans (union, intersection, difference, fragmets....  ), fillets, split curve etc ;
 
--------------------------------------------
+Meshing ===> triangular, quad, tetrahedral, hexahedral meshes ; order (1, 2, 3) ; unstructured, structured and mixed meshing ; mesh size control (at point, in region, global, mesh refinement,) ; many types of mesh import, export , recombine, optimize3d, 
+
+Visualization ===> visualize geometry, meshes, resuls with advanced features (advanced selection, zoom, rotation, split window etc. 
+
+Parameter ===> It has feature to make it coloured, read-only, visible/unvisible, slider, automatic change, looping in single or coupled loops, help text, communication with onelab etc.
 
 **In praise of GMSH DefineConstant and parameter menu**
 
@@ -107,7 +116,7 @@ DefineConstant name = {default, choices, label, highlight, help, autocheck, read
 **Sharing variables between gmsh and getDP**
 Use a file such as my_common_file.txt and include it in both .geo and .pro files. Here, define all the variables in straight way (x1 = 23.5 ) or using DefineConstant.
 
---------
+=============================================================
 
 https://github.com/jeromerobert/gmsh/tree/master
 
