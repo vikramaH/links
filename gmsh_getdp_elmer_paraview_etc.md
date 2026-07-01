@@ -101,6 +101,10 @@ Meshing ===> triangular, quad, tetrahedral, hexahedral meshes ; order (1, 2, 3) 
 
 Visualization ===> visualize geometry, meshes, resuls with advanced features (advanced selection, zoom, rotation, split window etc. 
 
+LLM etc ===> small LLMs - specifically, Phi-3 Mini and Qwen-2.5 1.5B - can be fine-tuned to generate precise engineering geometries in GMSH format (https://www.researchgate.net/publication/390142225_The_Power_of_Small_LLMs_in_Geometry_Generation_for_Physical_Simulations)
+
+Also see - GmshFEM & GmshDDM
+
 Parameter ===> It has feature to make it coloured, read-only, visible/unvisible, slider, automatic change, looping in single or coupled loops, help text, communication with onelab etc.
 
 **In praise of GMSH DefineConstant and parameter menu**
