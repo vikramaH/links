@@ -361,6 +361,8 @@ elements, WhitneyAVSolver, was implemented by Juha Ruokolainen in 2010 with the 
 
 Elmer’s rotation air-gap model is of sliding air-gap type, based on the so-called mortar method. The method is more suitable for 3D compared to moving band method used in GetDP.
 
+===> **Personal note: Elmerfem is probably the most interesting alternative to multiphysics FEM software such as COMSOL Multiphysics for beginners**. (Multiphysics modeling using Open-source FEM software : Elmerfem and Onelab  https://indico.psi.ch/event/12880/attachments/22137/38333/multiphysics-PSI06262002_FTrillaudP.pdf)
+
 ===> FEMM's electrical machine modelling is very limited due to lack of a time-dependent solver and a rotation model.
 
 
