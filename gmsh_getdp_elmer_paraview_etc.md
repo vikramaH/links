@@ -544,4 +544,24 @@ from paraview.simple import *
 7) does not support parallel execution
 8) difficult or impossible to connect with python to make automatic design flow
 9) costly, licence problem, many features exist but not availble to us
-10) 
+
+
+## ElmerFEM
+
+(From https://www.opennovation.org/profiles/Elmer.html)
+
+Elmer is an open source (GPL) suite for performing engineering simulations using the finite element method (FEM, or finite element analysis, FEA).  Its authors and primary contributors are at CSC Scientific Computing Ltd. in Finland.
+
+Elmer's 33 "Models", or equations, can solve a wide variety of problems, from heat conduction (temperature distribution in a solid) to turbulent fluid-structure interactions (e.g. carotid artery deformation due to pressure surge during a heartbeat, right; click for animation) to electromagnetics.  Its 2-D Level Set solver can solve multi-phase flow problems such as bubble deformation.  It can even use the finite element method for Density Functional Theory quantum mechanics calculations, in order to calculate molecule shapes or crystal structures and energies.  And beyond finite elements, it can do boundary element calculations, and has code for calculating heat transfer by thermal radiation between surfaces, and for simulating low-pressure gas flow using the Direct Simulation Monte Carlo method, and connect these models to finite element simulations.
+
+Elmer does not have its own geometry definition or meshing program. Instead, its ElmerGrid program can import meshes in fifteen different formats, such as those of Gmsh, Salomé, ANSYS, ABAQUS, FIDAP and COMSOL.
+
+Perhaps most importantly, all of this capability comes with very extensive and easy-to-read documentation, including several tutorials with input files which describe how to use its extensive graphical user interface (GUI) called ElmerFront to solve simple and complex problems.
+
+A new GUI called ElmerGUI currently under development will make all of this even easier.  This GUI can directly import meshes in the fifteen formats of ElmerGrid, and links with OpenCASCADE and NETGEN to directly import and mesh CAD files in IGES, STEP, BREP and STL formats.  One can point-and-click to set boundary conditions and equations.  And it has a new module for visualizing the resulting temperatures, flow velocities, etc. based on VTK.
+
+Elmer also runs in parallel, using either the (P)ARPACK solver or the UMFPACK direct solver which is more robust but slower.
+
+For those who prefer writing their own finite element program, Elmer has its own library called libelmersolver, which is similar to libMesh and deal.II.
+
+Elmer is in the Opennovation Debian (Lenny) and Ubuntu (Hardy) repositories, so you can automatically download and install it along with all of its dependencies using Synaptic, Aptitude, or simply "apt-get install elmer".
